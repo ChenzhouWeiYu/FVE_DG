@@ -1,0 +1,959 @@
+Start   0.000000
+CPU Time: 0.001054  	sec      Split Hex Mesh to Tet
+CPU Time: 0.015982  	sec      Set Init Value
+CPU Time: 0.016277  	sec      Start discretization
+CPU Time: 0.076279  	sec      Picard iter 0	 before = 14.1528
+CPU Time: 0.076601  	sec      Picard iter 0	 init : 14.1528
+CPU Time: 0.086812  	sec      Picard iter 0	 only Arr : 14.1528
+CPU Time: 0.180559  	sec      Picard iter 0	 only Amm = 1204.9
+CPU Time: 0.187035  	sec      Picard iter 0	 only Aee = 10.0075
+CPU Time: 0.198448  	sec      Picard iter 0	 Arr + Aee = 10.0075
+CPU Time: 0.198606  	sec      Picard iter 0	 Submat residual = 5.93953e-14
+CPU Time: 0.198971  	sec      Picard iter 0	 Submat residual = 10.0075
+CPU Time: 0.199116  	sec      Picard iter 0	 Submat residual = 10.0075
+CPU Time: 0.199139  	sec      Start linear solver
+CPU Time: 0.922220  	sec      Linear solver finished
+CPU Time: 0.922360  	sec      Re-discretize, calculate nonlinear residuals
+CPU Time: 0.952457  	sec      Picard iter 0	 ||N(U_k)|| = 216.782
+CPU Time: 0.952575  	sec      Picard iter 0	 ||delta U|| = 162.775
+CPU Time: 0.954006  	sec      Start discretization
+CPU Time: 0.982937  	sec      Picard iter 1	 before = 216.782
+CPU Time: 0.983378  	sec      Picard iter 1	 init : 216.782
+CPU Time: 0.990604  	sec      Picard iter 1	 only Arr : 217.612
+CPU Time: 1.087164  	sec      Picard iter 1	 only Amm = 4564.23
+CPU Time: 1.092947  	sec      Picard iter 1	 only Aee = 5.2044
+CPU Time: 1.104362  	sec      Picard iter 1	 Arr + Aee = 5.20466
+CPU Time: 1.104592  	sec      Picard iter 1	 Submat residual = 0.000719505
+CPU Time: 1.105003  	sec      Picard iter 1	 Submat residual = 5.21011
+CPU Time: 1.105189  	sec      Picard iter 1	 Submat residual = 216.719
+CPU Time: 1.105210  	sec      Start linear solver
+CPU Time: 1.506515  	sec      Linear solver finished
+CPU Time: 1.506697  	sec      Re-discretize, calculate nonlinear residuals
+CPU Time: 1.532424  	sec      Picard iter 1	 ||N(U_k)|| = 235.441
+CPU Time: 1.532530  	sec      Picard iter 1	 ||delta U|| = 92.3802
+CPU Time: 1.535176  	sec      Start discretization
+CPU Time: 1.562903  	sec      Picard iter 2	 before = 235.441
+CPU Time: 1.564405  	sec      Picard iter 2	 init : 235.441
+CPU Time: 1.571895  	sec      Picard iter 2	 only Arr : 236.348
+CPU Time: 1.669415  	sec      Picard iter 2	 only Amm = 1751.84
+CPU Time: 1.676455  	sec      Picard iter 2	 only Aee = 2.81098
+CPU Time: 1.691794  	sec      Picard iter 2	 Arr + Aee = 2.81064
+CPU Time: 1.692015  	sec      Picard iter 2	 Submat residual = 0.000781368
+CPU Time: 1.692448  	sec      Picard iter 2	 Submat residual = 2.81353
+CPU Time: 1.692658  	sec      Picard iter 2	 Submat residual = 235.424
+CPU Time: 1.692681  	sec      Start linear solver
+CPU Time: 2.263418  	sec      Linear solver finished
+CPU Time: 2.263566  	sec      Re-discretize, calculate nonlinear residuals
+CPU Time: 2.284242  	sec      Picard iter 2	 ||N(U_k)|| = 192.908
+CPU Time: 2.284336  	sec      Picard iter 2	 ||delta U|| = 50.036
+CPU Time: 2.286885  	sec      Start discretization
+CPU Time: 2.317630  	sec      Picard iter 3	 before = 192.908
+CPU Time: 2.318244  	sec      Picard iter 3	 init : 192.908
+CPU Time: 2.330670  	sec      Picard iter 3	 only Arr : 193.643
+CPU Time: 2.415824  	sec      Picard iter 3	 only Amm = 759.501
+CPU Time: 2.421970  	sec      Picard iter 3	 only Aee = 1.59642
+CPU Time: 2.433544  	sec      Picard iter 3	 Arr + Aee = 1.59544
+CPU Time: 2.433742  	sec      Picard iter 3	 Submat residual = 0.000640188
+CPU Time: 2.434098  	sec      Picard iter 3	 Submat residual = 1.59541
+CPU Time: 2.434264  	sec      Picard iter 3	 Submat residual = 192.902
+CPU Time: 2.434284  	sec      Start linear solver
+CPU Time: 2.808163  	sec      Linear solver finished
+CPU Time: 2.808309  	sec      Re-discretize, calculate nonlinear residuals
+CPU Time: 2.829695  	sec      Picard iter 3	 ||N(U_k)|| = 139.478
+CPU Time: 2.829785  	sec      Picard iter 3	 ||delta U|| = 28.3309
+CPU Time: 2.832409  	sec      Start discretization
+CPU Time: 2.861967  	sec      Picard iter 4	 before = 139.478
+CPU Time: 2.862684  	sec      Picard iter 4	 init : 139.478
+CPU Time: 2.871348  	sec      Picard iter 4	 only Arr : 139.999
+CPU Time: 2.964289  	sec      Picard iter 4	 only Amm = 428.761
+CPU Time: 2.970067  	sec      Picard iter 4	 only Aee = 0.962813
+CPU Time: 2.981686  	sec      Picard iter 4	 Arr + Aee = 0.961871
+CPU Time: 2.981970  	sec      Picard iter 4	 Submat residual = 0.000462884
+CPU Time: 2.982368  	sec      Picard iter 4	 Submat residual = 0.959733
+CPU Time: 2.982533  	sec      Picard iter 4	 Submat residual = 139.475
+CPU Time: 2.982538  	sec      Start linear solver
+CPU Time: 3.430399  	sec      Linear solver finished
+CPU Time: 3.449972  	sec      Re-discretize, calculate nonlinear residuals
+CPU Time: 3.470968  	sec      Picard iter 4	 ||N(U_k)|| = 46.7952
+CPU Time: 3.471062  	sec      Picard iter 4	 ||delta U|| = 48.8032
+CPU Time: 3.473783  	sec      Start discretization
+CPU Time: 3.500147  	sec      Picard iter 5	 before = 46.7952
+CPU Time: 3.500699  	sec      Picard iter 5	 init : 46.7952
+CPU Time: 3.509561  	sec      Picard iter 5	 only Arr : 46.9362
+CPU Time: 3.594600  	sec      Picard iter 5	 only Amm = 317.895
+CPU Time: 3.600365  	sec      Picard iter 5	 only Aee = 0.259943
+CPU Time: 3.610563  	sec      Picard iter 5	 Arr + Aee = 0.259302
+CPU Time: 3.610754  	sec      Picard iter 5	 Submat residual = 0.000155387
+CPU Time: 3.611133  	sec      Picard iter 5	 Submat residual = 0.244278
+CPU Time: 3.611288  	sec      Picard iter 5	 Submat residual = 46.7946
+CPU Time: 3.611311  	sec      Start linear solver
+CPU Time: 3.962705  	sec      Linear solver finished
+CPU Time: 3.983575  	sec      Re-discretize, calculate nonlinear residuals
+CPU Time: 4.005602  	sec      Picard iter 5	 ||N(U_k)|| = 35.8568
+CPU Time: 4.005705  	sec      Picard iter 5	 ||delta U|| = 17.4547
+CPU Time: 4.008508  	sec      Start discretization
+CPU Time: 4.039242  	sec      Picard iter 6	 before = 35.8568
+CPU Time: 4.039762  	sec      Picard iter 6	 init : 35.8568
+CPU Time: 4.047314  	sec      Picard iter 6	 only Arr : 35.9689
+CPU Time: 4.126938  	sec      Picard iter 6	 only Amm = 123.808
+CPU Time: 4.133492  	sec      Picard iter 6	 only Aee = 0.18134
+CPU Time: 4.146544  	sec      Picard iter 6	 Arr + Aee = 0.179741
+CPU Time: 4.147326  	sec      Picard iter 6	 Submat residual = 0.000118997
+CPU Time: 4.147866  	sec      Picard iter 6	 Submat residual = 0.167462
+CPU Time: 4.148114  	sec      Picard iter 6	 Submat residual = 35.8564
+CPU Time: 4.148143  	sec      Start linear solver
+CPU Time: 4.447826  	sec      Linear solver finished
+CPU Time: 4.468990  	sec      Re-discretize, calculate nonlinear residuals
+CPU Time: 4.490642  	sec      Picard iter 6	 ||N(U_k)|| = 31.3199
+CPU Time: 4.490771  	sec      Picard iter 6	 ||delta U|| = 10.6483
+CPU Time: 4.494239  	sec      Start discretization
+CPU Time: 4.522261  	sec      Picard iter 7	 before = 31.3199
+CPU Time: 4.522617  	sec      Picard iter 7	 init : 31.3199
+CPU Time: 4.531407  	sec      Picard iter 7	 only Arr : 31.4213
+CPU Time: 4.609328  	sec      Picard iter 7	 only Amm = 102.993
+CPU Time: 4.614891  	sec      Picard iter 7	 only Aee = 0.140578
+CPU Time: 4.624783  	sec      Picard iter 7	 Arr + Aee = 0.138752
+CPU Time: 4.624941  	sec      Picard iter 7	 Submat residual = 0.000103874
+CPU Time: 4.625316  	sec      Picard iter 7	 Submat residual = 0.131455
+CPU Time: 4.625444  	sec      Picard iter 7	 Submat residual = 31.3196
+CPU Time: 4.625464  	sec      Start linear solver
+CPU Time: 4.882021  	sec      Linear solver finished
+CPU Time: 4.903149  	sec      Re-discretize, calculate nonlinear residuals
+CPU Time: 4.923494  	sec      Picard iter 7	 ||N(U_k)|| = 27.5475
+CPU Time: 4.923595  	sec      Picard iter 7	 ||delta U|| = 11.6381
+CPU Time: 4.926383  	sec      Start discretization
+CPU Time: 4.950733  	sec      Picard iter 8	 before = 27.5475
+CPU Time: 4.951037  	sec      Picard iter 8	 init : 27.5475
+CPU Time: 4.957967  	sec      Picard iter 8	 only Arr : 27.6345
+CPU Time: 5.030931  	sec      Picard iter 8	 only Amm = 86.193
+CPU Time: 5.036733  	sec      Picard iter 8	 only Aee = 0.105041
+CPU Time: 5.047107  	sec      Picard iter 8	 Arr + Aee = 0.103658
+CPU Time: 5.047293  	sec      Picard iter 8	 Submat residual = 9.12998e-05
+CPU Time: 5.047626  	sec      Picard iter 8	 Submat residual = 0.101953
+CPU Time: 5.047764  	sec      Picard iter 8	 Submat residual = 27.5473
+CPU Time: 5.047783  	sec      Start linear solver
+CPU Time: 5.252797  	sec      Linear solver finished
+CPU Time: 5.274126  	sec      Re-discretize, calculate nonlinear residuals
+CPU Time: 5.296037  	sec      Picard iter 8	 ||N(U_k)|| = 19.8474
+CPU Time: 5.296152  	sec      Picard iter 8	 ||delta U|| = 23.2276
+CPU Time: 5.299556  	sec      Start discretization
+CPU Time: 5.324825  	sec      Picard iter 9	 before = 19.8474
+CPU Time: 5.325159  	sec      Picard iter 9	 init : 19.8474
+CPU Time: 5.333423  	sec      Picard iter 9	 only Arr : 19.9005
+CPU Time: 5.411912  	sec      Picard iter 9	 only Amm = 62.3243
+CPU Time: 5.417838  	sec      Picard iter 9	 only Aee = 0.0649953
+CPU Time: 5.429068  	sec      Picard iter 9	 Arr + Aee = 0.0648071
+CPU Time: 5.429236  	sec      Picard iter 9	 Submat residual = 6.56913e-05
+CPU Time: 5.429567  	sec      Picard iter 9	 Submat residual = 0.0659509
+CPU Time: 5.429709  	sec      Picard iter 9	 Submat residual = 19.8473
+CPU Time: 5.429730  	sec      Start linear solver
+CPU Time: 5.682446  	sec      Linear solver finished
+CPU Time: 5.703683  	sec      Re-discretize, calculate nonlinear residuals
+CPU Time: 5.726045  	sec      Picard iter 9	 ||N(U_k)|| = 7.53273
+CPU Time: 5.726142  	sec      Picard iter 9	 ||delta U|| = 14.3425
+CPU Time: 5.730343  	sec      Start discretization
+CPU Time: 5.759379  	sec      Picard iter 10	 before = 7.53273
+CPU Time: 5.759850  	sec      Picard iter 10	 init : 7.53273
+CPU Time: 5.767902  	sec      Picard iter 10	 only Arr : 7.55131
+CPU Time: 5.848816  	sec      Picard iter 10	 only Amm = 44.5254
+CPU Time: 5.854406  	sec      Picard iter 10	 only Aee = 0.0435846
+CPU Time: 5.866204  	sec      Picard iter 10	 Arr + Aee = 0.0436362
+CPU Time: 5.866443  	sec      Picard iter 10	 Submat residual = 2.48075e-05
+CPU Time: 5.866890  	sec      Picard iter 10	 Submat residual = 0.0438503
+CPU Time: 5.867120  	sec      Picard iter 10	 Submat residual = 7.5326
+CPU Time: 5.867148  	sec      Start linear solver
+CPU Time: 6.069901  	sec      Linear solver finished
+CPU Time: 6.090575  	sec      Re-discretize, calculate nonlinear residuals
+CPU Time: 6.115124  	sec      Picard iter 10	 ||N(U_k)|| = 6.22789
+CPU Time: 6.115321  	sec      Picard iter 10	 ||delta U|| = 4.08984
+CPU Time: 6.118926  	sec      Start discretization
+CPU Time: 6.146328  	sec      Picard iter 11	 before = 6.22789
+CPU Time: 6.147197  	sec      Picard iter 11	 init : 6.22789
+CPU Time: 6.156379  	sec      Picard iter 11	 only Arr : 6.246
+CPU Time: 6.236408  	sec      Picard iter 11	 only Amm = 35.2544
+CPU Time: 6.242062  	sec      Picard iter 11	 only Aee = 0.0384742
+CPU Time: 6.252724  	sec      Picard iter 11	 Arr + Aee = 0.038546
+CPU Time: 6.252945  	sec      Picard iter 11	 Submat residual = 2.05556e-05
+CPU Time: 6.253354  	sec      Picard iter 11	 Submat residual = 0.0383486
+CPU Time: 6.253533  	sec      Picard iter 11	 Submat residual = 6.22777
+CPU Time: 6.253552  	sec      Start linear solver
+CPU Time: 6.500490  	sec      Linear solver finished
+CPU Time: 6.523302  	sec      Re-discretize, calculate nonlinear residuals
+CPU Time: 6.544971  	sec      Picard iter 11	 ||N(U_k)|| = 5.14263
+CPU Time: 6.545092  	sec      Picard iter 11	 ||delta U|| = 6.26246
+CPU Time: 6.548959  	sec      Start discretization
+CPU Time: 6.577453  	sec      Picard iter 12	 before = 5.14263
+CPU Time: 6.578103  	sec      Picard iter 12	 init : 5.14263
+CPU Time: 6.585200  	sec      Picard iter 12	 only Arr : 5.1577
+CPU Time: 6.662714  	sec      Picard iter 12	 only Amm = 34.0383
+CPU Time: 6.668401  	sec      Picard iter 12	 only Aee = 0.0334068
+CPU Time: 6.679685  	sec      Picard iter 12	 Arr + Aee = 0.0334692
+CPU Time: 6.679910  	sec      Picard iter 12	 Submat residual = 1.70902e-05
+CPU Time: 6.680310  	sec      Picard iter 12	 Submat residual = 0.0328814
+CPU Time: 6.680478  	sec      Picard iter 12	 Submat residual = 5.14253
+CPU Time: 6.680512  	sec      Start linear solver
+CPU Time: 6.868073  	sec      Linear solver finished
+CPU Time: 6.890517  	sec      Re-discretize, calculate nonlinear residuals
+CPU Time: 6.912261  	sec      Picard iter 12	 ||N(U_k)|| = 3.37427
+CPU Time: 6.912375  	sec      Picard iter 12	 ||delta U|| = 3.95722
+CPU Time: 6.915861  	sec      Start discretization
+CPU Time: 6.944336  	sec      Picard iter 13	 before = 3.37427
+CPU Time: 6.944894  	sec      Picard iter 13	 init : 3.37427
+CPU Time: 6.953780  	sec      Picard iter 13	 only Arr : 3.38324
+CPU Time: 7.031190  	sec      Picard iter 13	 only Amm = 63.4397
+CPU Time: 7.037390  	sec      Picard iter 13	 only Aee = 0.0290325
+CPU Time: 7.049064  	sec      Picard iter 13	 Arr + Aee = 0.0291045
+CPU Time: 7.049238  	sec      Picard iter 13	 Submat residual = 1.11821e-05
+CPU Time: 7.049614  	sec      Picard iter 13	 Submat residual = 0.0287419
+CPU Time: 7.049764  	sec      Picard iter 13	 Submat residual = 3.37414
+CPU Time: 7.049785  	sec      Start linear solver
+CPU Time: 7.225553  	sec      Linear solver finished
+CPU Time: 7.247184  	sec      Re-discretize, calculate nonlinear residuals
+CPU Time: 7.268291  	sec      Picard iter 13	 ||N(U_k)|| = 3.23326
+CPU Time: 7.268379  	sec      Picard iter 13	 ||delta U|| = 1.16798
+CPU Time: 7.270641  	sec      Start discretization
+CPU Time: 7.299314  	sec      Picard iter 14	 before = 3.23326
+CPU Time: 7.299872  	sec      Picard iter 14	 init : 3.23326
+CPU Time: 7.309147  	sec      Picard iter 14	 only Arr : 3.24208
+CPU Time: 7.388520  	sec      Picard iter 14	 only Amm = 21.1696
+CPU Time: 7.393781  	sec      Picard iter 14	 only Aee = 0.0277246
+CPU Time: 7.403886  	sec      Picard iter 14	 Arr + Aee = 0.0277675
+CPU Time: 7.404045  	sec      Picard iter 14	 Submat residual = 1.06719e-05
+CPU Time: 7.404384  	sec      Picard iter 14	 Submat residual = 0.0275908
+CPU Time: 7.404514  	sec      Picard iter 14	 Submat residual = 3.23314
+CPU Time: 7.404531  	sec      Start linear solver
+CPU Time: 7.594934  	sec      Linear solver finished
+CPU Time: 7.617037  	sec      Re-discretize, calculate nonlinear residuals
+CPU Time: 7.638877  	sec      Picard iter 14	 ||N(U_k)|| = 3.04754
+CPU Time: 7.638942  	sec      Picard iter 14	 ||delta U|| = 4.54596
+CPU Time: 7.642500  	sec      Start discretization
+CPU Time: 7.669695  	sec      Picard iter 15	 before = 3.04754
+CPU Time: 7.670037  	sec      Picard iter 15	 init : 3.04754
+CPU Time: 7.678904  	sec      Picard iter 15	 only Arr : 3.05568
+CPU Time: 7.760991  	sec      Picard iter 15	 only Amm = 30.3837
+CPU Time: 7.766305  	sec      Picard iter 15	 only Aee = 0.023922
+CPU Time: 7.777035  	sec      Picard iter 15	 Arr + Aee = 0.023968
+CPU Time: 7.777218  	sec      Picard iter 15	 Submat residual = 9.97132e-06
+CPU Time: 7.777574  	sec      Picard iter 15	 Submat residual = 0.0236999
+CPU Time: 7.777720  	sec      Picard iter 15	 Submat residual = 3.04745
+CPU Time: 7.777741  	sec      Start linear solver
+CPU Time: 7.950892  	sec      Linear solver finished
+CPU Time: 7.973829  	sec      Re-discretize, calculate nonlinear residuals
+CPU Time: 7.995309  	sec      Picard iter 15	 ||N(U_k)|| = 2.62492
+CPU Time: 7.995403  	sec      Picard iter 15	 ||delta U|| = 1.56306
+CPU Time: 7.998038  	sec      Start discretization
+CPU Time: 8.024013  	sec      Picard iter 16	 before = 2.62492
+CPU Time: 8.024539  	sec      Picard iter 16	 init : 2.62492
+CPU Time: 8.033497  	sec      Picard iter 16	 only Arr : 2.63172
+CPU Time: 8.114150  	sec      Picard iter 16	 only Amm = 25.9964
+CPU Time: 8.120107  	sec      Picard iter 16	 only Aee = 0.0224975
+CPU Time: 8.131579  	sec      Picard iter 16	 Arr + Aee = 0.0225489
+CPU Time: 8.131745  	sec      Picard iter 16	 Submat residual = 8.68602e-06
+CPU Time: 8.132185  	sec      Picard iter 16	 Submat residual = 0.0223136
+CPU Time: 8.132340  	sec      Picard iter 16	 Submat residual = 2.62482
+CPU Time: 8.132361  	sec      Start linear solver
+CPU Time: 8.272758  	sec      Linear solver finished
+CPU Time: 8.294006  	sec      Re-discretize, calculate nonlinear residuals
+CPU Time: 8.316924  	sec      Picard iter 16	 ||N(U_k)|| = 2.38631
+CPU Time: 8.317052  	sec      Picard iter 16	 ||delta U|| = 1.26076
+CPU Time: 8.320761  	sec      Start discretization
+CPU Time: 8.346646  	sec      Picard iter 17	 before = 2.38631
+CPU Time: 8.347038  	sec      Picard iter 17	 init : 2.38631
+CPU Time: 8.354063  	sec      Picard iter 17	 only Arr : 2.39258
+CPU Time: 8.431103  	sec      Picard iter 17	 only Amm = 26.0448
+CPU Time: 8.437160  	sec      Picard iter 17	 only Aee = 0.0213972
+CPU Time: 8.448938  	sec      Picard iter 17	 Arr + Aee = 0.0214352
+CPU Time: 8.449119  	sec      Picard iter 17	 Submat residual = 7.97135e-06
+CPU Time: 8.449469  	sec      Picard iter 17	 Submat residual = 0.021225
+CPU Time: 8.449616  	sec      Picard iter 17	 Submat residual = 2.38622
+CPU Time: 8.449635  	sec      Start linear solver
+CPU Time: 8.649427  	sec      Linear solver finished
+CPU Time: 8.672150  	sec      Re-discretize, calculate nonlinear residuals
+CPU Time: 8.693996  	sec      Picard iter 17	 ||N(U_k)|| = 2.18316
+CPU Time: 8.694109  	sec      Picard iter 17	 ||delta U|| = 1.23793
+CPU Time: 8.697188  	sec      Start discretization
+CPU Time: 8.722955  	sec      Picard iter 18	 before = 2.18316
+CPU Time: 8.723338  	sec      Picard iter 18	 init : 2.18316
+CPU Time: 8.730298  	sec      Picard iter 18	 only Arr : 2.18865
+CPU Time: 8.806182  	sec      Picard iter 18	 only Amm = 22.2247
+CPU Time: 8.812479  	sec      Picard iter 18	 only Aee = 0.0202832
+CPU Time: 8.824232  	sec      Picard iter 18	 Arr + Aee = 0.020325
+CPU Time: 8.824408  	sec      Picard iter 18	 Submat residual = 7.34462e-06
+CPU Time: 8.824761  	sec      Picard iter 18	 Submat residual = 0.0201582
+CPU Time: 8.824914  	sec      Picard iter 18	 Submat residual = 2.18307
+CPU Time: 8.824940  	sec      Start linear solver
+CPU Time: 8.962434  	sec      Linear solver finished
+CPU Time: 8.983352  	sec      Re-discretize, calculate nonlinear residuals
+CPU Time: 9.003765  	sec      Picard iter 18	 ||N(U_k)|| = 2.02988
+CPU Time: 9.003860  	sec      Picard iter 18	 ||delta U|| = 0.918174
+CPU Time: 9.007340  	sec      Start discretization
+CPU Time: 9.032635  	sec      Picard iter 19	 before = 2.02988
+CPU Time: 9.032945  	sec      Picard iter 19	 init : 2.02988
+CPU Time: 9.040233  	sec      Picard iter 19	 only Arr : 2.03504
+CPU Time: 9.119594  	sec      Picard iter 19	 only Amm = 20.4105
+CPU Time: 9.124938  	sec      Picard iter 19	 only Aee = 0.0194528
+CPU Time: 9.135067  	sec      Picard iter 19	 Arr + Aee = 0.0194854
+CPU Time: 9.135220  	sec      Picard iter 19	 Submat residual = 6.85367e-06
+CPU Time: 9.135556  	sec      Picard iter 19	 Submat residual = 0.0193487
+CPU Time: 9.135684  	sec      Picard iter 19	 Submat residual = 2.02979
+CPU Time: 9.135705  	sec      Start linear solver
+CPU Time: 9.289242  	sec      Linear solver finished
+CPU Time: 9.311161  	sec      Re-discretize, calculate nonlinear residuals
+CPU Time: 9.332656  	sec      Picard iter 19	 ||N(U_k)|| = 1.89657
+CPU Time: 9.332786  	sec      Picard iter 19	 ||delta U|| = 1.09396
+CPU Time: 9.336700  	sec      Start discretization
+CPU Time: 9.366544  	sec      Picard iter 20	 before = 1.89657
+CPU Time: 9.367349  	sec      Picard iter 20	 init : 1.89657
+CPU Time: 9.376237  	sec      Picard iter 20	 only Arr : 1.90109
+CPU Time: 9.457507  	sec      Picard iter 20	 only Amm = 18.5701
+CPU Time: 9.464016  	sec      Picard iter 20	 only Aee = 0.0184851
+CPU Time: 9.474941  	sec      Picard iter 20	 Arr + Aee = 0.0185214
+CPU Time: 9.475203  	sec      Picard iter 20	 Submat residual = 6.4317e-06
+CPU Time: 9.475538  	sec      Picard iter 20	 Submat residual = 0.0184077
+CPU Time: 9.475685  	sec      Picard iter 20	 Submat residual = 1.89648
+CPU Time: 9.475708  	sec      Start linear solver
+CPU Time: 9.617468  	sec      Linear solver finished
+CPU Time: 9.638385  	sec      Re-discretize, calculate nonlinear residuals
+CPU Time: 9.660466  	sec      Picard iter 20	 ||N(U_k)|| = 1.78674
+CPU Time: 9.660553  	sec      Picard iter 20	 ||delta U|| = 0.771477
+CPU Time: 9.663630  	sec      Start discretization
+CPU Time: 9.691259  	sec      Picard iter 21	 before = 1.78674
+CPU Time: 9.691814  	sec      Picard iter 21	 init : 1.78674
+CPU Time: 9.700759  	sec      Picard iter 21	 only Arr : 1.79104
+CPU Time: 9.785861  	sec      Picard iter 21	 only Amm = 17.3183
+CPU Time: 9.791420  	sec      Picard iter 21	 only Aee = 0.0178242
+CPU Time: 9.801324  	sec      Picard iter 21	 Arr + Aee = 0.0178553
+CPU Time: 9.801489  	sec      Picard iter 21	 Submat residual = 6.08739e-06
+CPU Time: 9.801844  	sec      Picard iter 21	 Submat residual = 0.0177521
+CPU Time: 9.801979  	sec      Picard iter 21	 Submat residual = 1.78666
+CPU Time: 9.801998  	sec      Start linear solver
+CPU Time: 9.980599  	sec      Linear solver finished
+CPU Time: 10.002208  	sec      Re-discretize, calculate nonlinear residuals
+CPU Time: 10.024582  	sec      Picard iter 21	 ||N(U_k)|| = 1.68326
+CPU Time: 10.024865  	sec      Picard iter 21	 ||delta U|| = 0.997068
+CPU Time: 10.028171  	sec      Start discretization
+CPU Time: 10.054842  	sec      Picard iter 22	 before = 1.68326
+CPU Time: 10.055247  	sec      Picard iter 22	 init : 1.68326
+CPU Time: 10.064025  	sec      Picard iter 22	 only Arr : 1.68702
+CPU Time: 10.150049  	sec      Picard iter 22	 only Amm = 16.5153
+CPU Time: 10.155501  	sec      Picard iter 22	 only Aee = 0.0169939
+CPU Time: 10.165985  	sec      Picard iter 22	 Arr + Aee = 0.0170279
+CPU Time: 10.166144  	sec      Picard iter 22	 Submat residual = 5.77372e-06
+CPU Time: 10.166479  	sec      Picard iter 22	 Submat residual = 0.01694
+CPU Time: 10.166617  	sec      Picard iter 22	 Submat residual = 1.68317
+CPU Time: 10.166635  	sec      Start linear solver
+CPU Time: 10.285700  	sec      Linear solver finished
+CPU Time: 10.306523  	sec      Re-discretize, calculate nonlinear residuals
+CPU Time: 10.327469  	sec      Picard iter 22	 ||N(U_k)|| = 1.59247
+CPU Time: 10.327587  	sec      Picard iter 22	 ||delta U|| = 0.654994
+CPU Time: 10.330584  	sec      Start discretization
+CPU Time: 10.356776  	sec      Picard iter 23	 before = 1.59247
+CPU Time: 10.357335  	sec      Picard iter 23	 init : 1.59247
+CPU Time: 10.364867  	sec      Picard iter 23	 only Arr : 1.59607
+CPU Time: 10.445187  	sec      Picard iter 23	 only Amm = 15.2014
+CPU Time: 10.450761  	sec      Picard iter 23	 only Aee = 0.0164696
+CPU Time: 10.461215  	sec      Picard iter 23	 Arr + Aee = 0.0165002
+CPU Time: 10.461398  	sec      Picard iter 23	 Submat residual = 5.50054e-06
+CPU Time: 10.461768  	sec      Picard iter 23	 Submat residual = 0.0164168
+CPU Time: 10.461919  	sec      Picard iter 23	 Submat residual = 1.59238
+CPU Time: 10.461940  	sec      Start linear solver
+CPU Time: 10.615115  	sec      Linear solver finished
+CPU Time: 10.636895  	sec      Re-discretize, calculate nonlinear residuals
+CPU Time: 10.657580  	sec      Picard iter 23	 ||N(U_k)|| = 1.5096
+CPU Time: 10.657680  	sec      Picard iter 23	 ||delta U|| = 0.875899
+CPU Time: 10.660753  	sec      Start discretization
+CPU Time: 10.686610  	sec      Picard iter 24	 before = 1.5096
+CPU Time: 10.686938  	sec      Picard iter 24	 init : 1.5096
+CPU Time: 10.695490  	sec      Picard iter 24	 only Arr : 1.51276
+CPU Time: 10.775191  	sec      Picard iter 24	 only Amm = 14.6467
+CPU Time: 10.780560  	sec      Picard iter 24	 only Aee = 0.0157783
+CPU Time: 10.791829  	sec      Picard iter 24	 Arr + Aee = 0.0158096
+CPU Time: 10.792025  	sec      Picard iter 24	 Submat residual = 5.25904e-06
+CPU Time: 10.792385  	sec      Picard iter 24	 Submat residual = 0.0157461
+CPU Time: 10.792545  	sec      Picard iter 24	 Submat residual = 1.50952
+CPU Time: 10.792567  	sec      Start linear solver
+CPU Time: 10.927998  	sec      Linear solver finished
+CPU Time: 10.949538  	sec      Re-discretize, calculate nonlinear residuals
+CPU Time: 10.971333  	sec      Picard iter 24	 ||N(U_k)|| = 1.43625
+CPU Time: 10.971427  	sec      Picard iter 24	 ||delta U|| = 0.571572
+CPU Time: 10.974521  	sec      Start discretization
+CPU Time: 11.001280  	sec      Picard iter 25	 before = 1.43625
+CPU Time: 11.001608  	sec      Picard iter 25	 init : 1.43625
+CPU Time: 11.010239  	sec      Picard iter 25	 only Arr : 1.43928
+CPU Time: 11.089450  	sec      Picard iter 25	 only Amm = 13.4916
+CPU Time: 11.095755  	sec      Picard iter 25	 only Aee = 0.0153562
+CPU Time: 11.106189  	sec      Picard iter 25	 Arr + Aee = 0.0153872
+CPU Time: 11.106389  	sec      Picard iter 25	 Submat residual = 5.04528e-06
+CPU Time: 11.106762  	sec      Picard iter 25	 Submat residual = 0.0153168
+CPU Time: 11.106923  	sec      Picard iter 25	 Submat residual = 1.43617
+CPU Time: 11.106929  	sec      Start linear solver
+CPU Time: 11.293053  	sec      Linear solver finished
+CPU Time: 11.315930  	sec      Re-discretize, calculate nonlinear residuals
+CPU Time: 11.338684  	sec      Picard iter 25	 ||N(U_k)|| = 1.37285
+CPU Time: 11.338799  	sec      Picard iter 25	 ||delta U|| = 0.750511
+CPU Time: 11.342011  	sec      Start discretization
+CPU Time: 11.373972  	sec      Picard iter 26	 before = 1.37285
+CPU Time: 11.374518  	sec      Picard iter 26	 init : 1.37285
+CPU Time: 11.383938  	sec      Picard iter 26	 only Arr : 1.37552
+CPU Time: 11.461950  	sec      Picard iter 26	 only Amm = 12.7549
+CPU Time: 11.468603  	sec      Picard iter 26	 only Aee = 0.0147903
+CPU Time: 11.480392  	sec      Picard iter 26	 Arr + Aee = 0.0148206
+CPU Time: 11.480590  	sec      Picard iter 26	 Submat residual = 4.86574e-06
+CPU Time: 11.480950  	sec      Picard iter 26	 Submat residual = 0.0147756
+CPU Time: 11.481109  	sec      Picard iter 26	 Submat residual = 1.37277
+CPU Time: 11.481130  	sec      Start linear solver
+CPU Time: 11.619043  	sec      Linear solver finished
+CPU Time: 11.640835  	sec      Re-discretize, calculate nonlinear residuals
+CPU Time: 11.663966  	sec      Picard iter 26	 ||N(U_k)|| = 1.3126
+CPU Time: 11.664104  	sec      Picard iter 26	 ||delta U|| = 0.536199
+CPU Time: 11.667686  	sec      Start discretization
+CPU Time: 11.694925  	sec      Picard iter 27	 before = 1.3126
+CPU Time: 11.695402  	sec      Picard iter 27	 init : 1.3126
+CPU Time: 11.705021  	sec      Picard iter 27	 only Arr : 1.31516
+CPU Time: 11.790840  	sec      Picard iter 27	 only Amm = 12.3404
+CPU Time: 11.796899  	sec      Picard iter 27	 only Aee = 0.0144277
+CPU Time: 11.808527  	sec      Picard iter 27	 Arr + Aee = 0.014458
+CPU Time: 11.808723  	sec      Picard iter 27	 Submat residual = 4.69617e-06
+CPU Time: 11.809093  	sec      Picard iter 27	 Submat residual = 0.0143967
+CPU Time: 11.809252  	sec      Picard iter 27	 Submat residual = 1.31252
+CPU Time: 11.809274  	sec      Start linear solver
+CPU Time: 11.939713  	sec      Linear solver finished
+CPU Time: 11.961438  	sec      Re-discretize, calculate nonlinear residuals
+CPU Time: 11.983245  	sec      Picard iter 27	 ||N(U_k)|| = 1.26688
+CPU Time: 11.983338  	sec      Picard iter 27	 ||delta U|| = 0.578931
+CPU Time: 11.985680  	sec      Start discretization
+CPU Time: 12.015949  	sec      Picard iter 28	 before = 1.26688
+CPU Time: 12.016516  	sec      Picard iter 28	 init : 1.26688
+CPU Time: 12.025991  	sec      Picard iter 28	 only Arr : 1.26918
+CPU Time: 12.107139  	sec      Picard iter 28	 only Amm = 11.2049
+CPU Time: 12.112860  	sec      Picard iter 28	 only Aee = 0.0140032
+CPU Time: 12.124085  	sec      Picard iter 28	 Arr + Aee = 0.0140323
+CPU Time: 12.124315  	sec      Picard iter 28	 Submat residual = 4.56888e-06
+CPU Time: 12.124739  	sec      Picard iter 28	 Submat residual = 0.0140031
+CPU Time: 12.124917  	sec      Picard iter 28	 Submat residual = 1.2668
+CPU Time: 12.124938  	sec      Start linear solver
+CPU Time: 12.239291  	sec      Linear solver finished
+CPU Time: 12.261630  	sec      Re-discretize, calculate nonlinear residuals
+CPU Time: 12.283720  	sec      Picard iter 28	 ||N(U_k)|| = 1.21612
+CPU Time: 12.283820  	sec      Picard iter 28	 ||delta U|| = 0.582374
+CPU Time: 12.286540  	sec      Start discretization
+CPU Time: 12.312602  	sec      Picard iter 29	 before = 1.21612
+CPU Time: 12.312936  	sec      Picard iter 29	 init : 1.21612
+CPU Time: 12.320396  	sec      Picard iter 29	 only Arr : 1.21829
+CPU Time: 12.404983  	sec      Picard iter 29	 only Amm = 11.999
+CPU Time: 12.410828  	sec      Picard iter 29	 only Aee = 0.0136479
+CPU Time: 12.421736  	sec      Picard iter 29	 Arr + Aee = 0.0136794
+CPU Time: 12.421953  	sec      Picard iter 29	 Submat residual = 4.43353e-06
+CPU Time: 12.422438  	sec      Picard iter 29	 Submat residual = 0.0136163
+CPU Time: 12.422621  	sec      Picard iter 29	 Submat residual = 1.21605
+CPU Time: 12.422641  	sec      Start linear solver
+CPU Time: 12.584458  	sec      Linear solver finished
+CPU Time: 12.605744  	sec      Re-discretize, calculate nonlinear residuals
+CPU Time: 12.628353  	sec      Picard iter 29	 ||N(U_k)|| = 1.18257
+CPU Time: 12.628448  	sec      Picard iter 29	 ||delta U|| = 0.394928
+CPU Time: 12.631832  	sec      Start discretization
+CPU Time: 12.659208  	sec      Picard iter 30	 before = 1.18257
+CPU Time: 12.659656  	sec      Picard iter 30	 init : 1.18257
+CPU Time: 12.669526  	sec      Picard iter 30	 only Arr : 1.18458
+CPU Time: 12.755573  	sec      Picard iter 30	 only Amm = 9.79639
+CPU Time: 12.762311  	sec      Picard iter 30	 only Aee = 0.0133545
+CPU Time: 12.773580  	sec      Picard iter 30	 Arr + Aee = 0.0133824
+CPU Time: 12.773789  	sec      Picard iter 30	 Submat residual = 4.33971e-06
+CPU Time: 12.774155  	sec      Picard iter 30	 Submat residual = 0.0133626
+CPU Time: 12.774372  	sec      Picard iter 30	 Submat residual = 1.18249
+CPU Time: 12.774392  	sec      Start linear solver
+CPU Time: 12.933441  	sec      Linear solver finished
+CPU Time: 12.954285  	sec      Re-discretize, calculate nonlinear residuals
+CPU Time: 12.976941  	sec      Picard iter 30	 ||N(U_k)|| = 1.13297
+CPU Time: 12.977066  	sec      Picard iter 30	 ||delta U|| = 0.854058
+CPU Time: 12.980865  	sec      Start discretization
+CPU Time: 13.009101  	sec      Picard iter 31	 before = 1.13297
+CPU Time: 13.009626  	sec      Picard iter 31	 init : 1.13297
+CPU Time: 13.020068  	sec      Picard iter 31	 only Arr : 1.13478
+CPU Time: 13.101452  	sec      Picard iter 31	 only Amm = 12.116
+CPU Time: 13.106979  	sec      Picard iter 31	 only Aee = 0.0128771
+CPU Time: 13.118645  	sec      Picard iter 31	 Arr + Aee = 0.012911
+CPU Time: 13.119439  	sec      Picard iter 31	 Submat residual = 4.21836e-06
+CPU Time: 13.119911  	sec      Picard iter 31	 Submat residual = 0.0128338
+CPU Time: 13.120092  	sec      Picard iter 31	 Submat residual = 1.13289
+CPU Time: 13.120113  	sec      Start linear solver
+CPU Time: 13.263897  	sec      Linear solver finished
+CPU Time: 13.285804  	sec      Re-discretize, calculate nonlinear residuals
+CPU Time: 13.307386  	sec      Picard iter 31	 ||N(U_k)|| = 1.10168
+CPU Time: 13.307514  	sec      Picard iter 31	 ||delta U|| = 0.260776
+CPU Time: 13.309936  	sec      Start discretization
+CPU Time: 13.340121  	sec      Picard iter 32	 before = 1.10168
+CPU Time: 13.340794  	sec      Picard iter 32	 init : 1.10168
+CPU Time: 13.350387  	sec      Picard iter 32	 only Arr : 1.10341
+CPU Time: 13.432574  	sec      Picard iter 32	 only Amm = 8.94834
+CPU Time: 13.438774  	sec      Picard iter 32	 only Aee = 0.0126662
+CPU Time: 13.450876  	sec      Picard iter 32	 Arr + Aee = 0.0126938
+CPU Time: 13.451104  	sec      Picard iter 32	 Submat residual = 4.12922e-06
+CPU Time: 13.451455  	sec      Picard iter 32	 Submat residual = 0.0126769
+CPU Time: 13.451589  	sec      Picard iter 32	 Submat residual = 1.10161
+CPU Time: 13.451613  	sec      Start linear solver
+CPU Time: 13.582277  	sec      Linear solver finished
+CPU Time: 13.603911  	sec      Re-discretize, calculate nonlinear residuals
+CPU Time: 13.626057  	sec      Picard iter 32	 ||N(U_k)|| = 1.02984
+CPU Time: 13.626167  	sec      Picard iter 32	 ||delta U|| = 1.37497
+CPU Time: 13.629208  	sec      Start discretization
+CPU Time: 13.656842  	sec      Picard iter 33	 before = 1.02984
+CPU Time: 13.657347  	sec      Picard iter 33	 init : 1.02984
+CPU Time: 13.665328  	sec      Picard iter 33	 only Arr : 1.03128
+CPU Time: 13.748466  	sec      Picard iter 33	 only Amm = 9.69677
+CPU Time: 13.754734  	sec      Picard iter 33	 only Aee = 0.0119205
+CPU Time: 13.767091  	sec      Picard iter 33	 Arr + Aee = 0.0119571
+CPU Time: 13.767340  	sec      Picard iter 33	 Submat residual = 3.9589e-06
+CPU Time: 13.767804  	sec      Picard iter 33	 Submat residual = 0.0118968
+CPU Time: 13.767992  	sec      Picard iter 33	 Submat residual = 1.02977
+CPU Time: 13.768018  	sec      Start linear solver
+CPU Time: 13.958581  	sec      Linear solver finished
+CPU Time: 13.985389  	sec      Re-discretize, calculate nonlinear residuals
+CPU Time: 14.011497  	sec      Picard iter 33	 ||N(U_k)|| = 1.01337
+CPU Time: 14.011797  	sec      Picard iter 33	 ||delta U|| = 0.204543
+CPU Time: 14.015542  	sec      Start discretization
+CPU Time: 14.043031  	sec      Picard iter 34	 before = 1.01337
+CPU Time: 14.043624  	sec      Picard iter 34	 init : 1.01337
+CPU Time: 14.052404  	sec      Picard iter 34	 only Arr : 1.01476
+CPU Time: 14.138457  	sec      Picard iter 34	 only Amm = 8.17676
+CPU Time: 14.145405  	sec      Picard iter 34	 only Aee = 0.0117736
+CPU Time: 14.156671  	sec      Picard iter 34	 Arr + Aee = 0.0118021
+CPU Time: 14.156900  	sec      Picard iter 34	 Submat residual = 3.9138e-06
+CPU Time: 14.157324  	sec      Picard iter 34	 Submat residual = 0.0117866
+CPU Time: 14.157500  	sec      Picard iter 34	 Submat residual = 1.0133
+CPU Time: 14.157525  	sec      Start linear solver
+CPU Time: 14.261201  	sec      Linear solver finished
+CPU Time: 14.283604  	sec      Re-discretize, calculate nonlinear residuals
+CPU Time: 14.307340  	sec      Picard iter 34	 ||N(U_k)|| = 0.964609
+CPU Time: 14.307474  	sec      Picard iter 34	 ||delta U|| = 1.19064
+CPU Time: 14.311639  	sec      Start discretization
+CPU Time: 14.342214  	sec      Picard iter 35	 before = 0.964609
+CPU Time: 14.342879  	sec      Picard iter 35	 init : 0.964609
+CPU Time: 14.351172  	sec      Picard iter 35	 only Arr : 0.965817
+CPU Time: 14.432754  	sec      Picard iter 35	 only Amm = 7.97425
+CPU Time: 14.439201  	sec      Picard iter 35	 only Aee = 0.0111694
+CPU Time: 14.451918  	sec      Picard iter 35	 Arr + Aee = 0.0111976
+CPU Time: 14.452156  	sec      Picard iter 35	 Submat residual = 3.80283e-06
+CPU Time: 14.452607  	sec      Picard iter 35	 Submat residual = 0.0111768
+CPU Time: 14.452817  	sec      Picard iter 35	 Submat residual = 0.964544
+CPU Time: 14.452848  	sec      Start linear solver
+CPU Time: 14.563846  	sec      Linear solver finished
+CPU Time: 14.585888  	sec      Re-discretize, calculate nonlinear residuals
+CPU Time: 14.607951  	sec      Picard iter 35	 ||N(U_k)|| = 0.955526
+CPU Time: 14.608058  	sec      Picard iter 35	 ||delta U|| = 0.530742
+CPU Time: 14.611272  	sec      Start discretization
+CPU Time: 14.638673  	sec      Picard iter 36	 before = 0.955526
+CPU Time: 14.639180  	sec      Picard iter 36	 init : 0.955526
+CPU Time: 14.647490  	sec      Picard iter 36	 only Arr : 0.956667
+CPU Time: 14.726812  	sec      Picard iter 36	 only Amm = 7.88986
+CPU Time: 14.733308  	sec      Picard iter 36	 only Aee = 0.0109078
+CPU Time: 14.746257  	sec      Picard iter 36	 Arr + Aee = 0.0109489
+CPU Time: 14.746501  	sec      Picard iter 36	 Submat residual = 3.78676e-06
+CPU Time: 14.746944  	sec      Picard iter 36	 Submat residual = 0.0109207
+CPU Time: 14.747172  	sec      Picard iter 36	 Submat residual = 0.955464
+CPU Time: 14.747198  	sec      Start linear solver
+CPU Time: 14.880310  	sec      Linear solver finished
+CPU Time: 14.903657  	sec      Re-discretize, calculate nonlinear residuals
+CPU Time: 14.926533  	sec      Picard iter 36	 ||N(U_k)|| = 0.934825
+CPU Time: 14.926673  	sec      Picard iter 36	 ||delta U|| = 0.489738
+CPU Time: 14.930501  	sec      Start discretization
+CPU Time: 14.958979  	sec      Picard iter 37	 before = 0.934825
+CPU Time: 14.959469  	sec      Picard iter 37	 init : 0.934825
+CPU Time: 14.969435  	sec      Picard iter 37	 only Arr : 0.935932
+CPU Time: 15.055818  	sec      Picard iter 37	 only Amm = 9.19527
+CPU Time: 15.061812  	sec      Picard iter 37	 only Aee = 0.0107144
+CPU Time: 15.072627  	sec      Picard iter 37	 Arr + Aee = 0.010774
+CPU Time: 15.072822  	sec      Picard iter 37	 Submat residual = 3.74179e-06
+CPU Time: 15.073184  	sec      Picard iter 37	 Submat residual = 0.0106907
+CPU Time: 15.073348  	sec      Picard iter 37	 Submat residual = 0.934763
+CPU Time: 15.073371  	sec      Start linear solver
+CPU Time: 15.198929  	sec      Linear solver finished
+CPU Time: 15.221422  	sec      Re-discretize, calculate nonlinear residuals
+CPU Time: 15.243998  	sec      Picard iter 37	 ||N(U_k)|| = 0.930508
+CPU Time: 15.244104  	sec      Picard iter 37	 ||delta U|| = 0.152334
+CPU Time: 15.247440  	sec      Start discretization
+CPU Time: 15.275542  	sec      Picard iter 38	 before = 0.930508
+CPU Time: 15.275949  	sec      Picard iter 38	 init : 0.930508
+CPU Time: 15.285168  	sec      Picard iter 38	 only Arr : 0.931599
+CPU Time: 15.380863  	sec      Picard iter 38	 only Amm = 7.25418
+CPU Time: 15.387418  	sec      Picard iter 38	 only Aee = 0.0106108
+CPU Time: 15.402285  	sec      Picard iter 38	 Arr + Aee = 0.0106395
+CPU Time: 15.402499  	sec      Picard iter 38	 Submat residual = 3.72984e-06
+CPU Time: 15.402975  	sec      Picard iter 38	 Submat residual = 0.0106227
+CPU Time: 15.403199  	sec      Picard iter 38	 Submat residual = 0.930448
+CPU Time: 15.403229  	sec      Start linear solver
+CPU Time: 15.609610  	sec      Linear solver finished
+CPU Time: 15.634484  	sec      Re-discretize, calculate nonlinear residuals
+CPU Time: 15.659304  	sec      Picard iter 38	 ||N(U_k)|| = 0.919822
+CPU Time: 15.659427  	sec      Picard iter 38	 ||delta U|| = 0.913471
+CPU Time: 15.663853  	sec      Start discretization
+CPU Time: 15.693058  	sec      Picard iter 39	 before = 0.919822
+CPU Time: 15.693898  	sec      Picard iter 39	 init : 0.919822
+CPU Time: 15.703687  	sec      Picard iter 39	 only Arr : 0.920842
+CPU Time: 15.801901  	sec      Picard iter 39	 only Amm = 7.3262
+CPU Time: 15.808071  	sec      Picard iter 39	 only Aee = 0.0102067
+CPU Time: 15.821377  	sec      Picard iter 39	 Arr + Aee = 0.0102432
+CPU Time: 15.821625  	sec      Picard iter 39	 Submat residual = 3.71385e-06
+CPU Time: 15.822080  	sec      Picard iter 39	 Submat residual = 0.0102193
+CPU Time: 15.822283  	sec      Picard iter 39	 Submat residual = 0.919765
+CPU Time: 15.822316  	sec      Start linear solver
+CPU Time: 16.008124  	sec      Linear solver finished
+CPU Time: 16.033068  	sec      Re-discretize, calculate nonlinear residuals
+CPU Time: 16.057579  	sec      Picard iter 39	 ||N(U_k)|| = 0.904441
+CPU Time: 16.057837  	sec      Picard iter 39	 ||delta U|| = 0.277922
+CPU Time: 16.061528  	sec      Start discretization
+CPU Time: 16.093229  	sec      Picard iter 40	 before = 0.904441
+CPU Time: 16.094064  	sec      Picard iter 40	 init : 0.904441
+CPU Time: 16.102324  	sec      Picard iter 40	 only Arr : 0.905458
+CPU Time: 16.188402  	sec      Picard iter 40	 only Amm = 7.08461
+CPU Time: 16.194971  	sec      Picard iter 40	 only Aee = 0.0100957
+CPU Time: 16.208352  	sec      Picard iter 40	 Arr + Aee = 0.0101282
+CPU Time: 16.208594  	sec      Picard iter 40	 Submat residual = 3.67737e-06
+CPU Time: 16.209042  	sec      Picard iter 40	 Submat residual = 0.0100995
+CPU Time: 16.209235  	sec      Picard iter 40	 Submat residual = 0.904385
+CPU Time: 16.209264  	sec      Start linear solver
+CPU Time: 16.350112  	sec      Linear solver finished
+CPU Time: 16.372785  	sec      Re-discretize, calculate nonlinear residuals
+CPU Time: 16.395548  	sec      Picard iter 40	 ||N(U_k)|| = 0.902151
+CPU Time: 16.395635  	sec      Picard iter 40	 ||delta U|| = 0.171965
+CPU Time: 16.398921  	sec      Start discretization
+CPU Time: 16.426782  	sec      Picard iter 41	 before = 0.902151
+CPU Time: 16.427185  	sec      Picard iter 41	 init : 0.902151
+CPU Time: 16.436158  	sec      Picard iter 41	 only Arr : 0.903157
+CPU Time: 16.548731  	sec      Picard iter 41	 only Amm = 6.7944
+CPU Time: 16.555339  	sec      Picard iter 41	 only Aee = 0.0100139
+CPU Time: 16.568273  	sec      Picard iter 41	 Arr + Aee = 0.010042
+CPU Time: 16.568487  	sec      Picard iter 41	 Submat residual = 3.67247e-06
+CPU Time: 16.568917  	sec      Picard iter 41	 Submat residual = 0.0100289
+CPU Time: 16.569137  	sec      Picard iter 41	 Submat residual = 0.902096
+CPU Time: 16.569181  	sec      Start linear solver
+CPU Time: 16.716517  	sec      Linear solver finished
+CPU Time: 16.741277  	sec      Re-discretize, calculate nonlinear residuals
+CPU Time: 16.766872  	sec      Picard iter 41	 ||N(U_k)|| = 0.885798
+CPU Time: 16.767098  	sec      Picard iter 41	 ||delta U|| = 0.936146
+CPU Time: 16.772136  	sec      Start discretization
+CPU Time: 16.804347  	sec      Picard iter 42	 before = 0.885798
+CPU Time: 16.804984  	sec      Picard iter 42	 init : 0.885798
+CPU Time: 16.815961  	sec      Picard iter 42	 only Arr : 0.886768
+CPU Time: 16.915193  	sec      Picard iter 42	 only Amm = 6.58696
+CPU Time: 16.921398  	sec      Picard iter 42	 only Aee = 0.00963648
+CPU Time: 16.934436  	sec      Picard iter 42	 Arr + Aee = 0.00967086
+CPU Time: 16.934679  	sec      Picard iter 42	 Submat residual = 3.64055e-06
+CPU Time: 16.935172  	sec      Picard iter 42	 Submat residual = 0.00964738
+CPU Time: 16.935368  	sec      Picard iter 42	 Submat residual = 0.885746
+CPU Time: 16.935390  	sec      Start linear solver
+CPU Time: 17.087217  	sec      Linear solver finished
+CPU Time: 17.111027  	sec      Re-discretize, calculate nonlinear residuals
+CPU Time: 17.137171  	sec      Picard iter 42	 ||N(U_k)|| = 0.883535
+CPU Time: 17.137289  	sec      Picard iter 42	 ||delta U|| = 0.390239
+CPU Time: 17.143222  	sec      Start discretization
+CPU Time: 17.178271  	sec      Picard iter 43	 before = 0.883535
+CPU Time: 17.178972  	sec      Picard iter 43	 init : 0.883535
+CPU Time: 17.189257  	sec      Picard iter 43	 only Arr : 0.884494
+CPU Time: 17.307019  	sec      Picard iter 43	 only Amm = 6.85503
+CPU Time: 17.315576  	sec      Picard iter 43	 only Aee = 0.00948182
+CPU Time: 17.331443  	sec      Picard iter 43	 Arr + Aee = 0.00951246
+CPU Time: 17.331700  	sec      Picard iter 43	 Submat residual = 3.63662e-06
+CPU Time: 17.332201  	sec      Picard iter 43	 Submat residual = 0.0094962
+CPU Time: 17.332415  	sec      Picard iter 43	 Submat residual = 0.883484
+CPU Time: 17.332422  	sec      Start linear solver
+CPU Time: 17.550976  	sec      Linear solver finished
+CPU Time: 17.586873  	sec      Re-discretize, calculate nonlinear residuals
+CPU Time: 17.625302  	sec      Picard iter 43	 ||N(U_k)|| = 0.876049
+CPU Time: 17.625473  	sec      Picard iter 43	 ||delta U|| = 0.430139
+CPU Time: 17.633407  	sec      Start discretization
+CPU Time: 17.686335  	sec      Picard iter 44	 before = 0.876049
+CPU Time: 17.687373  	sec      Picard iter 44	 init : 0.876049
+CPU Time: 17.702390  	sec      Picard iter 44	 only Arr : 0.876997
+CPU Time: 17.864143  	sec      Picard iter 44	 only Amm = 7.52442
+CPU Time: 17.874653  	sec      Picard iter 44	 only Aee = 0.0093369
+CPU Time: 17.895090  	sec      Picard iter 44	 Arr + Aee = 0.00939996
+CPU Time: 17.895370  	sec      Picard iter 44	 Submat residual = 3.62293e-06
+CPU Time: 17.895887  	sec      Picard iter 44	 Submat residual = 0.0093328
+CPU Time: 17.896113  	sec      Picard iter 44	 Submat residual = 0.875999
+CPU Time: 17.896148  	sec      Start linear solver
+CPU Time: 18.351473  	sec      Linear solver finished
+CPU Time: 18.400269  	sec      Re-discretize, calculate nonlinear residuals
+CPU Time: 18.445240  	sec      Picard iter 44	 ||N(U_k)|| = 0.873651
+CPU Time: 18.445394  	sec      Picard iter 44	 ||delta U|| = 0.131117
+CPU Time: 18.454232  	sec      Start discretization
+CPU Time: 18.510565  	sec      Picard iter 45	 before = 0.873651
+CPU Time: 18.511838  	sec      Picard iter 45	 init : 0.873651
+CPU Time: 18.528923  	sec      Picard iter 45	 only Arr : 0.874598
+CPU Time: 18.702086  	sec      Picard iter 45	 only Amm = 6.25666
+CPU Time: 18.713883  	sec      Picard iter 45	 only Aee = 0.00927069
+CPU Time: 18.734403  	sec      Picard iter 45	 Arr + Aee = 0.00930075
+CPU Time: 18.734669  	sec      Picard iter 45	 Submat residual = 3.61613e-06
+CPU Time: 18.735203  	sec      Picard iter 45	 Submat residual = 0.00928399
+CPU Time: 18.735425  	sec      Picard iter 45	 Submat residual = 0.873602
+CPU Time: 18.735460  	sec      Start linear solver
+CPU Time: 19.146225  	sec      Linear solver finished
+CPU Time: 19.194165  	sec      Re-discretize, calculate nonlinear residuals
+CPU Time: 19.242007  	sec      Picard iter 45	 ||N(U_k)|| = 0.867175
+CPU Time: 19.242163  	sec      Picard iter 45	 ||delta U|| = 0.871246
+CPU Time: 19.251855  	sec      Start discretization
+CPU Time: 19.320068  	sec      Picard iter 46	 before = 0.867175
+CPU Time: 19.321230  	sec      Picard iter 46	 init : 0.867175
+CPU Time: 19.337593  	sec      Picard iter 46	 only Arr : 0.868108
+CPU Time: 19.579156  	sec      Picard iter 46	 only Amm = 6.64035
+CPU Time: 19.593672  	sec      Picard iter 46	 only Aee = 0.00895079
+CPU Time: 19.620890  	sec      Picard iter 46	 Arr + Aee = 0.00898331
+CPU Time: 19.621306  	sec      Picard iter 46	 Submat residual = 3.60471e-06
+CPU Time: 19.622056  	sec      Picard iter 46	 Submat residual = 0.00896579
+CPU Time: 19.622429  	sec      Picard iter 46	 Submat residual = 0.867129
+CPU Time: 19.622446  	sec      Start linear solver
+CPU Time: 20.040844  	sec      Linear solver finished
+CPU Time: 20.084033  	sec      Re-discretize, calculate nonlinear residuals
+CPU Time: 20.127334  	sec      Picard iter 46	 ||N(U_k)|| = 0.859107
+CPU Time: 20.127506  	sec      Picard iter 46	 ||delta U|| = 0.411058
+CPU Time: 20.138273  	sec      Start discretization
+CPU Time: 20.198957  	sec      Picard iter 47	 before = 0.859107
+CPU Time: 20.199659  	sec      Picard iter 47	 init : 0.859107
+CPU Time: 20.214259  	sec      Picard iter 47	 only Arr : 0.860031
+CPU Time: 20.417639  	sec      Picard iter 47	 only Amm = 7.33073
+CPU Time: 20.434163  	sec      Picard iter 47	 only Aee = 0.00883071
+CPU Time: 20.454990  	sec      Picard iter 47	 Arr + Aee = 0.00889842
+CPU Time: 20.455240  	sec      Picard iter 47	 Submat residual = 3.58758e-06
+CPU Time: 20.455768  	sec      Picard iter 47	 Submat residual = 0.00882183
+CPU Time: 20.455980  	sec      Picard iter 47	 Submat residual = 0.859062
+CPU Time: 20.455995  	sec      Start linear solver
+CPU Time: 20.719365  	sec      Linear solver finished
+CPU Time: 20.756784  	sec      Re-discretize, calculate nonlinear residuals
+CPU Time: 20.793212  	sec      Picard iter 47	 ||N(U_k)|| = 0.858048
+CPU Time: 20.793344  	sec      Picard iter 47	 ||delta U|| = 0.125944
+CPU Time: 20.800247  	sec      Start discretization
+CPU Time: 20.846392  	sec      Picard iter 48	 before = 0.858048
+CPU Time: 20.847209  	sec      Picard iter 48	 init : 0.858048
+CPU Time: 20.859434  	sec      Picard iter 48	 only Arr : 0.858973
+CPU Time: 21.010439  	sec      Picard iter 48	 only Amm = 5.90543
+CPU Time: 21.020554  	sec      Picard iter 48	 only Aee = 0.00876609
+CPU Time: 21.039662  	sec      Picard iter 48	 Arr + Aee = 0.00879607
+CPU Time: 21.039944  	sec      Picard iter 48	 Submat residual = 3.58457e-06
+CPU Time: 21.040445  	sec      Picard iter 48	 Submat residual = 0.00877878
+CPU Time: 21.040678  	sec      Picard iter 48	 Submat residual = 0.858003
+CPU Time: 21.040687  	sec      Start linear solver
+CPU Time: 21.282115  	sec      Linear solver finished
+CPU Time: 21.321035  	sec      Re-discretize, calculate nonlinear residuals
+CPU Time: 21.358491  	sec      Picard iter 48	 ||N(U_k)|| = 0.855503
+CPU Time: 21.358813  	sec      Picard iter 48	 ||delta U|| = 0.687247
+CPU Time: 21.366915  	sec      Start discretization
+CPU Time: 21.414250  	sec      Picard iter 49	 before = 0.855503
+CPU Time: 21.415218  	sec      Picard iter 49	 init : 0.855503
+CPU Time: 21.430296  	sec      Picard iter 49	 only Arr : 0.856423
+CPU Time: 21.586793  	sec      Picard iter 49	 only Amm = 6.31198
+CPU Time: 21.597142  	sec      Picard iter 49	 only Aee = 0.00853162
+CPU Time: 21.616458  	sec      Picard iter 49	 Arr + Aee = 0.00856336
+CPU Time: 21.616726  	sec      Picard iter 49	 Submat residual = 3.58069e-06
+CPU Time: 21.617221  	sec      Picard iter 49	 Submat residual = 0.00854628
+CPU Time: 21.617435  	sec      Picard iter 49	 Submat residual = 0.85546
+CPU Time: 21.617471  	sec      Start linear solver
+CPU Time: 21.938666  	sec      Linear solver finished
+CPU Time: 22.000763  	sec      Re-discretize, calculate nonlinear residuals
+CPU Time: 22.043437  	sec      Picard iter 49	 ||N(U_k)|| = 0.847835
+CPU Time: 22.043612  	sec      Picard iter 49	 ||delta U|| = 0.350075
+CPU Time: 22.052525  	sec      Start discretization
+CPU Time: 22.109224  	sec      Picard iter 50	 before = 0.847835
+CPU Time: 22.110075  	sec      Picard iter 50	 init : 0.847835
+CPU Time: 22.129949  	sec      Picard iter 50	 only Arr : 0.848747
+CPU Time: 22.319584  	sec      Picard iter 50	 only Amm = 6.50437
+CPU Time: 22.330880  	sec      Picard iter 50	 only Aee = 0.00843206
+CPU Time: 22.351169  	sec      Picard iter 50	 Arr + Aee = 0.00847914
+CPU Time: 22.351466  	sec      Picard iter 50	 Submat residual = 3.56249e-06
+CPU Time: 22.352028  	sec      Picard iter 50	 Submat residual = 0.0084317
+CPU Time: 22.352278  	sec      Picard iter 50	 Submat residual = 0.847793
+CPU Time: 22.352319  	sec      Start linear solver
+CPU Time: 22.572962  	sec      Linear solver finished
+CPU Time: 22.608983  	sec      Re-discretize, calculate nonlinear residuals
+CPU Time: 22.647077  	sec      Picard iter 50	 ||N(U_k)|| = 0.847147
+CPU Time: 22.647189  	sec      Picard iter 50	 ||delta U|| = 0.122644
+CPU Time: 22.654390  	sec      Start discretization
+CPU Time: 22.703860  	sec      Picard iter 51	 before = 0.847147
+CPU Time: 22.704774  	sec      Picard iter 51	 init : 0.847147
+CPU Time: 22.721923  	sec      Picard iter 51	 only Arr : 0.84806
+CPU Time: 22.889380  	sec      Picard iter 51	 only Amm = 5.65763
+CPU Time: 22.902014  	sec      Picard iter 51	 only Aee = 0.0083795
+CPU Time: 22.921326  	sec      Picard iter 51	 Arr + Aee = 0.00840922
+CPU Time: 22.921613  	sec      Picard iter 51	 Submat residual = 3.56112e-06
+CPU Time: 22.922136  	sec      Picard iter 51	 Submat residual = 0.00839243
+CPU Time: 22.922371  	sec      Picard iter 51	 Submat residual = 0.847105
+CPU Time: 22.922405  	sec      Start linear solver
+CPU Time: 23.273499  	sec      Linear solver finished
+CPU Time: 23.310014  	sec      Re-discretize, calculate nonlinear residuals
+CPU Time: 23.345870  	sec      Picard iter 51	 ||N(U_k)|| = 0.845121
+CPU Time: 23.346030  	sec      Picard iter 51	 ||delta U|| = 0.599451
+CPU Time: 23.353612  	sec      Start discretization
+CPU Time: 23.403555  	sec      Picard iter 52	 before = 0.845121
+CPU Time: 23.404613  	sec      Picard iter 52	 init : 0.845121
+CPU Time: 23.418035  	sec      Picard iter 52	 only Arr : 0.846033
+CPU Time: 23.611228  	sec      Picard iter 52	 only Amm = 5.75249
+CPU Time: 23.623021  	sec      Picard iter 52	 only Aee = 0.00818825
+CPU Time: 23.644742  	sec      Picard iter 52	 Arr + Aee = 0.00821899
+CPU Time: 23.645223  	sec      Picard iter 52	 Submat residual = 3.55804e-06
+CPU Time: 23.646358  	sec      Picard iter 52	 Submat residual = 0.00820186
+CPU Time: 23.647112  	sec      Picard iter 52	 Submat residual = 0.845081
+CPU Time: 23.647179  	sec      Start linear solver
+CPU Time: 23.921706  	sec      Linear solver finished
+CPU Time: 23.959994  	sec      Re-discretize, calculate nonlinear residuals
+CPU Time: 23.999809  	sec      Picard iter 52	 ||N(U_k)|| = 0.838527
+CPU Time: 23.999960  	sec      Picard iter 52	 ||delta U|| = 0.372503
+CPU Time: 24.007832  	sec      Start discretization
+CPU Time: 24.062605  	sec      Picard iter 53	 before = 0.838527
+CPU Time: 24.063711  	sec      Picard iter 53	 init : 0.838527
+CPU Time: 24.080185  	sec      Picard iter 53	 only Arr : 0.839432
+CPU Time: 24.264911  	sec      Picard iter 53	 only Amm = 5.85735
+CPU Time: 24.275916  	sec      Picard iter 53	 only Aee = 0.00808179
+CPU Time: 24.296295  	sec      Picard iter 53	 Arr + Aee = 0.00811798
+CPU Time: 24.297114  	sec      Picard iter 53	 Submat residual = 3.54113e-06
+CPU Time: 24.297744  	sec      Picard iter 53	 Submat residual = 0.00808705
+CPU Time: 24.298016  	sec      Picard iter 53	 Submat residual = 0.838488
+CPU Time: 24.298064  	sec      Start linear solver
+CPU Time: 24.808061  	sec      Linear solver finished
+CPU Time: 24.849113  	sec      Re-discretize, calculate nonlinear residuals
+CPU Time: 24.897446  	sec      Picard iter 53	 ||N(U_k)|| = 0.837786
+CPU Time: 24.897601  	sec      Picard iter 53	 ||delta U|| = 0.120001
+CPU Time: 24.906385  	sec      Start discretization
+CPU Time: 24.986135  	sec      Picard iter 54	 before = 0.837786
+CPU Time: 24.988772  	sec      Picard iter 54	 init : 0.837786
+CPU Time: 25.007255  	sec      Picard iter 54	 only Arr : 0.838691
+CPU Time: 25.186096  	sec      Picard iter 54	 only Amm = 5.44282
+CPU Time: 25.197527  	sec      Picard iter 54	 only Aee = 0.00803804
+CPU Time: 25.218550  	sec      Picard iter 54	 Arr + Aee = 0.00806801
+CPU Time: 25.218865  	sec      Picard iter 54	 Submat residual = 3.53989e-06
+CPU Time: 25.219498  	sec      Picard iter 54	 Submat residual = 0.00805087
+CPU Time: 25.219757  	sec      Picard iter 54	 Submat residual = 0.837747
+CPU Time: 25.219797  	sec      Start linear solver
+CPU Time: 25.464751  	sec      Linear solver finished
+CPU Time: 25.503580  	sec      Re-discretize, calculate nonlinear residuals
+CPU Time: 25.542737  	sec      Picard iter 54	 ||N(U_k)|| = 0.836023
+CPU Time: 25.542916  	sec      Picard iter 54	 ||delta U|| = 0.557788
+CPU Time: 25.551394  	sec      Start discretization
+CPU Time: 25.603097  	sec      Picard iter 55	 before = 0.836023
+CPU Time: 25.604986  	sec      Picard iter 55	 init : 0.836023
+CPU Time: 25.621487  	sec      Picard iter 55	 only Arr : 0.836927
+CPU Time: 25.781167  	sec      Picard iter 55	 only Amm = 5.47475
+CPU Time: 25.793037  	sec      Picard iter 55	 only Aee = 0.00787063
+CPU Time: 25.815685  	sec      Picard iter 55	 Arr + Aee = 0.00790337
+CPU Time: 25.815972  	sec      Picard iter 55	 Submat residual = 3.53693e-06
+CPU Time: 25.816513  	sec      Picard iter 55	 Submat residual = 0.00788369
+CPU Time: 25.816742  	sec      Picard iter 55	 Submat residual = 0.835986
+CPU Time: 25.816751  	sec      Start linear solver
+CPU Time: 26.124416  	sec      Linear solver finished
+CPU Time: 26.180782  	sec      Re-discretize, calculate nonlinear residuals
+CPU Time: 26.231319  	sec      Picard iter 55	 ||N(U_k)|| = 0.83022
+CPU Time: 26.231594  	sec      Picard iter 55	 ||delta U|| = 0.37016
+CPU Time: 26.239703  	sec      Start discretization
+CPU Time: 26.300170  	sec      Picard iter 56	 before = 0.83022
+CPU Time: 26.301069  	sec      Picard iter 56	 init : 0.83022
+CPU Time: 26.316632  	sec      Picard iter 56	 only Arr : 0.831119
+CPU Time: 26.500628  	sec      Picard iter 56	 only Amm = 5.40542
+CPU Time: 26.512395  	sec      Picard iter 56	 only Aee = 0.00776851
+CPU Time: 26.535139  	sec      Picard iter 56	 Arr + Aee = 0.00779993
+CPU Time: 26.535455  	sec      Picard iter 56	 Submat residual = 3.52172e-06
+CPU Time: 26.536052  	sec      Picard iter 56	 Submat residual = 0.0077759
+CPU Time: 26.536301  	sec      Picard iter 56	 Submat residual = 0.830184
+CPU Time: 26.536341  	sec      Start linear solver
+CPU Time: 26.857928  	sec      Linear solver finished
+CPU Time: 26.896364  	sec      Re-discretize, calculate nonlinear residuals
+CPU Time: 26.937875  	sec      Picard iter 56	 ||N(U_k)|| = 0.829347
+CPU Time: 26.938054  	sec      Picard iter 56	 ||delta U|| = 0.117742
+CPU Time: 26.947221  	sec      Start discretization
+CPU Time: 26.994829  	sec      Picard iter 57	 before = 0.829347
+CPU Time: 26.995601  	sec      Picard iter 57	 init : 0.829347
+CPU Time: 27.011443  	sec      Picard iter 57	 only Arr : 0.830247
+CPU Time: 27.170955  	sec      Picard iter 57	 only Amm = 5.24973
+CPU Time: 27.182781  	sec      Picard iter 57	 only Aee = 0.00772962
+CPU Time: 27.202582  	sec      Picard iter 57	 Arr + Aee = 0.00775936
+CPU Time: 27.202897  	sec      Picard iter 57	 Submat residual = 3.52023e-06
+CPU Time: 27.203507  	sec      Picard iter 57	 Submat residual = 0.00774247
+CPU Time: 27.203769  	sec      Picard iter 57	 Submat residual = 0.829311
+CPU Time: 27.203807  	sec      Start linear solver
+CPU Time: 27.441082  	sec      Linear solver finished
+CPU Time: 27.479523  	sec      Re-discretize, calculate nonlinear residuals
+CPU Time: 27.515947  	sec      Picard iter 57	 ||N(U_k)|| = 0.827413
+CPU Time: 27.516070  	sec      Picard iter 57	 ||delta U|| = 0.638344
+CPU Time: 27.524591  	sec      Start discretization
+CPU Time: 27.571338  	sec      Picard iter 58	 before = 0.827413
+CPU Time: 27.572759  	sec      Picard iter 58	 init : 0.827413
+CPU Time: 27.586051  	sec      Picard iter 58	 only Arr : 0.828311
+CPU Time: 27.739685  	sec      Picard iter 58	 only Amm = 5.21407
+CPU Time: 27.751083  	sec      Picard iter 58	 only Aee = 0.00754968
+CPU Time: 27.774374  	sec      Picard iter 58	 Arr + Aee = 0.00758324
+CPU Time: 27.774720  	sec      Picard iter 58	 Submat residual = 3.51656e-06
+CPU Time: 27.775407  	sec      Picard iter 58	 Submat residual = 0.00756209
+CPU Time: 27.775743  	sec      Picard iter 58	 Submat residual = 0.827378
+CPU Time: 27.775803  	sec      Start linear solver
+CPU Time: 28.035234  	sec      Linear solver finished
+CPU Time: 28.071461  	sec      Re-discretize, calculate nonlinear residuals
+CPU Time: 28.106316  	sec      Picard iter 58	 ||N(U_k)|| = 0.821998
+CPU Time: 28.106448  	sec      Picard iter 58	 ||delta U|| = 0.324056
+CPU Time: 28.113743  	sec      Start discretization
+CPU Time: 28.157190  	sec      Picard iter 59	 before = 0.821998
+CPU Time: 28.157842  	sec      Picard iter 59	 init : 0.821998
+CPU Time: 28.172089  	sec      Picard iter 59	 only Arr : 0.82289
+CPU Time: 28.314405  	sec      Picard iter 59	 only Amm = 5.15244
+CPU Time: 28.324370  	sec      Picard iter 59	 only Aee = 0.00746466
+CPU Time: 28.343215  	sec      Picard iter 59	 Arr + Aee = 0.00749582
+CPU Time: 28.343677  	sec      Picard iter 59	 Submat residual = 3.50133e-06
+CPU Time: 28.344463  	sec      Picard iter 59	 Submat residual = 0.00747305
+CPU Time: 28.344996  	sec      Picard iter 59	 Submat residual = 0.821964
+CPU Time: 28.345039  	sec      Start linear solver
+CPU Time: 28.613489  	sec      Linear solver finished
+CPU Time: 28.655460  	sec      Re-discretize, calculate nonlinear residuals
+CPU Time: 28.705353  	sec      Picard iter 59	 ||N(U_k)|| = 0.821069
+CPU Time: 28.705547  	sec      Picard iter 59	 ||delta U|| = 0.115678
+CPU Time: 28.714024  	sec      Start discretization
+CPU Time: 28.760718  	sec      Picard iter 60	 before = 0.821069
+CPU Time: 28.761481  	sec      Picard iter 60	 init : 0.821069
+CPU Time: 28.776887  	sec      Picard iter 60	 only Arr : 0.821963
+CPU Time: 28.941792  	sec      Picard iter 60	 only Amm = 5.05283
+CPU Time: 28.952774  	sec      Picard iter 60	 only Aee = 0.00742965
+CPU Time: 28.972879  	sec      Picard iter 60	 Arr + Aee = 0.00746015
+CPU Time: 28.973160  	sec      Picard iter 60	 Submat residual = 3.4999e-06
+CPU Time: 28.973663  	sec      Picard iter 60	 Submat residual = 0.00744215
+CPU Time: 28.973883  	sec      Picard iter 60	 Submat residual = 0.821035
+CPU Time: 28.973920  	sec      Start linear solver
+CPU Time: 29.219249  	sec      Linear solver finished
+CPU Time: 29.257996  	sec      Re-discretize, calculate nonlinear residuals
+CPU Time: 29.298285  	sec      Picard iter 60	 ||N(U_k)|| = 0.818886
+CPU Time: 29.298609  	sec      Picard iter 60	 ||delta U|| = 0.725666
+CPU Time: 29.305026  	sec      Start discretization
+CPU Time: 29.355862  	sec      Picard iter 61	 before = 0.818886
+CPU Time: 29.356588  	sec      Picard iter 61	 init : 0.818886
+CPU Time: 29.373961  	sec      Picard iter 61	 only Arr : 0.81978
+CPU Time: 29.539560  	sec      Picard iter 61	 only Amm = 4.99748
+CPU Time: 29.554504  	sec      Picard iter 61	 only Aee = 0.00723664
+CPU Time: 29.574235  	sec      Picard iter 61	 Arr + Aee = 0.00727062
+CPU Time: 29.574501  	sec      Picard iter 61	 Submat residual = 3.49595e-06
+CPU Time: 29.575070  	sec      Picard iter 61	 Submat residual = 0.00724917
+CPU Time: 29.575267  	sec      Picard iter 61	 Submat residual = 0.818854
+CPU Time: 29.575310  	sec      Start linear solver
+CPU Time: 29.859296  	sec      Linear solver finished
+CPU Time: 29.896204  	sec      Re-discretize, calculate nonlinear residuals
+CPU Time: 29.936443  	sec      Picard iter 61	 ||N(U_k)|| = 0.813854
+CPU Time: 29.936604  	sec      Picard iter 61	 ||delta U|| = 0.283992
+CPU Time: 29.944625  	sec      Start discretization
+CPU Time: 29.999970  	sec      Picard iter 62	 before = 0.813854
+CPU Time: 30.000857  	sec      Picard iter 62	 init : 0.813854
+CPU Time: 30.022098  	sec      Picard iter 62	 only Arr : 0.814741
+CPU Time: 30.188017  	sec      Picard iter 62	 only Amm = 4.99804
+CPU Time: 30.198294  	sec      Picard iter 62	 only Aee = 0.00716609
+CPU Time: 30.217357  	sec      Picard iter 62	 Arr + Aee = 0.00719649
+CPU Time: 30.217615  	sec      Picard iter 62	 Submat residual = 3.48096e-06
+CPU Time: 30.218103  	sec      Picard iter 62	 Submat residual = 0.00717585
+CPU Time: 30.218303  	sec      Picard iter 62	 Submat residual = 0.813822
+CPU Time: 30.218341  	sec      Start linear solver
+CPU Time: 30.526018  	sec      Linear solver finished
+CPU Time: 30.563808  	sec      Re-discretize, calculate nonlinear residuals
+CPU Time: 30.601489  	sec      Picard iter 62	 ||N(U_k)|| = 0.812699
+CPU Time: 30.601637  	sec      Picard iter 62	 ||delta U|| = 0.145331
+CPU Time: 30.609127  	sec      Start discretization
+CPU Time: 30.654984  	sec      Picard iter 63	 before = 0.812699
+CPU Time: 30.655640  	sec      Picard iter 63	 init : 0.812699
+CPU Time: 30.672605  	sec      Picard iter 63	 only Arr : 0.813587
+CPU Time: 30.828283  	sec      Picard iter 63	 only Amm = 4.84529
+CPU Time: 30.837655  	sec      Picard iter 63	 only Aee = 0.0071266
+CPU Time: 30.862083  	sec      Picard iter 63	 Arr + Aee = 0.00715806
+CPU Time: 30.862705  	sec      Picard iter 63	 Submat residual = 3.4791e-06
+CPU Time: 30.863490  	sec      Picard iter 63	 Submat residual = 0.00713926
+CPU Time: 30.863760  	sec      Picard iter 63	 Submat residual = 0.812667
+CPU Time: 30.863798  	sec      Start linear solver

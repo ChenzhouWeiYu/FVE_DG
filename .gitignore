@@ -1,0 +1,24 @@
+# 忽略 Jupyter Notebook 的检查点目录
+.ipynb_checkpoints/
+__pycache__/
+*.ipynb_checkpoints
+
+# 忽略 logging 相关文件和目录
+# 假设你的日志叫 logging 或 logs 或 *.log
+logging/
+logs/
+*.log
+log/
+
+# 忽略所有名为 Order_* 的目录
+Order_*/
+build/
+
+# 可选：忽略 .pyc 文件、缓存等
+*.pyc
+*.pyo
+*.pyd
+.DS_Store
+
+
+

@@ -1,0 +1,2940 @@
+Solution file: ./Order_1_Mesh_10/solution/T_0_N_100.txt
+Error log:     ./Order_1_Mesh_10/error_log.txt
+Config file:   ./Order_1_Mesh_10/config.json
+Run info:      ./Order_1_Mesh_10/run_info.txt
+CPU used:      16
+#       time  rel.err  rho    rel.err  u    rel.err  v    rel.err  w    rel.err  e  rel.err coef      cpu time  
+#iterations: 115
+estimated error: 9.51189e-13
+real residual = 7.44832e-06,	 iter = 115,	 iter residual = 9.51189e-13
+iter = 0 ,  ||Az-v|| residual = 8.165071e-01
+iter = 0 ,   residual = 7.258465e-01
+iter = 1 ,  ||Az-v|| residual = 1.321572e+00
+iter = 1 ,   residual = 7.034882e-01
+iter = 2 ,  ||Az-v|| residual = 2.114524e+00
+iter = 2 ,   residual = 6.879757e-01
+iter = 3 ,  ||Az-v|| residual = 7.735651e-01
+iter = 3 ,   residual = 6.647248e-01
+iter = 4 ,  ||Az-v|| residual = 1.146993e+00
+iter = 4 ,   residual = 6.419108e-01
+iter = 5 ,  ||Az-v|| residual = 9.386831e-01
+iter = 5 ,   residual = 4.893789e-01
+iter = 6 ,  ||Az-v|| residual = 1.687441e+00
+iter = 6 ,   residual = -3.452470e-01
+iter = 7 ,  ||Az-v|| residual = 1.062675e+00
+iter = 7 ,   residual = 2.226334e-01
+iter = 8 ,  ||Az-v|| residual = 1.068419e+00
+iter = 8 ,   residual = -1.390716e-01
+iter = 9 ,  ||Az-v|| residual = 1.385927e+00
+iter = 9 ,   residual = -1.077978e-01
+iter = 10 ,  ||Az-v|| residual = 1.937376e+00
+iter = 10 ,   residual = -7.247937e-02
+iter = 11 ,  ||Az-v|| residual = 1.481999e+00
+iter = 11 ,   residual = -5.186402e-02
+iter = 12 ,  ||Az-v|| residual = 1.213618e+00
+iter = 12 ,   residual = -3.583287e-02
+iter = 13 ,  ||Az-v|| residual = 1.597092e+00
+iter = 13 ,   residual = 2.409261e-02
+iter = 14 ,  ||Az-v|| residual = 2.503439e+00
+iter = 14 ,   residual = 1.775693e-02
+iter = 15 ,  ||Az-v|| residual = 2.970636e+00
+iter = 15 ,   residual = 1.241499e-02
+iter = 16 ,  ||Az-v|| residual = 2.632762e+00
+iter = 16 ,   residual = 9.454827e-03
+iter = 17 ,  ||Az-v|| residual = 2.653920e+00
+iter = 17 ,   residual = 6.913842e-03
+iter = 18 ,  ||Az-v|| residual = 2.425207e+00
+iter = 18 ,   residual = 5.287882e-03
+iter = 19 ,  ||Az-v|| residual = 3.688179e+00
+iter = 19 ,   residual = 3.879730e-03
+iter = 20 ,  ||Az-v|| residual = 3.107184e+00
+iter = 20 ,   residual = 2.874677e-03
+iter = 21 ,  ||Az-v|| residual = 2.991325e+00
+iter = 21 ,   residual = 2.343204e-03
+iter = 22 ,  ||Az-v|| residual = 2.537906e+00
+iter = 22 ,   residual = 1.756891e-03
+iter = 23 ,  ||Az-v|| residual = 3.257193e+00
+iter = 23 ,   residual = 1.282426e-03
+iter = 24 ,  ||Az-v|| residual = 5.480609e+00
+iter = 24 ,   residual = 9.968327e-04
+iter = 25 ,  ||Az-v|| residual = 4.267379e+00
+iter = 25 ,   residual = 7.997741e-04
+iter = 26 ,  ||Az-v|| residual = 2.926732e+00
+iter = 26 ,   residual = 7.065203e-04
+iter = 27 ,  ||Az-v|| residual = 1.898543e+00
+iter = 27 ,   residual = 6.092755e-04
+iter = 28 ,  ||Az-v|| residual = 2.229411e+00
+iter = 28 ,   residual = 4.770620e-04
+iter = 29 ,  ||Az-v|| residual = 5.166493e+00
+iter = 29 ,   residual = 3.795590e-04
+iter = 30 ,  ||Az-v|| residual = 5.103471e+00
+iter = 30 ,   residual = 3.266557e-04
+iter = 31 ,  ||Az-v|| residual = 2.992073e+00
+iter = 31 ,   residual = 2.765950e-04
+iter = 32 ,  ||Az-v|| residual = 1.231324e+00
+iter = 32 ,   residual = 2.507422e-04
+iter = 33 ,  ||Az-v|| residual = 2.453412e+00
+iter = 33 ,   residual = 2.117962e-04
+iter = 34 ,  ||Az-v|| residual = 1.247288e+00
+iter = 34 ,   residual = 1.780548e-04
+iter = 35 ,  ||Az-v|| residual = 1.098909e+00
+iter = 35 ,   residual = 1.445405e-04
+iter = 36 ,  ||Az-v|| residual = 2.429032e+00
+iter = 36 ,   residual = 1.197565e-04
+iter = 37 ,  ||Az-v|| residual = 1.552966e+00
+iter = 37 ,   residual = 1.008912e-04
+iter = 38 ,  ||Az-v|| residual = 9.955451e-01
+iter = 38 ,   residual = 8.620093e-05
+iter = 39 ,  ||Az-v|| residual = 1.395862e+00
+iter = 39 ,   residual = 7.578161e-05
+iter = 40 ,  ||Az-v|| residual = 2.403831e+00
+iter = 40 ,   residual = 6.219196e-05
+iter = 41 ,  ||Az-v|| residual = 1.657144e+00
+iter = 41 ,   residual = 5.059267e-05
+iter = 42 ,  ||Az-v|| residual = 1.527602e+00
+iter = 42 ,   residual = 4.342951e-05
+iter = 43 ,  ||Az-v|| residual = 1.144382e+00
+iter = 43 ,   residual = 3.621578e-05
+iter = 44 ,  ||Az-v|| residual = 1.241119e+00
+iter = 44 ,   residual = 3.075140e-05
+iter = 45 ,  ||Az-v|| residual = 1.368815e+00
+iter = 45 ,   residual = 2.669864e-05
+iter = 46 ,  ||Az-v|| residual = 1.828980e+00
+iter = 46 ,   residual = 2.176239e-05
+iter = 47 ,  ||Az-v|| residual = 1.785380e+00
+iter = 47 ,   residual = 1.751633e-05
+iter = 48 ,  ||Az-v|| residual = 1.404738e+00
+iter = 48 ,   residual = 1.484110e-05
+iter = 49 ,  ||Az-v|| residual = 1.540308e+00
+iter = 49 ,   residual = 1.295383e-05
+iter = 50 ,  ||Az-v|| residual = 2.039184e+00
+iter = 50 ,   residual = 1.155185e-05
+iter = 51 ,  ||Az-v|| residual = 1.740388e+00
+iter = 51 ,   residual = 9.889259e-06
+iter = 52 ,  ||Az-v|| residual = 2.296631e+00
+iter = 52 ,   residual = 8.462084e-06
+iter = 53 ,  ||Az-v|| residual = 1.660858e+00
+iter = 53 ,   residual = 7.210867e-06
+iter = 54 ,  ||Az-v|| residual = 2.236332e+00
+iter = 54 ,   residual = 5.839400e-06
+iter = 55 ,  ||Az-v|| residual = 1.768030e+00
+iter = 55 ,   residual = 4.800712e-06
+iter = 56 ,  ||Az-v|| residual = 2.023431e+00
+iter = 56 ,   residual = 4.063156e-06
+iter = 57 ,  ||Az-v|| residual = 1.747974e+00
+iter = 57 ,   residual = 3.488768e-06
+iter = 58 ,  ||Az-v|| residual = 1.284311e+00
+iter = 58 ,   residual = 2.806146e-06
+iter = 59 ,  ||Az-v|| residual = 2.298660e+00
+iter = 59 ,   residual = 2.209490e-06
+iter = 60 ,  ||Az-v|| residual = 1.467562e+00
+iter = 60 ,   residual = 1.769017e-06
+iter = 61 ,  ||Az-v|| residual = 1.530214e+00
+iter = 61 ,   residual = 1.537146e-06
+iter = 62 ,  ||Az-v|| residual = 2.977376e+00
+iter = 62 ,   residual = 1.338692e-06
+iter = 63 ,  ||Az-v|| residual = 1.565314e+00
+iter = 63 ,   residual = 1.201654e-06
+iter = 64 ,  ||Az-v|| residual = 1.490508e+00
+iter = 64 ,   residual = 1.057686e-06
+iter = 65 ,  ||Az-v|| residual = 2.831773e+00
+iter = 65 ,   residual = 8.985369e-07
+iter = 66 ,  ||Az-v|| residual = 2.957232e+00
+iter = 66 ,   residual = 8.395247e-07
+iter = 67 ,  ||Az-v|| residual = 5.029405e+00
+iter = 67 ,   residual = 7.234549e-07
+iter = 68 ,  ||Az-v|| residual = 4.406918e+00
+iter = 68 ,   residual = 5.729876e-07
+iter = 69 ,  ||Az-v|| residual = 4.641650e+00
+iter = 69 ,   residual = 4.381231e-07
+iter = 70 ,  ||Az-v|| residual = 2.713414e+00
+iter = 70 ,   residual = -3.079826e-07
+iter = 71 ,  ||Az-v|| residual = 5.120660e+00
+iter = 71 ,   residual = -2.299119e-07
+iter = 72 ,  ||Az-v|| residual = 4.379948e+00
+iter = 72 ,   residual = -1.788858e-07
+iter = 73 ,  ||Az-v|| residual = 5.253756e+00
+iter = 73 ,   residual = -1.538573e-07
+iter = 74 ,  ||Az-v|| residual = 2.902865e+00
+iter = 74 ,   residual = -1.346952e-07
+iter = 75 ,  ||Az-v|| residual = 2.188257e+00
+iter = 75 ,   residual = -1.116206e-07
+iter = 76 ,  ||Az-v|| residual = 1.798286e+00
+iter = 76 ,   residual = -9.848193e-08
+iter = 77 ,  ||Az-v|| residual = 1.742513e+00
+iter = 77 ,   residual = -9.132673e-08
+iter = 78 ,  ||Az-v|| residual = 1.803458e+00
+iter = 78 ,   residual = -8.711484e-08
+iter = 79 ,  ||Az-v|| residual = 2.157452e+00
+iter = 79 ,   residual = -8.416190e-08
+iter = 80 ,  ||Az-v|| residual = 1.605072e+00
+iter = 80 ,   residual = -8.106377e-08
+iter = 81 ,  ||Az-v|| residual = 4.152978e+00
+iter = 81 ,   residual = -7.135260e-08
+iter = 82 ,  ||Az-v|| residual = 1.964418e+00
+iter = 82 ,   residual = -5.928273e-08
+iter = 83 ,  ||Az-v|| residual = 2.299369e+00
+iter = 83 ,   residual = -5.032498e-08
+iter = 84 ,  ||Az-v|| residual = 1.563561e+00
+iter = 84 ,   residual = -4.335881e-08
+iter = 85 ,  ||Az-v|| residual = 3.162041e+00
+iter = 85 ,   residual = -3.681387e-08
+iter = 86 ,  ||Az-v|| residual = 2.541316e+00
+iter = 86 ,   residual = -3.259375e-08
+iter = 87 ,  ||Az-v|| residual = 3.870076e+00
+iter = 87 ,   residual = -2.861247e-08
+iter = 88 ,  ||Az-v|| residual = 5.044313e+00
+iter = 88 ,   residual = -2.684712e-08
+iter = 89 ,  ||Az-v|| residual = 4.465578e+00
+iter = 89 ,   residual = -2.309767e-08
+iter = 90 ,  ||Az-v|| residual = 4.006328e+00
+iter = 90 ,   residual = -1.744785e-08
+iter = 91 ,  ||Az-v|| residual = 7.515242e+00
+iter = 91 ,   residual = -1.554554e-08
+iter = 92 ,  ||Az-v|| residual = 1.964503e+00
+iter = 92 ,   residual = -1.299170e-08
+iter = 93 ,  ||Az-v|| residual = 3.737301e+00
+iter = 93 ,   residual = -1.149167e-08
+iter = 94 ,  ||Az-v|| residual = 2.879263e+00
+iter = 94 ,   residual = -9.682517e-09
+iter = 95 ,  ||Az-v|| residual = 1.663762e+00
+iter = 95 ,   residual = -8.044868e-09
+iter = 96 ,  ||Az-v|| residual = 1.860897e+00
+iter = 96 ,   residual = -6.996772e-09
+iter = 97 ,  ||Az-v|| residual = 1.789229e+00
+iter = 97 ,   residual = -6.597360e-09
+iter = 98 ,  ||Az-v|| residual = 2.981013e+00
+iter = 98 ,   residual = -6.195223e-09
+iter = 99 ,  ||Az-v|| residual = 1.986225e+00
+iter = 99 ,   residual = -5.776025e-09
+iter = 100 ,  ||Az-v|| residual = 3.097027e+00
+iter = 100 ,   residual = -5.306570e-09
+iter = 101 ,  ||Az-v|| residual = 2.084327e+00
+iter = 101 ,   residual = -4.756898e-09
+iter = 102 ,  ||Az-v|| residual = 1.865874e+00
+iter = 102 ,   residual = -4.188487e-09
+iter = 103 ,  ||Az-v|| residual = 3.125281e+00
+iter = 103 ,   residual = -3.608274e-09
+iter = 104 ,  ||Az-v|| residual = 3.822597e+00
+iter = 104 ,   residual = -3.117806e-09
+iter = 105 ,  ||Az-v|| residual = 1.710392e+00
+iter = 105 ,   residual = -2.572705e-09
+iter = 106 ,  ||Az-v|| residual = 2.145917e+00
+iter = 106 ,   residual = -2.176324e-09
+iter = 107 ,  ||Az-v|| residual = 3.199019e+00
+iter = 107 ,   residual = -1.819665e-09
+iter = 108 ,  ||Az-v|| residual = 2.366527e+00
+iter = 108 ,   residual = -1.596350e-09
+iter = 109 ,  ||Az-v|| residual = 2.530326e+00
+iter = 109 ,   residual = -1.317614e-09
+iter = 110 ,  ||Az-v|| residual = 3.266443e+00
+iter = 110 ,   residual = -1.101972e-09
+iter = 111 ,  ||Az-v|| residual = 2.457344e+00
+iter = 111 ,   residual = -9.578672e-10
+iter = 112 ,  ||Az-v|| residual = 1.782543e+00
+iter = 112 ,   residual = -8.117625e-10
+iter = 113 ,  ||Az-v|| residual = 2.823805e+00
+iter = 113 ,   residual = -6.880073e-10
+iter = 114 ,  ||Az-v|| residual = 3.918365e+00
+iter = 114 ,   residual = -6.062757e-10
+iter = 115 ,  ||Az-v|| residual = 2.235946e+00
+iter = 115 ,   residual = -5.355504e-10
+iter = 116 ,  ||Az-v|| residual = 3.897613e+00
+iter = 116 ,   residual = -4.470010e-10
+iter = 117 ,  ||Az-v|| residual = 3.273247e+00
+iter = 117 ,   residual = -3.707569e-10
+iter = 118 ,  ||Az-v|| residual = 2.475086e+00
+iter = 118 ,   residual = -3.298640e-10
+iter = 119 ,  ||Az-v|| residual = 1.660132e+00
+iter = 119 ,   residual = -2.989535e-10
+iter = 120 ,  ||Az-v|| residual = 2.978338e+00
+iter = 120 ,   residual = -2.780584e-10
+iter = 121 ,  ||Az-v|| residual = 2.553699e+00
+iter = 121 ,   residual = -2.461590e-10
+iter = 122 ,  ||Az-v|| residual = 4.449319e+00
+iter = 122 ,   residual = -2.294174e-10
+iter = 123 ,  ||Az-v|| residual = 2.067799e+00
+iter = 123 ,   residual = -2.116052e-10
+iter = 124 ,  ||Az-v|| residual = 2.675576e+00
+iter = 124 ,   residual = -1.938132e-10
+iter = 125 ,  ||Az-v|| residual = 3.194848e+00
+iter = 125 ,   residual = -1.749730e-10
+iter = 126 ,  ||Az-v|| residual = 2.275447e+00
+iter = 126 ,   residual = -1.538567e-10
+iter = 127 ,  ||Az-v|| residual = 2.031509e+00
+iter = 127 ,   residual = -1.363484e-10
+iter = 128 ,  ||Az-v|| residual = 2.713620e+00
+iter = 128 ,   residual = -1.212564e-10
+iter = 129 ,  ||Az-v|| residual = 5.334359e+00
+iter = 129 ,   residual = -1.007073e-10
+iter = 130 ,  ||Az-v|| residual = 2.271244e+00
+iter = 130 ,   residual = -8.539464e-11
+iter = 131 ,  ||Az-v|| residual = 4.111471e+00
+iter = 131 ,   residual = -7.296420e-11
+iter = 132 ,  ||Az-v|| residual = 3.431820e+00
+iter = 132 ,   residual = -5.798840e-11
+iter = 133 ,  ||Az-v|| residual = 3.521024e+00
+iter = 133 ,   residual = -4.514068e-11
+iter = 134 ,  ||Az-v|| residual = 2.261173e+00
+iter = 134 ,   residual = -3.907011e-11
+iter = 135 ,  ||Az-v|| residual = 5.223021e+00
+iter = 135 ,   residual = -3.535816e-11
+iter = 136 ,  ||Az-v|| residual = 3.627503e+00
+iter = 136 ,   residual = -3.206501e-11
+iter = 137 ,  ||Az-v|| residual = 2.741554e+00
+iter = 137 ,   residual = -2.912763e-11
+iter = 138 ,  ||Az-v|| residual = 2.694379e+00
+iter = 138 ,   residual = -2.515441e-11
+iter = 139 ,  ||Az-v|| residual = 4.710161e+00
+iter = 139 ,   residual = -2.260845e-11
+iter = 140 ,  ||Az-v|| residual = 6.743096e+00
+iter = 140 ,   residual = -2.017901e-11
+iter = 141 ,  ||Az-v|| residual = 2.450565e+00
+iter = 141 ,   residual = -1.676133e-11
+iter = 142 ,  ||Az-v|| residual = 7.975028e+00
+iter = 142 ,   residual = -1.467364e-11
+iter = 143 ,  ||Az-v|| residual = 2.141261e+00
+iter = 143 ,   residual = -1.258513e-11
+iter = 144 ,  ||Az-v|| residual = 3.845725e+00
+iter = 144 ,   residual = -1.149516e-11
+iter = 145 ,  ||Az-v|| residual = 4.558068e+00
+iter = 145 ,   residual = -9.097729e-12
+iter = 146 ,  ||Az-v|| residual = 2.363953e+00
+iter = 146 ,   residual = -7.684781e-12
+iter = 147 ,  ||Az-v|| residual = 2.677724e+00
+iter = 147 ,   residual = -6.517914e-12
+iter = 148 ,  ||Az-v|| residual = 3.947541e+00
+iter = 148 ,   residual = -5.566817e-12
+iter = 149 ,  ||Az-v|| residual = 3.850173e+00
+iter = 149 ,   residual = -4.793121e-12
+iter = 150 ,  ||Az-v|| residual = 2.207952e+00
+iter = 150 ,   residual = -4.113586e-12
+iter = 151 ,  ||Az-v|| residual = 4.469391e+00
+iter = 151 ,   residual = -3.913965e-12
+iter = 152 ,  ||Az-v|| residual = 3.977084e+00
+iter = 152 ,   residual = -3.510561e-12
+iter = 153 ,  ||Az-v|| residual = 1.882473e+00
+iter = 153 ,   residual = -3.166285e-12
+iter = 154 ,  ||Az-v|| residual = 2.428864e+00
+iter = 154 ,   residual = -2.547610e-12
+iter = 155 ,  ||Az-v|| residual = 2.811438e+00
+iter = 155 ,   residual = -2.299297e-12
+iter = 156 ,  ||Az-v|| residual = 2.559901e+00
+iter = 156 ,   residual = -2.043884e-12
+iter = 157 ,  ||Az-v|| residual = 3.074502e+00
+iter = 157 ,   residual = -1.667652e-12
+iter = 158 ,  ||Az-v|| residual = 4.310026e+00
+iter = 158 ,   residual = -1.270097e-12
+iter = 159 ,  ||Az-v|| residual = 2.647561e+00
+iter = 159 ,   residual = -1.008024e-12
+iter = 160 ,  ||Az-v|| residual = 3.208093e+00
+iter = 160 ,   residual = -8.517430e-13
+111real residual = 6.6694e-06,	 iter = 160,	 iter residual = 6.66961e-06
+#iterations: 114
+estimated error: 9.15193e-13
+real residual = 7.16672e-06,	 iter = 114,	 iter residual = 9.15193e-13
+iter = 0 ,  ||Az-v|| residual = 8.165057e-01
+iter = 0 ,   residual = 7.258462e-01
+iter = 1 ,  ||Az-v|| residual = 1.321489e+00
+iter = 1 ,   residual = 7.034826e-01
+iter = 2 ,  ||Az-v|| residual = 2.114129e+00
+iter = 2 ,   residual = 6.879736e-01
+iter = 3 ,  ||Az-v|| residual = 7.735021e-01
+iter = 3 ,   residual = 6.647200e-01
+iter = 4 ,  ||Az-v|| residual = 1.146894e+00
+iter = 4 ,   residual = 6.418861e-01
+iter = 5 ,  ||Az-v|| residual = 9.388315e-01
+iter = 5 ,   residual = 4.893528e-01
+iter = 6 ,  ||Az-v|| residual = 1.687418e+00
+iter = 6 ,   residual = -3.452212e-01
+iter = 7 ,  ||Az-v|| residual = 1.062603e+00
+iter = 7 ,   residual = 2.226242e-01
+iter = 8 ,  ||Az-v|| residual = 1.068173e+00
+iter = 8 ,   residual = -1.390665e-01
+iter = 9 ,  ||Az-v|| residual = 1.385828e+00
+iter = 9 ,   residual = -1.077948e-01
+iter = 10 ,  ||Az-v|| residual = 1.937377e+00
+iter = 10 ,   residual = -7.247933e-02
+iter = 11 ,  ||Az-v|| residual = 1.481897e+00
+iter = 11 ,   residual = -5.186496e-02
+iter = 12 ,  ||Az-v|| residual = 1.213511e+00
+iter = 12 ,   residual = -3.583201e-02
+iter = 13 ,  ||Az-v|| residual = 1.596518e+00
+iter = 13 ,   residual = 2.409108e-02
+iter = 14 ,  ||Az-v|| residual = 2.503163e+00
+iter = 14 ,   residual = 1.775790e-02
+iter = 15 ,  ||Az-v|| residual = 2.970431e+00
+iter = 15 ,   residual = 1.241469e-02
+iter = 16 ,  ||Az-v|| residual = 2.632833e+00
+iter = 16 ,   residual = 9.454658e-03
+iter = 17 ,  ||Az-v|| residual = 2.653788e+00
+iter = 17 ,   residual = 6.913894e-03
+iter = 18 ,  ||Az-v|| residual = 2.424942e+00
+iter = 18 ,   residual = 5.287798e-03
+iter = 19 ,  ||Az-v|| residual = 3.687955e+00
+iter = 19 ,   residual = 3.879482e-03
+iter = 20 ,  ||Az-v|| residual = 3.107993e+00
+iter = 20 ,   residual = 2.874328e-03
+iter = 21 ,  ||Az-v|| residual = 2.991499e+00
+iter = 21 ,   residual = 2.343097e-03
+iter = 22 ,  ||Az-v|| residual = 2.536979e+00
+iter = 22 ,   residual = 1.756800e-03
+iter = 23 ,  ||Az-v|| residual = 3.256821e+00
+iter = 23 ,   residual = 1.282347e-03
+iter = 24 ,  ||Az-v|| residual = 5.479440e+00
+iter = 24 ,   residual = 9.967633e-04
+iter = 25 ,  ||Az-v|| residual = 4.266075e+00
+iter = 25 ,   residual = 7.997108e-04
+iter = 26 ,  ||Az-v|| residual = 2.926420e+00
+iter = 26 ,   residual = 7.064645e-04
+iter = 27 ,  ||Az-v|| residual = 1.897733e+00
+iter = 27 ,   residual = 6.092503e-04
+iter = 28 ,  ||Az-v|| residual = 2.229456e+00
+iter = 28 ,   residual = 4.769946e-04
+iter = 29 ,  ||Az-v|| residual = 5.168978e+00
+iter = 29 ,   residual = 3.794885e-04
+iter = 30 ,  ||Az-v|| residual = 5.103457e+00
+iter = 30 ,   residual = 3.266203e-04
+iter = 31 ,  ||Az-v|| residual = 2.987269e+00
+iter = 31 ,   residual = 2.765881e-04
+iter = 32 ,  ||Az-v|| residual = 1.229460e+00
+iter = 32 ,   residual = 2.507438e-04
+iter = 33 ,  ||Az-v|| residual = 2.452773e+00
+iter = 33 ,   residual = 2.117663e-04
+iter = 34 ,  ||Az-v|| residual = 1.246010e+00
+iter = 34 ,   residual = 1.780334e-04
+iter = 35 ,  ||Az-v|| residual = 1.098946e+00
+iter = 35 ,   residual = 1.445418e-04
+iter = 36 ,  ||Az-v|| residual = 2.426862e+00
+iter = 36 ,   residual = 1.197571e-04
+iter = 37 ,  ||Az-v|| residual = 1.551317e+00
+iter = 37 ,   residual = 1.008903e-04
+iter = 38 ,  ||Az-v|| residual = 9.945730e-01
+iter = 38 ,   residual = 8.620067e-05
+iter = 39 ,  ||Az-v|| residual = 1.397824e+00
+iter = 39 ,   residual = 7.577466e-05
+iter = 40 ,  ||Az-v|| residual = 2.402442e+00
+iter = 40 ,   residual = 6.217103e-05
+iter = 41 ,  ||Az-v|| residual = 1.656828e+00
+iter = 41 ,   residual = 5.059022e-05
+iter = 42 ,  ||Az-v|| residual = 1.528060e+00
+iter = 42 ,   residual = 4.342568e-05
+iter = 43 ,  ||Az-v|| residual = 1.144618e+00
+iter = 43 ,   residual = 3.621236e-05
+iter = 44 ,  ||Az-v|| residual = 1.241307e+00
+iter = 44 ,   residual = 3.075298e-05
+iter = 45 ,  ||Az-v|| residual = 1.367708e+00
+iter = 45 ,   residual = 2.669998e-05
+iter = 46 ,  ||Az-v|| residual = 1.824855e+00
+iter = 46 ,   residual = 2.175828e-05
+iter = 47 ,  ||Az-v|| residual = 1.785936e+00
+iter = 47 ,   residual = 1.751572e-05
+iter = 48 ,  ||Az-v|| residual = 1.403908e+00
+iter = 48 ,   residual = 1.484062e-05
+iter = 49 ,  ||Az-v|| residual = 1.542675e+00
+iter = 49 ,   residual = 1.295508e-05
+iter = 50 ,  ||Az-v|| residual = 2.036282e+00
+iter = 50 ,   residual = 1.155303e-05
+iter = 51 ,  ||Az-v|| residual = 1.744056e+00
+iter = 51 ,   residual = 9.887506e-06
+iter = 52 ,  ||Az-v|| residual = 2.292789e+00
+iter = 52 ,   residual = 8.461820e-06
+iter = 53 ,  ||Az-v|| residual = 1.659124e+00
+iter = 53 ,   residual = 7.208411e-06
+iter = 54 ,  ||Az-v|| residual = 2.232578e+00
+iter = 54 ,   residual = 5.839201e-06
+iter = 55 ,  ||Az-v|| residual = 1.766212e+00
+iter = 55 ,   residual = 4.800190e-06
+iter = 56 ,  ||Az-v|| residual = 2.027970e+00
+iter = 56 ,   residual = 4.062746e-06
+iter = 57 ,  ||Az-v|| residual = 1.740635e+00
+iter = 57 ,   residual = 3.488904e-06
+iter = 58 ,  ||Az-v|| residual = 1.285479e+00
+iter = 58 ,   residual = 2.805369e-06
+iter = 59 ,  ||Az-v|| residual = 2.290650e+00
+iter = 59 ,   residual = 2.209857e-06
+iter = 60 ,  ||Az-v|| residual = 1.465131e+00
+iter = 60 ,   residual = 1.768238e-06
+iter = 61 ,  ||Az-v|| residual = 1.524023e+00
+iter = 61 ,   residual = 1.537153e-06
+iter = 62 ,  ||Az-v|| residual = 2.973023e+00
+iter = 62 ,   residual = 1.338081e-06
+iter = 63 ,  ||Az-v|| residual = 1.561347e+00
+iter = 63 ,   residual = 1.201333e-06
+iter = 64 ,  ||Az-v|| residual = 1.490348e+00
+iter = 64 ,   residual = 1.056854e-06
+iter = 65 ,  ||Az-v|| residual = 2.829772e+00
+iter = 65 ,   residual = 8.983341e-07
+iter = 66 ,  ||Az-v|| residual = 2.968054e+00
+iter = 66 ,   residual = 8.398700e-07
+iter = 67 ,  ||Az-v|| residual = 5.017770e+00
+iter = 67 ,   residual = 7.236569e-07
+iter = 68 ,  ||Az-v|| residual = 4.401113e+00
+iter = 68 ,   residual = 5.735127e-07
+iter = 69 ,  ||Az-v|| residual = 4.640993e+00
+iter = 69 ,   residual = 4.383168e-07
+iter = 70 ,  ||Az-v|| residual = 2.700332e+00
+iter = 70 ,   residual = -3.081397e-07
+iter = 71 ,  ||Az-v|| residual = 5.134178e+00
+iter = 71 ,   residual = -2.301312e-07
+iter = 72 ,  ||Az-v|| residual = 4.361882e+00
+iter = 72 ,   residual = -1.792335e-07
+iter = 73 ,  ||Az-v|| residual = 5.232777e+00
+iter = 73 ,   residual = -1.540883e-07
+iter = 74 ,  ||Az-v|| residual = 2.877613e+00
+iter = 74 ,   residual = -1.346371e-07
+iter = 75 ,  ||Az-v|| residual = 2.240259e+00
+iter = 75 ,   residual = -1.116207e-07
+iter = 76 ,  ||Az-v|| residual = 1.730684e+00
+iter = 76 ,   residual = -9.833348e-08
+iter = 77 ,  ||Az-v|| residual = 1.814800e+00
+iter = 77 ,   residual = -9.134119e-08
+iter = 78 ,  ||Az-v|| residual = 1.701581e+00
+iter = 78 ,   residual = -8.704054e-08
+iter = 79 ,  ||Az-v|| residual = 2.155594e+00
+iter = 79 ,   residual = -8.423097e-08
+iter = 80 ,  ||Az-v|| residual = 1.575370e+00
+iter = 80 ,   residual = -8.103814e-08
+iter = 81 ,  ||Az-v|| residual = 4.285455e+00
+iter = 81 ,   residual = -7.156515e-08
+iter = 82 ,  ||Az-v|| residual = 1.942353e+00
+iter = 82 ,   residual = -5.945429e-08
+iter = 83 ,  ||Az-v|| residual = 2.132731e+00
+iter = 83 ,   residual = -5.040426e-08
+iter = 84 ,  ||Az-v|| residual = 1.561430e+00
+iter = 84 ,   residual = -4.339401e-08
+iter = 85 ,  ||Az-v|| residual = 3.028630e+00
+iter = 85 ,   residual = -3.694432e-08
+iter = 86 ,  ||Az-v|| residual = 2.559768e+00
+iter = 86 ,   residual = -3.265250e-08
+iter = 87 ,  ||Az-v|| residual = 3.827553e+00
+iter = 87 ,   residual = -2.868913e-08
+iter = 88 ,  ||Az-v|| residual = 4.932146e+00
+iter = 88 ,   residual = -2.705237e-08
+iter = 89 ,  ||Az-v|| residual = 4.315551e+00
+iter = 89 ,   residual = -2.318241e-08
+iter = 90 ,  ||Az-v|| residual = 4.030509e+00
+iter = 90 ,   residual = -1.764991e-08
+iter = 91 ,  ||Az-v|| residual = 7.252945e+00
+iter = 91 ,   residual = -1.562646e-08
+iter = 92 ,  ||Az-v|| residual = 2.063293e+00
+iter = 92 ,   residual = -1.313710e-08
+iter = 93 ,  ||Az-v|| residual = 3.535081e+00
+iter = 93 ,   residual = -1.161915e-08
+iter = 94 ,  ||Az-v|| residual = 2.592694e+00
+iter = 94 ,   residual = -9.789556e-09
+iter = 95 ,  ||Az-v|| residual = 2.121121e+00
+iter = 95 ,   residual = -8.202512e-09
+iter = 96 ,  ||Az-v|| residual = 1.807455e+00
+iter = 96 ,   residual = -7.090443e-09
+iter = 97 ,  ||Az-v|| residual = 1.878881e+00
+iter = 97 ,   residual = -6.614947e-09
+iter = 98 ,  ||Az-v|| residual = 3.404337e+00
+iter = 98 ,   residual = -6.244300e-09
+iter = 99 ,  ||Az-v|| residual = 2.120364e+00
+iter = 99 ,   residual = -5.841804e-09
+iter = 100 ,  ||Az-v|| residual = 3.019836e+00
+iter = 100 ,   residual = -5.339359e-09
+iter = 101 ,  ||Az-v|| residual = 1.611792e+00
+iter = 101 ,   residual = -4.833718e-09
+iter = 102 ,  ||Az-v|| residual = 1.880011e+00
+iter = 102 ,   residual = -4.232581e-09
+iter = 103 ,  ||Az-v|| residual = 3.187241e+00
+iter = 103 ,   residual = -3.661858e-09
+iter = 104 ,  ||Az-v|| residual = 3.420210e+00
+iter = 104 ,   residual = -3.196250e-09
+iter = 105 ,  ||Az-v|| residual = 1.838726e+00
+iter = 105 ,   residual = -2.635910e-09
+iter = 106 ,  ||Az-v|| residual = 2.315039e+00
+iter = 106 ,   residual = -2.215003e-09
+iter = 107 ,  ||Az-v|| residual = 2.361267e+00
+iter = 107 ,   residual = -1.863428e-09
+iter = 108 ,  ||Az-v|| residual = 3.112751e+00
+iter = 108 ,   residual = -1.629276e-09
+iter = 109 ,  ||Az-v|| residual = 2.374688e+00
+iter = 109 ,   residual = -1.363183e-09
+iter = 110 ,  ||Az-v|| residual = 2.444917e+00
+iter = 110 ,   residual = -1.129298e-09
+iter = 111 ,  ||Az-v|| residual = 3.220102e+00
+iter = 111 ,   residual = -9.785999e-10
+iter = 112 ,  ||Az-v|| residual = 1.826920e+00
+iter = 112 ,   residual = -8.279651e-10
+iter = 113 ,  ||Az-v|| residual = 3.161425e+00
+iter = 113 ,   residual = -7.071256e-10
+iter = 114 ,  ||Az-v|| residual = 3.372774e+00
+iter = 114 ,   residual = -6.155750e-10
+iter = 115 ,  ||Az-v|| residual = 2.234722e+00
+iter = 115 ,   residual = -5.455686e-10
+iter = 116 ,  ||Az-v|| residual = 3.981154e+00
+iter = 116 ,   residual = -4.579790e-10
+iter = 117 ,  ||Az-v|| residual = 3.307689e+00
+iter = 117 ,   residual = -3.799150e-10
+iter = 118 ,  ||Az-v|| residual = 2.500087e+00
+iter = 118 ,   residual = -3.363253e-10
+iter = 119 ,  ||Az-v|| residual = 1.513002e+00
+iter = 119 ,   residual = -3.045264e-10
+iter = 120 ,  ||Az-v|| residual = 3.317133e+00
+iter = 120 ,   residual = -2.832997e-10
+iter = 121 ,  ||Az-v|| residual = 2.157919e+00
+iter = 121 ,   residual = -2.511309e-10
+iter = 122 ,  ||Az-v|| residual = 4.601183e+00
+iter = 122 ,   residual = -2.339187e-10
+iter = 123 ,  ||Az-v|| residual = 2.063846e+00
+iter = 123 ,   residual = -2.169227e-10
+iter = 124 ,  ||Az-v|| residual = 2.598627e+00
+iter = 124 ,   residual = -1.968079e-10
+iter = 125 ,  ||Az-v|| residual = 2.794007e+00
+iter = 125 ,   residual = -1.783974e-10
+iter = 126 ,  ||Az-v|| residual = 2.333246e+00
+iter = 126 ,   residual = -1.568961e-10
+iter = 127 ,  ||Az-v|| residual = 1.974810e+00
+iter = 127 ,   residual = -1.391555e-10
+iter = 128 ,  ||Az-v|| residual = 2.601568e+00
+iter = 128 ,   residual = -1.235209e-10
+iter = 129 ,  ||Az-v|| residual = 5.495832e+00
+iter = 129 ,   residual = -1.024497e-10
+iter = 130 ,  ||Az-v|| residual = 2.104319e+00
+iter = 130 ,   residual = -8.735633e-11
+iter = 131 ,  ||Az-v|| residual = 4.018536e+00
+iter = 131 ,   residual = -7.462047e-11
+iter = 132 ,  ||Az-v|| residual = 3.194184e+00
+iter = 132 ,   residual = -5.971014e-11
+iter = 133 ,  ||Az-v|| residual = 3.354435e+00
+iter = 133 ,   residual = -4.628595e-11
+iter = 134 ,  ||Az-v|| residual = 2.221816e+00
+iter = 134 ,   residual = -3.987392e-11
+iter = 135 ,  ||Az-v|| residual = 4.238236e+00
+iter = 135 ,   residual = -3.578812e-11
+iter = 136 ,  ||Az-v|| residual = 2.859804e+00
+iter = 136 ,   residual = -3.254977e-11
+iter = 137 ,  ||Az-v|| residual = 2.489977e+00
+iter = 137 ,   residual = -2.969937e-11
+iter = 138 ,  ||Az-v|| residual = 2.474351e+00
+iter = 138 ,   residual = -2.566912e-11
+iter = 139 ,  ||Az-v|| residual = 4.129991e+00
+iter = 139 ,   residual = -2.311157e-11
+iter = 140 ,  ||Az-v|| residual = 5.984385e+00
+iter = 140 ,   residual = -2.044251e-11
+iter = 141 ,  ||Az-v|| residual = 2.300619e+00
+iter = 141 ,   residual = -1.762756e-11
+iter = 142 ,  ||Az-v|| residual = 7.749362e+00
+iter = 142 ,   residual = -1.518625e-11
+iter = 143 ,  ||Az-v|| residual = 1.974827e+00
+iter = 143 ,   residual = -1.303480e-11
+iter = 144 ,  ||Az-v|| residual = 3.683238e+00
+iter = 144 ,   residual = -1.181143e-11
+iter = 145 ,  ||Az-v|| residual = 2.840603e+00
+iter = 145 ,   residual = -9.556104e-12
+iter = 146 ,  ||Az-v|| residual = 2.104721e+00
+iter = 146 ,   residual = -8.066206e-12
+iter = 147 ,  ||Az-v|| residual = 2.735067e+00
+iter = 147 ,   residual = -6.827750e-12
+iter = 148 ,  ||Az-v|| residual = 2.468195e+00
+iter = 148 ,   residual = -5.839524e-12
+iter = 149 ,  ||Az-v|| residual = 4.714454e+00
+iter = 149 ,   residual = -5.018003e-12
+iter = 150 ,  ||Az-v|| residual = 2.491529e+00
+iter = 150 ,   residual = -4.195613e-12
+iter = 151 ,  ||Az-v|| residual = 4.850356e+00
+iter = 151 ,   residual = -3.992992e-12
+iter = 152 ,  ||Az-v|| residual = 4.494211e+00
+iter = 152 ,   residual = -3.645690e-12
+iter = 153 ,  ||Az-v|| residual = 1.694687e+00
+iter = 153 ,   residual = -3.271877e-12
+iter = 154 ,  ||Az-v|| residual = 2.723030e+00
+iter = 154 ,   residual = -2.619793e-12
+iter = 155 ,  ||Az-v|| residual = 3.037031e+00
+iter = 155 ,   residual = -2.385216e-12
+iter = 156 ,  ||Az-v|| residual = 2.415705e+00
+iter = 156 ,   residual = -2.121842e-12
+iter = 157 ,  ||Az-v|| residual = 2.983259e+00
+iter = 157 ,   residual = -1.743073e-12
+iter = 158 ,  ||Az-v|| residual = 4.218088e+00
+iter = 158 ,   residual = -1.351372e-12
+iter = 159 ,  ||Az-v|| residual = 2.418114e+00
+iter = 159 ,   residual = -1.079149e-12
+iter = 160 ,  ||Az-v|| residual = 2.341059e+00
+iter = 160 ,   residual = -8.918715e-13
+111real residual = 6.98406e-06,	 iter = 160,	 iter residual = 6.9839e-06
+#iterations: 111
+estimated error: 9.79949e-13
+real residual = 7.67381e-06,	 iter = 111,	 iter residual = 9.79949e-13
+iter = 0 ,  ||Az-v|| residual = 8.165040e-01
+iter = 0 ,   residual = 7.258454e-01
+iter = 1 ,  ||Az-v|| residual = 1.321440e+00
+iter = 1 ,   residual = 7.034788e-01
+iter = 2 ,  ||Az-v|| residual = 2.113903e+00
+iter = 2 ,   residual = 6.879715e-01
+iter = 3 ,  ||Az-v|| residual = 7.734664e-01
+iter = 3 ,   residual = 6.647161e-01
+iter = 4 ,  ||Az-v|| residual = 1.146842e+00
+iter = 4 ,   residual = 6.418715e-01
+iter = 5 ,  ||Az-v|| residual = 9.389087e-01
+iter = 5 ,   residual = 4.893379e-01
+iter = 6 ,  ||Az-v|| residual = 1.687390e+00
+iter = 6 ,   residual = -3.452075e-01
+iter = 7 ,  ||Az-v|| residual = 1.062555e+00
+iter = 7 ,   residual = 2.226199e-01
+iter = 8 ,  ||Az-v|| residual = 1.068029e+00
+iter = 8 ,   residual = -1.390641e-01
+iter = 9 ,  ||Az-v|| residual = 1.385755e+00
+iter = 9 ,   residual = -1.077939e-01
+iter = 10 ,  ||Az-v|| residual = 1.937328e+00
+iter = 10 ,   residual = -7.247975e-02
+iter = 11 ,  ||Az-v|| residual = 1.481812e+00
+iter = 11 ,   residual = -5.186578e-02
+iter = 12 ,  ||Az-v|| residual = 1.213443e+00
+iter = 12 ,   residual = -3.583179e-02
+iter = 13 ,  ||Az-v|| residual = 1.596127e+00
+iter = 13 ,   residual = 2.409034e-02
+iter = 14 ,  ||Az-v|| residual = 2.502997e+00
+iter = 14 ,   residual = 1.775869e-02
+iter = 15 ,  ||Az-v|| residual = 2.970267e+00
+iter = 15 ,   residual = 1.241464e-02
+iter = 16 ,  ||Az-v|| residual = 2.632750e+00
+iter = 16 ,   residual = 9.454647e-03
+iter = 17 ,  ||Az-v|| residual = 2.653658e+00
+iter = 17 ,   residual = 6.913999e-03
+iter = 18 ,  ||Az-v|| residual = 2.424717e+00
+iter = 18 ,   residual = 5.287763e-03
+iter = 19 ,  ||Az-v|| residual = 3.687686e+00
+iter = 19 ,   residual = 3.879332e-03
+iter = 20 ,  ||Az-v|| residual = 3.108470e+00
+iter = 20 ,   residual = 2.874148e-03
+iter = 21 ,  ||Az-v|| residual = 2.991451e+00
+iter = 21 ,   residual = 2.343052e-03
+iter = 22 ,  ||Az-v|| residual = 2.536424e+00
+iter = 22 ,   residual = 1.756746e-03
+iter = 23 ,  ||Az-v|| residual = 3.256646e+00
+iter = 23 ,   residual = 1.282284e-03
+iter = 24 ,  ||Az-v|| residual = 5.479116e+00
+iter = 24 ,   residual = 9.967268e-04
+iter = 25 ,  ||Az-v|| residual = 4.264982e+00
+iter = 25 ,   residual = 7.996779e-04
+iter = 26 ,  ||Az-v|| residual = 2.926189e+00
+iter = 26 ,   residual = 7.064389e-04
+iter = 27 ,  ||Az-v|| residual = 1.897194e+00
+iter = 27 ,   residual = 6.092348e-04
+iter = 28 ,  ||Az-v|| residual = 2.229768e+00
+iter = 28 ,   residual = 4.769523e-04
+iter = 29 ,  ||Az-v|| residual = 5.170493e+00
+iter = 29 ,   residual = 3.794441e-04
+iter = 30 ,  ||Az-v|| residual = 5.103440e+00
+iter = 30 ,   residual = 3.265988e-04
+iter = 31 ,  ||Az-v|| residual = 2.984023e+00
+iter = 31 ,   residual = 2.765822e-04
+iter = 32 ,  ||Az-v|| residual = 1.228371e+00
+iter = 32 ,   residual = 2.507463e-04
+iter = 33 ,  ||Az-v|| residual = 2.452374e+00
+iter = 33 ,   residual = 2.117483e-04
+iter = 34 ,  ||Az-v|| residual = 1.245084e+00
+iter = 34 ,   residual = 1.780195e-04
+iter = 35 ,  ||Az-v|| residual = 1.098982e+00
+iter = 35 ,   residual = 1.445419e-04
+iter = 36 ,  ||Az-v|| residual = 2.425684e+00
+iter = 36 ,   residual = 1.197589e-04
+iter = 37 ,  ||Az-v|| residual = 1.549864e+00
+iter = 37 ,   residual = 1.008919e-04
+iter = 38 ,  ||Az-v|| residual = 9.939586e-01
+iter = 38 ,   residual = 8.620077e-05
+iter = 39 ,  ||Az-v|| residual = 1.399151e+00
+iter = 39 ,   residual = 7.577187e-05
+iter = 40 ,  ||Az-v|| residual = 2.401685e+00
+iter = 40 ,   residual = 6.215819e-05
+iter = 41 ,  ||Az-v|| residual = 1.656472e+00
+iter = 41 ,   residual = 5.058916e-05
+iter = 42 ,  ||Az-v|| residual = 1.528028e+00
+iter = 42 ,   residual = 4.342381e-05
+iter = 43 ,  ||Az-v|| residual = 1.144645e+00
+iter = 43 ,   residual = 3.621081e-05
+iter = 44 ,  ||Az-v|| residual = 1.241532e+00
+iter = 44 ,   residual = 3.075450e-05
+iter = 45 ,  ||Az-v|| residual = 1.366891e+00
+iter = 45 ,   residual = 2.670098e-05
+iter = 46 ,  ||Az-v|| residual = 1.822105e+00
+iter = 46 ,   residual = 2.175615e-05
+iter = 47 ,  ||Az-v|| residual = 1.786051e+00
+iter = 47 ,   residual = 1.751579e-05
+iter = 48 ,  ||Az-v|| residual = 1.403381e+00
+iter = 48 ,   residual = 1.484048e-05
+iter = 49 ,  ||Az-v|| residual = 1.543678e+00
+iter = 49 ,   residual = 1.295630e-05
+iter = 50 ,  ||Az-v|| residual = 2.034724e+00
+iter = 50 ,   residual = 1.155413e-05
+iter = 51 ,  ||Az-v|| residual = 1.744876e+00
+iter = 51 ,   residual = 9.886970e-06
+iter = 52 ,  ||Az-v|| residual = 2.290987e+00
+iter = 52 ,   residual = 8.462085e-06
+iter = 53 ,  ||Az-v|| residual = 1.658157e+00
+iter = 53 ,   residual = 7.207258e-06
+iter = 54 ,  ||Az-v|| residual = 2.229675e+00
+iter = 54 ,   residual = 5.839944e-06
+iter = 55 ,  ||Az-v|| residual = 1.763948e+00
+iter = 55 ,   residual = 4.800043e-06
+iter = 56 ,  ||Az-v|| residual = 2.029760e+00
+iter = 56 ,   residual = 4.062750e-06
+iter = 57 ,  ||Az-v|| residual = 1.735109e+00
+iter = 57 ,   residual = 3.489296e-06
+iter = 58 ,  ||Az-v|| residual = 1.286326e+00
+iter = 58 ,   residual = 2.805588e-06
+iter = 59 ,  ||Az-v|| residual = 2.285575e+00
+iter = 59 ,   residual = 2.210621e-06
+iter = 60 ,  ||Az-v|| residual = 1.460949e+00
+iter = 60 ,   residual = 1.768380e-06
+iter = 61 ,  ||Az-v|| residual = 1.516908e+00
+iter = 61 ,   residual = 1.537585e-06
+iter = 62 ,  ||Az-v|| residual = 2.966031e+00
+iter = 62 ,   residual = 1.338004e-06
+iter = 63 ,  ||Az-v|| residual = 1.554878e+00
+iter = 63 ,   residual = 1.201336e-06
+iter = 64 ,  ||Az-v|| residual = 1.488732e+00
+iter = 64 ,   residual = 1.056776e-06
+iter = 65 ,  ||Az-v|| residual = 2.831383e+00
+iter = 65 ,   residual = 8.986724e-07
+iter = 66 ,  ||Az-v|| residual = 2.961040e+00
+iter = 66 ,   residual = 8.402641e-07
+iter = 67 ,  ||Az-v|| residual = 4.993237e+00
+iter = 67 ,   residual = 7.240033e-07
+iter = 68 ,  ||Az-v|| residual = 4.407490e+00
+iter = 68 ,   residual = 5.741362e-07
+iter = 69 ,  ||Az-v|| residual = 4.628926e+00
+iter = 69 ,   residual = 4.387182e-07
+iter = 70 ,  ||Az-v|| residual = 2.696653e+00
+iter = 70 ,   residual = -3.084663e-07
+iter = 71 ,  ||Az-v|| residual = 5.118588e+00
+iter = 71 ,   residual = -2.304517e-07
+iter = 72 ,  ||Az-v|| residual = 4.357830e+00
+iter = 72 ,   residual = -1.797212e-07
+iter = 73 ,  ||Az-v|| residual = 5.177723e+00
+iter = 73 ,   residual = -1.544092e-07
+iter = 74 ,  ||Az-v|| residual = 2.893213e+00
+iter = 74 ,   residual = -1.349987e-07
+iter = 75 ,  ||Az-v|| residual = 2.224513e+00
+iter = 75 ,   residual = -1.120116e-07
+iter = 76 ,  ||Az-v|| residual = 1.717263e+00
+iter = 76 ,   residual = -9.859754e-08
+iter = 77 ,  ||Az-v|| residual = 1.792868e+00
+iter = 77 ,   residual = -9.161160e-08
+iter = 78 ,  ||Az-v|| residual = 1.729358e+00
+iter = 78 ,   residual = -8.726883e-08
+iter = 79 ,  ||Az-v|| residual = 2.208774e+00
+iter = 79 ,   residual = -8.447185e-08
+iter = 80 ,  ||Az-v|| residual = 1.546321e+00
+iter = 80 ,   residual = -8.123454e-08
+iter = 81 ,  ||Az-v|| residual = 4.280234e+00
+iter = 81 ,   residual = -7.208323e-08
+iter = 82 ,  ||Az-v|| residual = 1.899818e+00
+iter = 82 ,   residual = -5.977814e-08
+iter = 83 ,  ||Az-v|| residual = 2.115962e+00
+iter = 83 ,   residual = -5.061264e-08
+iter = 84 ,  ||Az-v|| residual = 1.557586e+00
+iter = 84 ,   residual = -4.357320e-08
+iter = 85 ,  ||Az-v|| residual = 2.962067e+00
+iter = 85 ,   residual = -3.713147e-08
+iter = 86 ,  ||Az-v|| residual = 2.528331e+00
+iter = 86 ,   residual = -3.280569e-08
+iter = 87 ,  ||Az-v|| residual = 3.829034e+00
+iter = 87 ,   residual = -2.882912e-08
+iter = 88 ,  ||Az-v|| residual = 4.805697e+00
+iter = 88 ,   residual = -2.722802e-08
+iter = 89 ,  ||Az-v|| residual = 4.259794e+00
+iter = 89 ,   residual = -2.329943e-08
+iter = 90 ,  ||Az-v|| residual = 4.074580e+00
+iter = 90 ,   residual = -1.783070e-08
+iter = 91 ,  ||Az-v|| residual = 7.032366e+00
+iter = 91 ,   residual = -1.572523e-08
+iter = 92 ,  ||Az-v|| residual = 2.166563e+00
+iter = 92 ,   residual = -1.323061e-08
+iter = 93 ,  ||Az-v|| residual = 3.535619e+00
+iter = 93 ,   residual = -1.170657e-08
+iter = 94 ,  ||Az-v|| residual = 2.365279e+00
+iter = 94 ,   residual = -9.859519e-09
+iter = 95 ,  ||Az-v|| residual = 2.362088e+00
+iter = 95 ,   residual = -8.302107e-09
+iter = 96 ,  ||Az-v|| residual = 1.807088e+00
+iter = 96 ,   residual = -7.142639e-09
+iter = 97 ,  ||Az-v|| residual = 1.957594e+00
+iter = 97 ,   residual = -6.633203e-09
+iter = 98 ,  ||Az-v|| residual = 3.508145e+00
+iter = 98 ,   residual = -6.267166e-09
+iter = 99 ,  ||Az-v|| residual = 2.201886e+00
+iter = 99 ,   residual = -5.873083e-09
+iter = 100 ,  ||Az-v|| residual = 2.984667e+00
+iter = 100 ,   residual = -5.356949e-09
+iter = 101 ,  ||Az-v|| residual = 1.510512e+00
+iter = 101 ,   residual = -4.865960e-09
+iter = 102 ,  ||Az-v|| residual = 1.826059e+00
+iter = 102 ,   residual = -4.257046e-09
+iter = 103 ,  ||Az-v|| residual = 3.299289e+00
+iter = 103 ,   residual = -3.684183e-09
+iter = 104 ,  ||Az-v|| residual = 3.259338e+00
+iter = 104 ,   residual = -3.215621e-09
+iter = 105 ,  ||Az-v|| residual = 1.845176e+00
+iter = 105 ,   residual = -2.661750e-09
+iter = 106 ,  ||Az-v|| residual = 2.344994e+00
+iter = 106 ,   residual = -2.230897e-09
+iter = 107 ,  ||Az-v|| residual = 2.220353e+00
+iter = 107 ,   residual = -1.877649e-09
+iter = 108 ,  ||Az-v|| residual = 3.077756e+00
+iter = 108 ,   residual = -1.647558e-09
+iter = 109 ,  ||Az-v|| residual = 2.294020e+00
+iter = 109 ,   residual = -1.383924e-09
+iter = 110 ,  ||Az-v|| residual = 2.337406e+00
+iter = 110 ,   residual = -1.142631e-09
+iter = 111 ,  ||Az-v|| residual = 3.220818e+00
+iter = 111 ,   residual = -9.926170e-10
+iter = 112 ,  ||Az-v|| residual = 1.847176e+00
+iter = 112 ,   residual = -8.421844e-10
+iter = 113 ,  ||Az-v|| residual = 3.249012e+00
+iter = 113 ,   residual = -7.197512e-10
+iter = 114 ,  ||Az-v|| residual = 3.316643e+00
+iter = 114 ,   residual = -6.254198e-10
+iter = 115 ,  ||Az-v|| residual = 2.265369e+00
+iter = 115 ,   residual = -5.548796e-10
+iter = 116 ,  ||Az-v|| residual = 3.890506e+00
+iter = 116 ,   residual = -4.689095e-10
+iter = 117 ,  ||Az-v|| residual = 2.961545e+00
+iter = 117 ,   residual = -3.882907e-10
+iter = 118 ,  ||Az-v|| residual = 2.475875e+00
+iter = 118 ,   residual = -3.432334e-10
+iter = 119 ,  ||Az-v|| residual = 1.471456e+00
+iter = 119 ,   residual = -3.102561e-10
+iter = 120 ,  ||Az-v|| residual = 3.422550e+00
+iter = 120 ,   residual = -2.889377e-10
+iter = 121 ,  ||Az-v|| residual = 1.958534e+00
+iter = 121 ,   residual = -2.563463e-10
+iter = 122 ,  ||Az-v|| residual = 4.684759e+00
+iter = 122 ,   residual = -2.384018e-10
+iter = 123 ,  ||Az-v|| residual = 2.058045e+00
+iter = 123 ,   residual = -2.219640e-10
+iter = 124 ,  ||Az-v|| residual = 2.600103e+00
+iter = 124 ,   residual = -1.998171e-10
+iter = 125 ,  ||Az-v|| residual = 2.496643e+00
+iter = 125 ,   residual = -1.814608e-10
+iter = 126 ,  ||Az-v|| residual = 2.363700e+00
+iter = 126 ,   residual = -1.599255e-10
+iter = 127 ,  ||Az-v|| residual = 1.885153e+00
+iter = 127 ,   residual = -1.417825e-10
+iter = 128 ,  ||Az-v|| residual = 2.516808e+00
+iter = 128 ,   residual = -1.255298e-10
+iter = 129 ,  ||Az-v|| residual = 5.448022e+00
+iter = 129 ,   residual = -1.042882e-10
+iter = 130 ,  ||Az-v|| residual = 2.045347e+00
+iter = 130 ,   residual = -8.928475e-11
+iter = 131 ,  ||Az-v|| residual = 3.816337e+00
+iter = 131 ,   residual = -7.628347e-11
+iter = 132 ,  ||Az-v|| residual = 3.081903e+00
+iter = 132 ,   residual = -6.184199e-11
+iter = 133 ,  ||Az-v|| residual = 3.150980e+00
+iter = 133 ,   residual = -4.762788e-11
+iter = 134 ,  ||Az-v|| residual = 2.260318e+00
+iter = 134 ,   residual = -4.068481e-11
+iter = 135 ,  ||Az-v|| residual = 3.235684e+00
+iter = 135 ,   residual = -3.630275e-11
+iter = 136 ,  ||Az-v|| residual = 1.905441e+00
+iter = 136 ,   residual = -3.320569e-11
+iter = 137 ,  ||Az-v|| residual = 1.837977e+00
+iter = 137 ,   residual = -3.022892e-11
+iter = 138 ,  ||Az-v|| residual = 1.973450e+00
+iter = 138 ,   residual = -2.635185e-11
+iter = 139 ,  ||Az-v|| residual = 2.667178e+00
+iter = 139 ,   residual = -2.346055e-11
+iter = 140 ,  ||Az-v|| residual = 6.806998e+00
+iter = 140 ,   residual = -2.083269e-11
+iter = 141 ,  ||Az-v|| residual = 2.302182e+00
+iter = 141 ,   residual = -1.802332e-11
+iter = 142 ,  ||Az-v|| residual = 7.654232e+00
+iter = 142 ,   residual = -1.558476e-11
+iter = 143 ,  ||Az-v|| residual = 2.023026e+00
+iter = 143 ,   residual = -1.327269e-11
+iter = 144 ,  ||Az-v|| residual = 3.305828e+00
+iter = 144 ,   residual = -1.204851e-11
+iter = 145 ,  ||Az-v|| residual = 1.955378e+00
+iter = 145 ,   residual = -9.797527e-12
+iter = 146 ,  ||Az-v|| residual = 2.788230e+00
+iter = 146 ,   residual = -8.249326e-12
+iter = 147 ,  ||Az-v|| residual = 3.318931e+00
+iter = 147 ,   residual = -6.978112e-12
+iter = 148 ,  ||Az-v|| residual = 2.248137e+00
+iter = 148 ,   residual = -5.947639e-12
+iter = 149 ,  ||Az-v|| residual = 5.007521e+00
+iter = 149 ,   residual = -5.109780e-12
+iter = 150 ,  ||Az-v|| residual = 2.585829e+00
+iter = 150 ,   residual = -4.242646e-12
+iter = 151 ,  ||Az-v|| residual = 5.007732e+00
+iter = 151 ,   residual = -4.027595e-12
+iter = 152 ,  ||Az-v|| residual = 4.329408e+00
+iter = 152 ,   residual = -3.702941e-12
+iter = 153 ,  ||Az-v|| residual = 1.672112e+00
+iter = 153 ,   residual = -3.312645e-12
+iter = 154 ,  ||Az-v|| residual = 2.865191e+00
+iter = 154 ,   residual = -2.663695e-12
+iter = 155 ,  ||Az-v|| residual = 2.992111e+00
+iter = 155 ,   residual = -2.424715e-12
+iter = 156 ,  ||Az-v|| residual = 2.034614e+00
+iter = 156 ,   residual = -2.161082e-12
+iter = 157 ,  ||Az-v|| residual = 2.854258e+00
+iter = 157 ,   residual = -1.774189e-12
+iter = 158 ,  ||Az-v|| residual = 4.068696e+00
+iter = 158 ,   residual = -1.395995e-12
+iter = 159 ,  ||Az-v|| residual = 2.316090e+00
+iter = 159 ,   residual = -1.121383e-12
+iter = 160 ,  ||Az-v|| residual = 2.013345e+00
+iter = 160 ,   residual = -9.195278e-13
+111real residual = 7.20084e-06,	 iter = 160,	 iter residual = 7.20051e-06
+#iterations: 111
+estimated error: 9.19974e-13
+real residual = 7.20424e-06,	 iter = 111,	 iter residual = 9.19974e-13
+iter = 0 ,  ||Az-v|| residual = 8.165024e-01
+iter = 0 ,   residual = 7.258447e-01
+iter = 1 ,  ||Az-v|| residual = 1.321409e+00
+iter = 1 ,   residual = 7.034762e-01
+iter = 2 ,  ||Az-v|| residual = 2.113767e+00
+iter = 2 ,   residual = 6.879699e-01
+iter = 3 ,  ||Az-v|| residual = 7.734455e-01
+iter = 3 ,   residual = 6.647132e-01
+iter = 4 ,  ||Az-v|| residual = 1.146814e+00
+iter = 4 ,   residual = 6.418626e-01
+iter = 5 ,  ||Az-v|| residual = 9.389498e-01
+iter = 5 ,   residual = 4.893290e-01
+iter = 6 ,  ||Az-v|| residual = 1.687366e+00
+iter = 6 ,   residual = -3.452000e-01
+iter = 7 ,  ||Az-v|| residual = 1.062524e+00
+iter = 7 ,   residual = 2.226181e-01
+iter = 8 ,  ||Az-v|| residual = 1.067944e+00
+iter = 8 ,   residual = -1.390629e-01
+iter = 9 ,  ||Az-v|| residual = 1.385705e+00
+iter = 9 ,   residual = -1.077938e-01
+iter = 10 ,  ||Az-v|| residual = 1.937275e+00
+iter = 10 ,   residual = -7.248013e-02
+iter = 11 ,  ||Az-v|| residual = 1.481749e+00
+iter = 11 ,   residual = -5.186641e-02
+iter = 12 ,  ||Az-v|| residual = 1.213401e+00
+iter = 12 ,   residual = -3.583179e-02
+iter = 13 ,  ||Az-v|| residual = 1.595857e+00
+iter = 13 ,   residual = 2.408994e-02
+iter = 14 ,  ||Az-v|| residual = 2.502880e+00
+iter = 14 ,   residual = 1.775930e-02
+iter = 15 ,  ||Az-v|| residual = 2.970133e+00
+iter = 15 ,   residual = 1.241465e-02
+iter = 16 ,  ||Az-v|| residual = 2.632620e+00
+iter = 16 ,   residual = 9.454666e-03
+iter = 17 ,  ||Az-v|| residual = 2.653574e+00
+iter = 17 ,   residual = 6.914091e-03
+iter = 18 ,  ||Az-v|| residual = 2.424563e+00
+iter = 18 ,   residual = 5.287742e-03
+iter = 19 ,  ||Az-v|| residual = 3.687456e+00
+iter = 19 ,   residual = 3.879224e-03
+iter = 20 ,  ||Az-v|| residual = 3.108827e+00
+iter = 20 ,   residual = 2.874051e-03
+iter = 21 ,  ||Az-v|| residual = 2.991314e+00
+iter = 21 ,   residual = 2.343036e-03
+iter = 22 ,  ||Az-v|| residual = 2.536072e+00
+iter = 22 ,   residual = 1.756705e-03
+iter = 23 ,  ||Az-v|| residual = 3.256611e+00
+iter = 23 ,   residual = 1.282227e-03
+iter = 24 ,  ||Az-v|| residual = 5.479204e+00
+iter = 24 ,   residual = 9.966992e-04
+iter = 25 ,  ||Az-v|| residual = 4.264184e+00
+iter = 25 ,   residual = 7.996535e-04
+iter = 26 ,  ||Az-v|| residual = 2.926040e+00
+iter = 26 ,   residual = 7.064228e-04
+iter = 27 ,  ||Az-v|| residual = 1.896864e+00
+iter = 27 ,   residual = 6.092218e-04
+iter = 28 ,  ||Az-v|| residual = 2.230197e+00
+iter = 28 ,   residual = 4.769213e-04
+iter = 29 ,  ||Az-v|| residual = 5.171567e+00
+iter = 29 ,   residual = 3.794117e-04
+iter = 30 ,  ||Az-v|| residual = 5.103463e+00
+iter = 30 ,   residual = 3.265825e-04
+iter = 31 ,  ||Az-v|| residual = 2.981745e+00
+iter = 31 ,   residual = 2.765763e-04
+iter = 32 ,  ||Az-v|| residual = 1.227688e+00
+iter = 32 ,   residual = 2.507478e-04
+iter = 33 ,  ||Az-v|| residual = 2.452089e+00
+iter = 33 ,   residual = 2.117354e-04
+iter = 34 ,  ||Az-v|| residual = 1.244340e+00
+iter = 34 ,   residual = 1.780096e-04
+iter = 35 ,  ||Az-v|| residual = 1.099006e+00
+iter = 35 ,   residual = 1.445399e-04
+iter = 36 ,  ||Az-v|| residual = 2.425209e+00
+iter = 36 ,   residual = 1.197576e-04
+iter = 37 ,  ||Az-v|| residual = 1.548843e+00
+iter = 37 ,   residual = 1.008926e-04
+iter = 38 ,  ||Az-v|| residual = 9.935896e-01
+iter = 38 ,   residual = 8.620036e-05
+iter = 39 ,  ||Az-v|| residual = 1.400115e+00
+iter = 39 ,   residual = 7.576969e-05
+iter = 40 ,  ||Az-v|| residual = 2.401115e+00
+iter = 40 ,   residual = 6.214969e-05
+iter = 41 ,  ||Az-v|| residual = 1.656173e+00
+iter = 41 ,   residual = 5.058822e-05
+iter = 42 ,  ||Az-v|| residual = 1.527833e+00
+iter = 42 ,   residual = 4.342248e-05
+iter = 43 ,  ||Az-v|| residual = 1.144606e+00
+iter = 43 ,   residual = 3.621002e-05
+iter = 44 ,  ||Az-v|| residual = 1.241697e+00
+iter = 44 ,   residual = 3.075551e-05
+iter = 45 ,  ||Az-v|| residual = 1.366282e+00
+iter = 45 ,   residual = 2.670167e-05
+iter = 46 ,  ||Az-v|| residual = 1.820233e+00
+iter = 46 ,   residual = 2.175473e-05
+iter = 47 ,  ||Az-v|| residual = 1.786123e+00
+iter = 47 ,   residual = 1.751588e-05
+iter = 48 ,  ||Az-v|| residual = 1.402886e+00
+iter = 48 ,   residual = 1.484044e-05
+iter = 49 ,  ||Az-v|| residual = 1.544202e+00
+iter = 49 ,   residual = 1.295731e-05
+iter = 50 ,  ||Az-v|| residual = 2.033713e+00
+iter = 50 ,   residual = 1.155495e-05
+iter = 51 ,  ||Az-v|| residual = 1.744901e+00
+iter = 51 ,   residual = 9.886885e-06
+iter = 52 ,  ||Az-v|| residual = 2.290064e+00
+iter = 52 ,   residual = 8.462330e-06
+iter = 53 ,  ||Az-v|| residual = 1.657610e+00
+iter = 53 ,   residual = 7.206624e-06
+iter = 54 ,  ||Az-v|| residual = 2.227774e+00
+iter = 54 ,   residual = 5.840813e-06
+iter = 55 ,  ||Az-v|| residual = 1.762124e+00
+iter = 55 ,   residual = 4.800004e-06
+iter = 56 ,  ||Az-v|| residual = 2.030041e+00
+iter = 56 ,   residual = 4.062840e-06
+iter = 57 ,  ||Az-v|| residual = 1.731725e+00
+iter = 57 ,   residual = 3.489685e-06
+iter = 58 ,  ||Az-v|| residual = 1.286977e+00
+iter = 58 ,   residual = 2.806134e-06
+iter = 59 ,  ||Az-v|| residual = 2.282495e+00
+iter = 59 ,   residual = 2.211264e-06
+iter = 60 ,  ||Az-v|| residual = 1.457481e+00
+iter = 60 ,   residual = 1.768681e-06
+iter = 61 ,  ||Az-v|| residual = 1.512429e+00
+iter = 61 ,   residual = 1.538037e-06
+iter = 62 ,  ||Az-v|| residual = 2.958694e+00
+iter = 62 ,   residual = 1.338095e-06
+iter = 63 ,  ||Az-v|| residual = 1.549448e+00
+iter = 63 ,   residual = 1.201395e-06
+iter = 64 ,  ||Az-v|| residual = 1.487413e+00
+iter = 64 ,   residual = 1.056947e-06
+iter = 65 ,  ||Az-v|| residual = 2.834215e+00
+iter = 65 ,   residual = 8.991266e-07
+iter = 66 ,  ||Az-v|| residual = 2.948595e+00
+iter = 66 ,   residual = 8.405681e-07
+iter = 67 ,  ||Az-v|| residual = 4.971823e+00
+iter = 67 ,   residual = 7.243299e-07
+iter = 68 ,  ||Az-v|| residual = 4.415621e+00
+iter = 68 ,   residual = 5.746704e-07
+iter = 69 ,  ||Az-v|| residual = 4.614225e+00
+iter = 69 ,   residual = 4.391246e-07
+iter = 70 ,  ||Az-v|| residual = 2.698303e+00
+iter = 70 ,   residual = -3.087737e-07
+iter = 71 ,  ||Az-v|| residual = 5.095432e+00
+iter = 71 ,   residual = -2.307152e-07
+iter = 72 ,  ||Az-v|| residual = 4.362055e+00
+iter = 72 ,   residual = -1.801245e-07
+iter = 73 ,  ||Az-v|| residual = 5.126566e+00
+iter = 73 ,   residual = -1.546742e-07
+iter = 74 ,  ||Az-v|| residual = 2.920774e+00
+iter = 74 ,   residual = -1.354069e-07
+iter = 75 ,  ||Az-v|| residual = 2.187409e+00
+iter = 75 ,   residual = -1.124159e-07
+iter = 76 ,  ||Az-v|| residual = 1.732624e+00
+iter = 76 ,   residual = -9.892463e-08
+iter = 77 ,  ||Az-v|| residual = 1.745249e+00
+iter = 77 ,   residual = -9.187488e-08
+iter = 78 ,  ||Az-v|| residual = 1.800277e+00
+iter = 78 ,   residual = -8.753292e-08
+iter = 79 ,  ||Az-v|| residual = 2.263848e+00
+iter = 79 ,   residual = -8.468213e-08
+iter = 80 ,  ||Az-v|| residual = 1.535377e+00
+iter = 80 ,   residual = -8.145567e-08
+iter = 81 ,  ||Az-v|| residual = 4.223301e+00
+iter = 81 ,   residual = -7.248737e-08
+iter = 82 ,  ||Az-v|| residual = 1.876586e+00
+iter = 82 ,   residual = -6.005802e-08
+iter = 83 ,  ||Az-v|| residual = 2.158506e+00
+iter = 83 ,   residual = -5.079681e-08
+iter = 84 ,  ||Az-v|| residual = 1.548682e+00
+iter = 84 ,   residual = -4.374384e-08
+iter = 85 ,  ||Az-v|| residual = 2.949165e+00
+iter = 85 ,   residual = -3.727530e-08
+iter = 86 ,  ||Az-v|| residual = 2.485504e+00
+iter = 86 ,   residual = -3.293478e-08
+iter = 87 ,  ||Az-v|| residual = 3.846524e+00
+iter = 87 ,   residual = -2.894274e-08
+iter = 88 ,  ||Az-v|| residual = 4.716342e+00
+iter = 88 ,   residual = -2.734584e-08
+iter = 89 ,  ||Az-v|| residual = 4.250883e+00
+iter = 89 ,   residual = -2.339262e-08
+iter = 90 ,  ||Az-v|| residual = 4.088651e+00
+iter = 90 ,   residual = -1.794999e-08
+iter = 91 ,  ||Az-v|| residual = 6.903544e+00
+iter = 91 ,   residual = -1.580232e-08
+iter = 92 ,  ||Az-v|| residual = 2.205326e+00
+iter = 92 ,   residual = -1.329266e-08
+iter = 93 ,  ||Az-v|| residual = 3.549837e+00
+iter = 93 ,   residual = -1.176206e-08
+iter = 94 ,  ||Az-v|| residual = 2.244787e+00
+iter = 94 ,   residual = -9.905555e-09
+iter = 95 ,  ||Az-v|| residual = 2.451789e+00
+iter = 95 ,   residual = -8.362684e-09
+iter = 96 ,  ||Az-v|| residual = 1.801342e+00
+iter = 96 ,   residual = -7.173780e-09
+iter = 97 ,  ||Az-v|| residual = 1.990187e+00
+iter = 97 ,   residual = -6.646871e-09
+iter = 98 ,  ||Az-v|| residual = 3.533815e+00
+iter = 98 ,   residual = -6.281517e-09
+iter = 99 ,  ||Az-v|| residual = 2.248566e+00
+iter = 99 ,   residual = -5.892256e-09
+iter = 100 ,  ||Az-v|| residual = 2.967144e+00
+iter = 100 ,   residual = -5.369192e-09
+iter = 101 ,  ||Az-v|| residual = 1.466859e+00
+iter = 101 ,   residual = -4.883756e-09
+iter = 102 ,  ||Az-v|| residual = 1.791315e+00
+iter = 102 ,   residual = -4.271277e-09
+iter = 103 ,  ||Az-v|| residual = 3.338286e+00
+iter = 103 ,   residual = -3.695824e-09
+iter = 104 ,  ||Az-v|| residual = 3.188934e+00
+iter = 104 ,   residual = -3.228138e-09
+iter = 105 ,  ||Az-v|| residual = 1.828417e+00
+iter = 105 ,   residual = -2.675512e-09
+iter = 106 ,  ||Az-v|| residual = 2.344319e+00
+iter = 106 ,   residual = -2.241297e-09
+iter = 107 ,  ||Az-v|| residual = 2.169152e+00
+iter = 107 ,   residual = -1.886836e-09
+iter = 108 ,  ||Az-v|| residual = 3.018574e+00
+iter = 108 ,   residual = -1.659053e-09
+iter = 109 ,  ||Az-v|| residual = 2.244554e+00
+iter = 109 ,   residual = -1.396463e-09
+iter = 110 ,  ||Az-v|| residual = 2.277458e+00
+iter = 110 ,   residual = -1.152781e-09
+iter = 111 ,  ||Az-v|| residual = 3.179366e+00
+iter = 111 ,   residual = -1.001628e-09
+iter = 112 ,  ||Az-v|| residual = 1.848017e+00
+iter = 112 ,   residual = -8.523414e-10
+iter = 113 ,  ||Az-v|| residual = 3.299662e+00
+iter = 113 ,   residual = -7.285270e-10
+iter = 114 ,  ||Az-v|| residual = 3.298926e+00
+iter = 114 ,   residual = -6.333249e-10
+iter = 115 ,  ||Az-v|| residual = 2.309934e+00
+iter = 115 ,   residual = -5.615821e-10
+iter = 116 ,  ||Az-v|| residual = 3.788803e+00
+iter = 116 ,   residual = -4.766958e-10
+iter = 117 ,  ||Az-v|| residual = 2.722867e+00
+iter = 117 ,   residual = -3.944496e-10
+iter = 118 ,  ||Az-v|| residual = 2.467580e+00
+iter = 118 ,   residual = -3.485104e-10
+iter = 119 ,  ||Az-v|| residual = 1.511889e+00
+iter = 119 ,   residual = -3.144709e-10
+iter = 120 ,  ||Az-v|| residual = 3.483188e+00
+iter = 120 ,   residual = -2.928802e-10
+iter = 121 ,  ||Az-v|| residual = 1.886160e+00
+iter = 121 ,   residual = -2.600149e-10
+iter = 122 ,  ||Az-v|| residual = 4.677055e+00
+iter = 122 ,   residual = -2.416810e-10
+iter = 123 ,  ||Az-v|| residual = 2.049225e+00
+iter = 123 ,   residual = -2.251883e-10
+iter = 124 ,  ||Az-v|| residual = 2.564204e+00
+iter = 124 ,   residual = -2.019692e-10
+iter = 125 ,  ||Az-v|| residual = 2.325798e+00
+iter = 125 ,   residual = -1.836412e-10
+iter = 126 ,  ||Az-v|| residual = 2.388888e+00
+iter = 126 ,   residual = -1.620623e-10
+iter = 127 ,  ||Az-v|| residual = 1.820413e+00
+iter = 127 ,   residual = -1.434374e-10
+iter = 128 ,  ||Az-v|| residual = 2.481958e+00
+iter = 128 ,   residual = -1.269747e-10
+iter = 129 ,  ||Az-v|| residual = 5.411159e+00
+iter = 129 ,   residual = -1.056803e-10
+iter = 130 ,  ||Az-v|| residual = 2.016502e+00
+iter = 130 ,   residual = -9.059454e-11
+iter = 131 ,  ||Az-v|| residual = 3.665415e+00
+iter = 131 ,   residual = -7.748895e-11
+iter = 132 ,  ||Az-v|| residual = 3.062829e+00
+iter = 132 ,   residual = -6.326510e-11
+iter = 133 ,  ||Az-v|| residual = 3.012428e+00
+iter = 133 ,   residual = -4.845757e-11
+iter = 134 ,  ||Az-v|| residual = 2.331842e+00
+iter = 134 ,   residual = -4.124144e-11
+iter = 135 ,  ||Az-v|| residual = 2.847231e+00
+iter = 135 ,   residual = -3.661512e-11
+iter = 136 ,  ||Az-v|| residual = 1.678111e+00
+iter = 136 ,   residual = -3.352091e-11
+iter = 137 ,  ||Az-v|| residual = 1.855133e+00
+iter = 137 ,   residual = -3.051125e-11
+iter = 138 ,  ||Az-v|| residual = 1.917416e+00
+iter = 138 ,   residual = -2.666403e-11
+iter = 139 ,  ||Az-v|| residual = 2.533913e+00
+iter = 139 ,   residual = -2.367548e-11
+iter = 140 ,  ||Az-v|| residual = 6.646276e+00
+iter = 140 ,   residual = -2.097426e-11
+iter = 141 ,  ||Az-v|| residual = 2.353928e+00
+iter = 141 ,   residual = -1.824188e-11
+iter = 142 ,  ||Az-v|| residual = 7.354256e+00
+iter = 142 ,   residual = -1.576478e-11
+iter = 143 ,  ||Az-v|| residual = 2.141063e+00
+iter = 143 ,   residual = -1.340404e-11
+iter = 144 ,  ||Az-v|| residual = 3.133478e+00
+iter = 144 ,   residual = -1.214096e-11
+iter = 145 ,  ||Az-v|| residual = 2.018417e+00
+iter = 145 ,   residual = -9.917534e-12
+iter = 146 ,  ||Az-v|| residual = 3.134672e+00
+iter = 146 ,   residual = -8.339491e-12
+iter = 147 ,  ||Az-v|| residual = 3.533911e+00
+iter = 147 ,   residual = -7.041610e-12
+iter = 148 ,  ||Az-v|| residual = 2.255300e+00
+iter = 148 ,   residual = -6.008537e-12
+iter = 149 ,  ||Az-v|| residual = 5.052646e+00
+iter = 149 ,   residual = -5.157982e-12
+iter = 150 ,  ||Az-v|| residual = 2.610665e+00
+iter = 150 ,   residual = -4.269357e-12
+iter = 151 ,  ||Az-v|| residual = 4.993300e+00
+iter = 151 ,   residual = -4.046092e-12
+iter = 152 ,  ||Az-v|| residual = 4.187661e+00
+iter = 152 ,   residual = -3.734811e-12
+iter = 153 ,  ||Az-v|| residual = 1.652142e+00
+iter = 153 ,   residual = -3.334533e-12
+iter = 154 ,  ||Az-v|| residual = 2.936680e+00
+iter = 154 ,   residual = -2.690546e-12
+iter = 155 ,  ||Az-v|| residual = 2.956660e+00
+iter = 155 ,   residual = -2.446882e-12
+iter = 156 ,  ||Az-v|| residual = 1.847680e+00
+iter = 156 ,   residual = -2.183905e-12
+iter = 157 ,  ||Az-v|| residual = 2.759613e+00
+iter = 157 ,   residual = -1.791672e-12
+iter = 158 ,  ||Az-v|| residual = 3.991302e+00
+iter = 158 ,   residual = -1.423123e-12
+iter = 159 ,  ||Az-v|| residual = 2.263354e+00
+iter = 159 ,   residual = -1.145618e-12
+iter = 160 ,  ||Az-v|| residual = 2.014904e+00
+iter = 160 ,   residual = -9.361946e-13
+111real residual = 7.3307e-06,	 iter = 160,	 iter residual = 7.33106e-06
+#iterations: 108
+estimated error: 8.80322e-13
+real residual = 6.89348e-06,	 iter = 108,	 iter residual = 8.80322e-13
+iter = 0 ,  ||Az-v|| residual = 8.165009e-01
+iter = 0 ,   residual = 7.258439e-01
+iter = 1 ,  ||Az-v|| residual = 1.321390e+00
+iter = 1 ,   residual = 7.034743e-01
+iter = 2 ,  ||Az-v|| residual = 2.113683e+00
+iter = 2 ,   residual = 6.879685e-01
+iter = 3 ,  ||Az-v|| residual = 7.734326e-01
+iter = 3 ,   residual = 6.647111e-01
+iter = 4 ,  ||Az-v|| residual = 1.146798e+00
+iter = 4 ,   residual = 6.418569e-01
+iter = 5 ,  ||Az-v|| residual = 9.389723e-01
+iter = 5 ,   residual = 4.893230e-01
+iter = 6 ,  ||Az-v|| residual = 1.687346e+00
+iter = 6 ,   residual = -3.451957e-01
+iter = 7 ,  ||Az-v|| residual = 1.062502e+00
+iter = 7 ,   residual = 2.226175e-01
+iter = 8 ,  ||Az-v|| residual = 1.067891e+00
+iter = 8 ,   residual = -1.390624e-01
+iter = 9 ,  ||Az-v|| residual = 1.385672e+00
+iter = 9 ,   residual = -1.077941e-01
+iter = 10 ,  ||Az-v|| residual = 1.937229e+00
+iter = 10 ,   residual = -7.248039e-02
+iter = 11 ,  ||Az-v|| residual = 1.481705e+00
+iter = 11 ,   residual = -5.186692e-02
+iter = 12 ,  ||Az-v|| residual = 1.213374e+00
+iter = 12 ,   residual = -3.583191e-02
+iter = 13 ,  ||Az-v|| residual = 1.595672e+00
+iter = 13 ,   residual = 2.408974e-02
+iter = 14 ,  ||Az-v|| residual = 2.502786e+00
+iter = 14 ,   residual = 1.775977e-02
+iter = 15 ,  ||Az-v|| residual = 2.970040e+00
+iter = 15 ,   residual = 1.241467e-02
+iter = 16 ,  ||Az-v|| residual = 2.632484e+00
+iter = 16 ,   residual = 9.454692e-03
+iter = 17 ,  ||Az-v|| residual = 2.653536e+00
+iter = 17 ,   residual = 6.914170e-03
+iter = 18 ,  ||Az-v|| residual = 2.424460e+00
+iter = 18 ,   residual = 5.287733e-03
+iter = 19 ,  ||Az-v|| residual = 3.687272e+00
+iter = 19 ,   residual = 3.879148e-03
+iter = 20 ,  ||Az-v|| residual = 3.109103e+00
+iter = 20 ,   residual = 2.874004e-03
+iter = 21 ,  ||Az-v|| residual = 2.991145e+00
+iter = 21 ,   residual = 2.343039e-03
+iter = 22 ,  ||Az-v|| residual = 2.535823e+00
+iter = 22 ,   residual = 1.756676e-03
+iter = 23 ,  ||Az-v|| residual = 3.256647e+00
+iter = 23 ,   residual = 1.282178e-03
+iter = 24 ,  ||Az-v|| residual = 5.479452e+00
+iter = 24 ,   residual = 9.966765e-04
+iter = 25 ,  ||Az-v|| residual = 4.263628e+00
+iter = 25 ,   residual = 7.996345e-04
+iter = 26 ,  ||Az-v|| residual = 2.925942e+00
+iter = 26 ,   residual = 7.064116e-04
+iter = 27 ,  ||Az-v|| residual = 1.896677e+00
+iter = 27 ,   residual = 6.092111e-04
+iter = 28 ,  ||Az-v|| residual = 2.230633e+00
+iter = 28 ,   residual = 4.768973e-04
+iter = 29 ,  ||Az-v|| residual = 5.172432e+00
+iter = 29 ,   residual = 3.793868e-04
+iter = 30 ,  ||Az-v|| residual = 5.103512e+00
+iter = 30 ,   residual = 3.265687e-04
+iter = 31 ,  ||Az-v|| residual = 2.980163e+00
+iter = 31 ,   residual = 2.765709e-04
+iter = 32 ,  ||Az-v|| residual = 1.227207e+00
+iter = 32 ,   residual = 2.507486e-04
+iter = 33 ,  ||Az-v|| residual = 2.451863e+00
+iter = 33 ,   residual = 2.117254e-04
+iter = 34 ,  ||Az-v|| residual = 1.243739e+00
+iter = 34 ,   residual = 1.780027e-04
+iter = 35 ,  ||Az-v|| residual = 1.098997e+00
+iter = 35 ,   residual = 1.445373e-04
+iter = 36 ,  ||Az-v|| residual = 2.425046e+00
+iter = 36 ,   residual = 1.197544e-04
+iter = 37 ,  ||Az-v|| residual = 1.548197e+00
+iter = 37 ,   residual = 1.008926e-04
+iter = 38 ,  ||Az-v|| residual = 9.933828e-01
+iter = 38 ,   residual = 8.619991e-05
+iter = 39 ,  ||Az-v|| residual = 1.400770e+00
+iter = 39 ,   residual = 7.576768e-05
+iter = 40 ,  ||Az-v|| residual = 2.400681e+00
+iter = 40 ,   residual = 6.214400e-05
+iter = 41 ,  ||Az-v|| residual = 1.655924e+00
+iter = 41 ,   residual = 5.058735e-05
+iter = 42 ,  ||Az-v|| residual = 1.527599e+00
+iter = 42 ,   residual = 4.342153e-05
+iter = 43 ,  ||Az-v|| residual = 1.144541e+00
+iter = 43 ,   residual = 3.620960e-05
+iter = 44 ,  ||Az-v|| residual = 1.241806e+00
+iter = 44 ,   residual = 3.075617e-05
+iter = 45 ,  ||Az-v|| residual = 1.365831e+00
+iter = 45 ,   residual = 2.670218e-05
+iter = 46 ,  ||Az-v|| residual = 1.818913e+00
+iter = 46 ,   residual = 2.175370e-05
+iter = 47 ,  ||Az-v|| residual = 1.786254e+00
+iter = 47 ,   residual = 1.751589e-05
+iter = 48 ,  ||Az-v|| residual = 1.402401e+00
+iter = 48 ,   residual = 1.484046e-05
+iter = 49 ,  ||Az-v|| residual = 1.544581e+00
+iter = 49 ,   residual = 1.295811e-05
+iter = 50 ,  ||Az-v|| residual = 2.032890e+00
+iter = 50 ,   residual = 1.155554e-05
+iter = 51 ,  ||Az-v|| residual = 1.744731e+00
+iter = 51 ,   residual = 9.886938e-06
+iter = 52 ,  ||Az-v|| residual = 2.289587e+00
+iter = 52 ,   residual = 8.462470e-06
+iter = 53 ,  ||Az-v|| residual = 1.657249e+00
+iter = 53 ,   residual = 7.206230e-06
+iter = 54 ,  ||Az-v|| residual = 2.226485e+00
+iter = 54 ,   residual = 5.841490e-06
+iter = 55 ,  ||Az-v|| residual = 1.760850e+00
+iter = 55 ,   residual = 4.800011e-06
+iter = 56 ,  ||Az-v|| residual = 2.029700e+00
+iter = 56 ,   residual = 4.062937e-06
+iter = 57 ,  ||Az-v|| residual = 1.729762e+00
+iter = 57 ,   residual = 3.490007e-06
+iter = 58 ,  ||Az-v|| residual = 1.287451e+00
+iter = 58 ,   residual = 2.806693e-06
+iter = 59 ,  ||Az-v|| residual = 2.280676e+00
+iter = 59 ,   residual = 2.211724e-06
+iter = 60 ,  ||Az-v|| residual = 1.455020e+00
+iter = 60 ,   residual = 1.768946e-06
+iter = 61 ,  ||Az-v|| residual = 1.509948e+00
+iter = 61 ,   residual = 1.538386e-06
+iter = 62 ,  ||Az-v|| residual = 2.952702e+00
+iter = 62 ,   residual = 1.338213e-06
+iter = 63 ,  ||Az-v|| residual = 1.545597e+00
+iter = 63 ,   residual = 1.201438e-06
+iter = 64 ,  ||Az-v|| residual = 1.486662e+00
+iter = 64 ,   residual = 1.057147e-06
+iter = 65 ,  ||Az-v|| residual = 2.836651e+00
+iter = 65 ,   residual = 8.995194e-07
+iter = 66 ,  ||Az-v|| residual = 2.937422e+00
+iter = 66 ,   residual = 8.407879e-07
+iter = 67 ,  ||Az-v|| residual = 4.956734e+00
+iter = 67 ,   residual = 7.245941e-07
+iter = 68 ,  ||Az-v|| residual = 4.422069e+00
+iter = 68 ,   residual = 5.750735e-07
+iter = 69 ,  ||Az-v|| residual = 4.602112e+00
+iter = 69 ,   residual = 4.394541e-07
+iter = 70 ,  ||Az-v|| residual = 2.701221e+00
+iter = 70 ,   residual = -3.090079e-07
+iter = 71 ,  ||Az-v|| residual = 5.075965e+00
+iter = 71 ,   residual = -2.309057e-07
+iter = 72 ,  ||Az-v|| residual = 4.367784e+00
+iter = 72 ,   residual = -1.804111e-07
+iter = 73 ,  ||Az-v|| residual = 5.089866e+00
+iter = 73 ,   residual = -1.548673e-07
+iter = 74 ,  ||Az-v|| residual = 2.944071e+00
+iter = 74 ,   residual = -1.357272e-07
+iter = 75 ,  ||Az-v|| residual = 2.155732e+00
+iter = 75 ,   residual = -1.127166e-07
+iter = 76 ,  ||Az-v|| residual = 1.753375e+00
+iter = 76 ,   residual = -9.917828e-08
+iter = 77 ,  ||Az-v|| residual = 1.711662e+00
+iter = 77 ,   residual = -9.206387e-08
+iter = 78 ,  ||Az-v|| residual = 1.857910e+00
+iter = 78 ,   residual = -8.772824e-08
+iter = 79 ,  ||Az-v|| residual = 2.300736e+00
+iter = 79 ,   residual = -8.483020e-08
+iter = 80 ,  ||Az-v|| residual = 1.533716e+00
+iter = 80 ,   residual = -8.161704e-08
+iter = 81 ,  ||Az-v|| residual = 4.187523e+00
+iter = 81 ,   residual = -7.273208e-08
+iter = 82 ,  ||Az-v|| residual = 1.870600e+00
+iter = 82 ,   residual = -6.023886e-08
+iter = 83 ,  ||Az-v|| residual = 2.181889e+00
+iter = 83 ,   residual = -5.092240e-08
+iter = 84 ,  ||Az-v|| residual = 1.543875e+00
+iter = 84 ,   residual = -4.385741e-08
+iter = 85 ,  ||Az-v|| residual = 2.941299e+00
+iter = 85 ,   residual = -3.737054e-08
+iter = 86 ,  ||Az-v|| residual = 2.460035e+00
+iter = 86 ,   residual = -3.302539e-08
+iter = 87 ,  ||Az-v|| residual = 3.852378e+00
+iter = 87 ,   residual = -2.902469e-08
+iter = 88 ,  ||Az-v|| residual = 4.662543e+00
+iter = 88 ,   residual = -2.742548e-08
+iter = 89 ,  ||Az-v|| residual = 4.248660e+00
+iter = 89 ,   residual = -2.345837e-08
+iter = 90 ,  ||Az-v|| residual = 4.092046e+00
+iter = 90 ,   residual = -1.802867e-08
+iter = 91 ,  ||Az-v|| residual = 6.826038e+00
+iter = 91 ,   residual = -1.585703e-08
+iter = 92 ,  ||Az-v|| residual = 2.220122e+00
+iter = 92 ,   residual = -1.333526e-08
+iter = 93 ,  ||Az-v|| residual = 3.555309e+00
+iter = 93 ,   residual = -1.179821e-08
+iter = 94 ,  ||Az-v|| residual = 2.182544e+00
+iter = 94 ,   residual = -9.937105e-09
+iter = 95 ,  ||Az-v|| residual = 2.486372e+00
+iter = 95 ,   residual = -8.400987e-09
+iter = 96 ,  ||Az-v|| residual = 1.797335e+00
+iter = 96 ,   residual = -7.194433e-09
+iter = 97 ,  ||Az-v|| residual = 2.001598e+00
+iter = 97 ,   residual = -6.656806e-09
+iter = 98 ,  ||Az-v|| residual = 3.539094e+00
+iter = 98 ,   residual = -6.291199e-09
+iter = 99 ,  ||Az-v|| residual = 2.277278e+00
+iter = 99 ,   residual = -5.905065e-09
+iter = 100 ,  ||Az-v|| residual = 2.956212e+00
+iter = 100 ,   residual = -5.377674e-09
+iter = 101 ,  ||Az-v|| residual = 1.443974e+00
+iter = 101 ,   residual = -4.894500e-09
+iter = 102 ,  ||Az-v|| residual = 1.769359e+00
+iter = 102 ,   residual = -4.280380e-09
+iter = 103 ,  ||Az-v|| residual = 3.350862e+00
+iter = 103 ,   residual = -3.702958e-09
+iter = 104 ,  ||Az-v|| residual = 3.153874e+00
+iter = 104 ,   residual = -3.236532e-09
+iter = 105 ,  ||Az-v|| residual = 1.813171e+00
+iter = 105 ,   residual = -2.684152e-09
+iter = 106 ,  ||Az-v|| residual = 2.338518e+00
+iter = 106 ,   residual = -2.248270e-09
+iter = 107 ,  ||Az-v|| residual = 2.143057e+00
+iter = 107 ,   residual = -1.892710e-09
+iter = 108 ,  ||Az-v|| residual = 2.977754e+00
+iter = 108 ,   residual = -1.666322e-09
+iter = 109 ,  ||Az-v|| residual = 2.212103e+00
+iter = 109 ,   residual = -1.404295e-09
+iter = 110 ,  ||Az-v|| residual = 2.240794e+00
+iter = 110 ,   residual = -1.159620e-09
+iter = 111 ,  ||Az-v|| residual = 3.142911e+00
+iter = 111 ,   residual = -1.007253e-09
+iter = 112 ,  ||Az-v|| residual = 1.846667e+00
+iter = 112 ,   residual = -8.589322e-10
+iter = 113 ,  ||Az-v|| residual = 3.328720e+00
+iter = 113 ,   residual = -7.342772e-10
+iter = 114 ,  ||Az-v|| residual = 3.294682e+00
+iter = 114 ,   residual = -6.385420e-10
+iter = 115 ,  ||Az-v|| residual = 2.354665e+00
+iter = 115 ,   residual = -5.659498e-10
+iter = 116 ,  ||Az-v|| residual = 3.731878e+00
+iter = 116 ,   residual = -4.816260e-10
+iter = 117 ,  ||Az-v|| residual = 2.600325e+00
+iter = 117 ,   residual = -3.985289e-10
+iter = 118 ,  ||Az-v|| residual = 2.462407e+00
+iter = 118 ,   residual = -3.519032e-10
+iter = 119 ,  ||Az-v|| residual = 1.550004e+00
+iter = 119 ,   residual = -3.172216e-10
+iter = 120 ,  ||Az-v|| residual = 3.487330e+00
+iter = 120 ,   residual = -2.953447e-10
+iter = 121 ,  ||Az-v|| residual = 1.857348e+00
+iter = 121 ,   residual = -2.623134e-10
+iter = 122 ,  ||Az-v|| residual = 4.644085e+00
+iter = 122 ,   residual = -2.437993e-10
+iter = 123 ,  ||Az-v|| residual = 2.035378e+00
+iter = 123 ,   residual = -2.271762e-10
+iter = 124 ,  ||Az-v|| residual = 2.542085e+00
+iter = 124 ,   residual = -2.033516e-10
+iter = 125 ,  ||Az-v|| residual = 2.244852e+00
+iter = 125 ,   residual = -1.850465e-10
+iter = 126 ,  ||Az-v|| residual = 2.391563e+00
+iter = 126 ,   residual = -1.633650e-10
+iter = 127 ,  ||Az-v|| residual = 1.799776e+00
+iter = 127 ,   residual = -1.444655e-10
+iter = 128 ,  ||Az-v|| residual = 2.466999e+00
+iter = 128 ,   residual = -1.279194e-10
+iter = 129 ,  ||Az-v|| residual = 5.372169e+00
+iter = 129 ,   residual = -1.065614e-10
+iter = 130 ,  ||Az-v|| residual = 2.004772e+00
+iter = 130 ,   residual = -9.141744e-11
+iter = 131 ,  ||Az-v|| residual = 3.565069e+00
+iter = 131 ,   residual = -7.822623e-11
+iter = 132 ,  ||Az-v|| residual = 3.068363e+00
+iter = 132 ,   residual = -6.410435e-11
+iter = 133 ,  ||Az-v|| residual = 2.918132e+00
+iter = 133 ,   residual = -4.897169e-11
+iter = 134 ,  ||Az-v|| residual = 2.375933e+00
+iter = 134 ,   residual = -4.155579e-11
+iter = 135 ,  ||Az-v|| residual = 2.705923e+00
+iter = 135 ,   residual = -3.680000e-11
+iter = 136 ,  ||Az-v|| residual = 1.624730e+00
+iter = 136 ,   residual = -3.370681e-11
+iter = 137 ,  ||Az-v|| residual = 1.872407e+00
+iter = 137 ,   residual = -3.068223e-11
+iter = 138 ,  ||Az-v|| residual = 1.874530e+00
+iter = 138 ,   residual = -2.683884e-11
+iter = 139 ,  ||Az-v|| residual = 2.529084e+00
+iter = 139 ,   residual = -2.381807e-11
+iter = 140 ,  ||Az-v|| residual = 6.469376e+00
+iter = 140 ,   residual = -2.106090e-11
+iter = 141 ,  ||Az-v|| residual = 2.393381e+00
+iter = 141 ,   residual = -1.836893e-11
+iter = 142 ,  ||Az-v|| residual = 7.154071e+00
+iter = 142 ,   residual = -1.586714e-11
+iter = 143 ,  ||Az-v|| residual = 2.236244e+00
+iter = 143 ,   residual = -1.348809e-11
+iter = 144 ,  ||Az-v|| residual = 3.035811e+00
+iter = 144 ,   residual = -1.219462e-11
+iter = 145 ,  ||Az-v|| residual = 2.162335e+00
+iter = 145 ,   residual = -9.984700e-12
+iter = 146 ,  ||Az-v|| residual = 3.297937e+00
+iter = 146 ,   residual = -8.391533e-12
+iter = 147 ,  ||Az-v|| residual = 3.632830e+00
+iter = 147 ,   residual = -7.079531e-12
+iter = 148 ,  ||Az-v|| residual = 2.265621e+00
+iter = 148 ,   residual = -6.046349e-12
+iter = 149 ,  ||Az-v|| residual = 5.089840e+00
+iter = 149 ,   residual = -5.187161e-12
+iter = 150 ,  ||Az-v|| residual = 2.617008e+00
+iter = 150 ,   residual = -4.285441e-12
+iter = 151 ,  ||Az-v|| residual = 4.960190e+00
+iter = 151 ,   residual = -4.057614e-12
+iter = 152 ,  ||Az-v|| residual = 4.090394e+00
+iter = 152 ,   residual = -3.754213e-12
+iter = 153 ,  ||Az-v|| residual = 1.639018e+00
+iter = 153 ,   residual = -3.348185e-12
+iter = 154 ,  ||Az-v|| residual = 2.974196e+00
+iter = 154 ,   residual = -2.707171e-12
+iter = 155 ,  ||Az-v|| residual = 2.946642e+00
+iter = 155 ,   residual = -2.460197e-12
+iter = 156 ,  ||Az-v|| residual = 1.771002e+00
+iter = 156 ,   residual = -2.197564e-12
+iter = 157 ,  ||Az-v|| residual = 2.690502e+00
+iter = 157 ,   residual = -1.802341e-12
+iter = 158 ,  ||Az-v|| residual = 3.955384e+00
+iter = 158 ,   residual = -1.439451e-12
+iter = 159 ,  ||Az-v|| residual = 2.249239e+00
+iter = 159 ,   residual = -1.159947e-12
+iter = 160 ,  ||Az-v|| residual = 2.074261e+00
+iter = 160 ,   residual = -9.460855e-13
+111real residual = 7.40903e-06,	 iter = 160,	 iter residual = 7.40854e-06
+#iterations: 105
+estimated error: 9.33135e-13
+real residual = 7.30732e-06,	 iter = 105,	 iter residual = 9.33135e-13
+iter = 0 ,  ||Az-v|| residual = 8.164940e-01
+iter = 0 ,   residual = 7.258405e-01
+iter = 1 ,  ||Az-v|| residual = 1.321352e+00
+iter = 1 ,   residual = 7.034693e-01
+iter = 2 ,  ||Az-v|| residual = 2.113548e+00
+iter = 2 ,   residual = 6.879643e-01
+iter = 3 ,  ||Az-v|| residual = 7.734053e-01
+iter = 3 ,   residual = 6.647054e-01
+iter = 4 ,  ||Az-v|| residual = 1.146769e+00
+iter = 4 ,   residual = 6.418442e-01
+iter = 5 ,  ||Az-v|| residual = 9.390103e-01
+iter = 5 ,   residual = 4.893068e-01
+iter = 6 ,  ||Az-v|| residual = 1.687308e+00
+iter = 6 ,   residual = -3.451845e-01
+iter = 7 ,  ||Az-v|| residual = 1.062449e+00
+iter = 7 ,   residual = 2.226150e-01
+iter = 8 ,  ||Az-v|| residual = 1.067785e+00
+iter = 8 ,   residual = -1.390606e-01
+iter = 9 ,  ||Az-v|| residual = 1.385600e+00
+iter = 9 ,   residual = -1.077943e-01
+iter = 10 ,  ||Az-v|| residual = 1.937134e+00
+iter = 10 ,   residual = -7.248016e-02
+iter = 11 ,  ||Az-v|| residual = 1.481622e+00
+iter = 11 ,   residual = -5.186793e-02
+iter = 12 ,  ||Az-v|| residual = 1.213322e+00
+iter = 12 ,   residual = -3.583218e-02
+iter = 13 ,  ||Az-v|| residual = 1.595335e+00
+iter = 13 ,   residual = 2.408942e-02
+iter = 14 ,  ||Az-v|| residual = 2.502504e+00
+iter = 14 ,   residual = 1.776069e-02
+iter = 15 ,  ||Az-v|| residual = 2.969874e+00
+iter = 15 ,   residual = 1.241473e-02
+iter = 16 ,  ||Az-v|| residual = 2.632151e+00
+iter = 16 ,   residual = 9.454747e-03
+iter = 17 ,  ||Az-v|| residual = 2.653528e+00
+iter = 17 ,   residual = 6.914347e-03
+iter = 18 ,  ||Az-v|| residual = 2.424257e+00
+iter = 18 ,   residual = 5.287721e-03
+iter = 19 ,  ||Az-v|| residual = 3.686920e+00
+iter = 19 ,   residual = 3.878981e-03
+iter = 20 ,  ||Az-v|| residual = 3.109674e+00
+iter = 20 ,   residual = 2.873927e-03
+iter = 21 ,  ||Az-v|| residual = 2.990686e+00
+iter = 21 ,   residual = 2.343063e-03
+iter = 22 ,  ||Az-v|| residual = 2.535245e+00
+iter = 22 ,   residual = 1.756614e-03
+iter = 23 ,  ||Az-v|| residual = 3.256763e+00
+iter = 23 ,   residual = 1.282058e-03
+iter = 24 ,  ||Az-v|| residual = 5.480241e+00
+iter = 24 ,   residual = 9.966162e-04
+iter = 25 ,  ||Az-v|| residual = 4.262475e+00
+iter = 25 ,   residual = 7.995849e-04
+iter = 26 ,  ||Az-v|| residual = 2.925770e+00
+iter = 26 ,   residual = 7.063852e-04
+iter = 27 ,  ||Az-v|| residual = 1.896373e+00
+iter = 27 ,   residual = 6.091836e-04
+iter = 28 ,  ||Az-v|| residual = 2.231738e+00
+iter = 28 ,   residual = 4.768383e-04
+iter = 29 ,  ||Az-v|| residual = 5.174662e+00
+iter = 29 ,   residual = 3.793264e-04
+iter = 30 ,  ||Az-v|| residual = 5.103600e+00
+iter = 30 ,   residual = 3.265280e-04
+iter = 31 ,  ||Az-v|| residual = 2.977268e+00
+iter = 31 ,   residual = 2.765535e-04
+iter = 32 ,  ||Az-v|| residual = 1.226069e+00
+iter = 32 ,   residual = 2.507475e-04
+iter = 33 ,  ||Az-v|| residual = 2.451349e+00
+iter = 33 ,   residual = 2.116996e-04
+iter = 34 ,  ||Az-v|| residual = 1.242378e+00
+iter = 34 ,   residual = 1.779854e-04
+iter = 35 ,  ||Az-v|| residual = 1.098847e+00
+iter = 35 ,   residual = 1.445281e-04
+iter = 36 ,  ||Az-v|| residual = 2.424605e+00
+iter = 36 ,   residual = 1.197435e-04
+iter = 37 ,  ||Az-v|| residual = 1.547033e+00
+iter = 37 ,   residual = 1.008902e-04
+iter = 38 ,  ||Az-v|| residual = 9.930512e-01
+iter = 38 ,   residual = 8.619904e-05
+iter = 39 ,  ||Az-v|| residual = 1.401836e+00
+iter = 39 ,   residual = 7.576106e-05
+iter = 40 ,  ||Az-v|| residual = 2.399953e+00
+iter = 40 ,   residual = 6.213234e-05
+iter = 41 ,  ||Az-v|| residual = 1.655364e+00
+iter = 41 ,   residual = 5.058417e-05
+iter = 42 ,  ||Az-v|| residual = 1.526877e+00
+iter = 42 ,   residual = 4.341950e-05
+iter = 43 ,  ||Az-v|| residual = 1.144349e+00
+iter = 43 ,   residual = 3.620817e-05
+iter = 44 ,  ||Az-v|| residual = 1.242067e+00
+iter = 44 ,   residual = 3.075715e-05
+iter = 45 ,  ||Az-v|| residual = 1.364853e+00
+iter = 45 ,   residual = 2.670286e-05
+iter = 46 ,  ||Az-v|| residual = 1.816117e+00
+iter = 46 ,   residual = 2.175131e-05
+iter = 47 ,  ||Az-v|| residual = 1.786794e+00
+iter = 47 ,   residual = 1.751564e-05
+iter = 48 ,  ||Az-v|| residual = 1.401179e+00
+iter = 48 ,   residual = 1.484054e-05
+iter = 49 ,  ||Az-v|| residual = 1.545655e+00
+iter = 49 ,   residual = 1.295979e-05
+iter = 50 ,  ||Az-v|| residual = 2.030544e+00
+iter = 50 ,   residual = 1.155670e-05
+iter = 51 ,  ||Az-v|| residual = 1.743847e+00
+iter = 51 ,   residual = 9.887116e-06
+iter = 52 ,  ||Az-v|| residual = 2.289026e+00
+iter = 52 ,   residual = 8.462588e-06
+iter = 53 ,  ||Az-v|| residual = 1.656281e+00
+iter = 53 ,   residual = 7.205466e-06
+iter = 54 ,  ||Az-v|| residual = 2.223413e+00
+iter = 54 ,   residual = 5.842546e-06
+iter = 55 ,  ||Az-v|| residual = 1.758492e+00
+iter = 55 ,   residual = 4.800063e-06
+iter = 56 ,  ||Az-v|| residual = 2.028230e+00
+iter = 56 ,   residual = 4.063164e-06
+iter = 57 ,  ||Az-v|| residual = 1.725957e+00
+iter = 57 ,   residual = 3.490687e-06
+iter = 58 ,  ||Az-v|| residual = 1.288367e+00
+iter = 58 ,   residual = 2.807921e-06
+iter = 59 ,  ||Az-v|| residual = 2.277158e+00
+iter = 59 ,   residual = 2.212658e-06
+iter = 60 ,  ||Az-v|| residual = 1.449756e+00
+iter = 60 ,   residual = 1.769600e-06
+iter = 61 ,  ||Az-v|| residual = 1.504531e+00
+iter = 61 ,   residual = 1.539007e-06
+iter = 62 ,  ||Az-v|| residual = 2.941632e+00
+iter = 62 ,   residual = 1.338524e-06
+iter = 63 ,  ||Az-v|| residual = 1.537929e+00
+iter = 63 ,   residual = 1.201459e-06
+iter = 64 ,  ||Az-v|| residual = 1.485603e+00
+iter = 64 ,   residual = 1.057566e-06
+iter = 65 ,  ||Az-v|| residual = 2.840781e+00
+iter = 65 ,   residual = 9.002935e-07
+iter = 66 ,  ||Az-v|| residual = 2.916300e+00
+iter = 66 ,   residual = 8.412522e-07
+iter = 67 ,  ||Az-v|| residual = 4.928024e+00
+iter = 67 ,   residual = 7.251723e-07
+iter = 68 ,  ||Az-v|| residual = 4.434509e+00
+iter = 68 ,   residual = 5.758785e-07
+iter = 69 ,  ||Az-v|| residual = 4.579821e+00
+iter = 69 ,   residual = 4.401462e-07
+iter = 70 ,  ||Az-v|| residual = 2.706200e+00
+iter = 70 ,   residual = -3.094683e-07
+iter = 71 ,  ||Az-v|| residual = 5.041620e+00
+iter = 71 ,   residual = -2.313074e-07
+iter = 72 ,  ||Az-v|| residual = 4.377816e+00
+iter = 72 ,   residual = -1.809745e-07
+iter = 73 ,  ||Az-v|| residual = 5.024614e+00
+iter = 73 ,   residual = -1.552747e-07
+iter = 74 ,  ||Az-v|| residual = 2.983266e+00
+iter = 74 ,   residual = -1.363420e-07
+iter = 75 ,  ||Az-v|| residual = 2.103469e+00
+iter = 75 ,   residual = -1.132859e-07
+iter = 76 ,  ||Az-v|| residual = 1.789434e+00
+iter = 76 ,   residual = -9.966214e-08
+iter = 77 ,  ||Az-v|| residual = 1.669065e+00
+iter = 77 ,   residual = -9.243065e-08
+iter = 78 ,  ||Az-v|| residual = 1.942435e+00
+iter = 78 ,   residual = -8.810525e-08
+iter = 79 ,  ||Az-v|| residual = 2.356078e+00
+iter = 79 ,   residual = -8.513129e-08
+iter = 80 ,  ||Az-v|| residual = 1.534832e+00
+iter = 80 ,   residual = -8.193767e-08
+iter = 81 ,  ||Az-v|| residual = 4.146045e+00
+iter = 81 ,   residual = -7.317091e-08
+iter = 82 ,  ||Az-v|| residual = 1.865961e+00
+iter = 82 ,   residual = -6.058591e-08
+iter = 83 ,  ||Az-v|| residual = 2.194048e+00
+iter = 83 ,   residual = -5.117214e-08
+iter = 84 ,  ||Az-v|| residual = 1.535911e+00
+iter = 84 ,   residual = -4.407597e-08
+iter = 85 ,  ||Az-v|| residual = 2.916885e+00
+iter = 85 ,   residual = -3.756904e-08
+iter = 86 ,  ||Az-v|| residual = 2.416493e+00
+iter = 86 ,   residual = -3.321759e-08
+iter = 87 ,  ||Az-v|| residual = 3.849664e+00
+iter = 87 ,   residual = -2.920258e-08
+iter = 88 ,  ||Az-v|| residual = 4.566281e+00
+iter = 88 ,   residual = -2.759251e-08
+iter = 89 ,  ||Az-v|| residual = 4.242439e+00
+iter = 89 ,   residual = -2.359905e-08
+iter = 90 ,  ||Az-v|| residual = 4.097921e+00
+iter = 90 ,   residual = -1.818968e-08
+iter = 91 ,  ||Az-v|| residual = 6.677417e+00
+iter = 91 ,   residual = -1.597660e-08
+iter = 92 ,  ||Az-v|| residual = 2.233193e+00
+iter = 92 ,   residual = -1.342723e-08
+iter = 93 ,  ||Az-v|| residual = 3.561886e+00
+iter = 93 ,   residual = -1.187224e-08
+iter = 94 ,  ||Az-v|| residual = 2.084815e+00
+iter = 94 ,   residual = -1.000585e-08
+iter = 95 ,  ||Az-v|| residual = 2.510880e+00
+iter = 95 ,   residual = -8.482473e-09
+iter = 96 ,  ||Az-v|| residual = 1.786413e+00
+iter = 96 ,   residual = -7.239402e-09
+iter = 97 ,  ||Az-v|| residual = 2.008496e+00
+iter = 97 ,   residual = -6.679435e-09
+iter = 98 ,  ||Az-v|| residual = 3.535266e+00
+iter = 98 ,   residual = -6.312649e-09
+iter = 99 ,  ||Az-v|| residual = 2.338238e+00
+iter = 99 ,   residual = -5.933015e-09
+iter = 100 ,  ||Az-v|| residual = 2.931494e+00
+iter = 100 ,   residual = -5.396719e-09
+iter = 101 ,  ||Az-v|| residual = 1.407156e+00
+iter = 101 ,   residual = -4.916540e-09
+iter = 102 ,  ||Az-v|| residual = 1.723244e+00
+iter = 102 ,   residual = -4.300136e-09
+iter = 103 ,  ||Az-v|| residual = 3.362937e+00
+iter = 103 ,   residual = -3.717074e-09
+iter = 104 ,  ||Az-v|| residual = 3.100775e+00
+iter = 104 ,   residual = -3.254042e-09
+iter = 105 ,  ||Az-v|| residual = 1.779358e+00
+iter = 105 ,   residual = -2.701597e-09
+iter = 106 ,  ||Az-v|| residual = 2.329017e+00
+iter = 106 ,   residual = -2.262086e-09
+iter = 107 ,  ||Az-v|| residual = 2.101060e+00
+iter = 107 ,   residual = -1.903831e-09
+iter = 108 ,  ||Az-v|| residual = 2.898834e+00
+iter = 108 ,   residual = -1.679860e-09
+iter = 109 ,  ||Az-v|| residual = 2.147584e+00
+iter = 109 ,   residual = -1.418936e-09
+iter = 110 ,  ||Az-v|| residual = 2.176490e+00
+iter = 110 ,   residual = -1.172441e-09
+iter = 111 ,  ||Az-v|| residual = 3.067578e+00
+iter = 111 ,   residual = -1.017601e-09
+iter = 112 ,  ||Az-v|| residual = 1.849404e+00
+iter = 112 ,   residual = -8.711604e-10
+iter = 113 ,  ||Az-v|| residual = 3.362952e+00
+iter = 113 ,   residual = -7.452505e-10
+iter = 114 ,  ||Az-v|| residual = 3.300550e+00
+iter = 114 ,   residual = -6.482266e-10
+iter = 115 ,  ||Az-v|| residual = 2.462001e+00
+iter = 115 ,   residual = -5.742520e-10
+iter = 116 ,  ||Az-v|| residual = 3.655961e+00
+iter = 116 ,   residual = -4.908211e-10
+iter = 117 ,  ||Az-v|| residual = 2.420228e+00
+iter = 117 ,   residual = -4.063943e-10
+iter = 118 ,  ||Az-v|| residual = 2.442348e+00
+iter = 118 ,   residual = -3.581901e-10
+iter = 119 ,  ||Az-v|| residual = 1.600646e+00
+iter = 119 ,   residual = -3.223885e-10
+iter = 120 ,  ||Az-v|| residual = 3.444879e+00
+iter = 120 ,   residual = -2.998316e-10
+iter = 121 ,  ||Az-v|| residual = 1.812490e+00
+iter = 121 ,   residual = -2.665599e-10
+iter = 122 ,  ||Az-v|| residual = 4.540995e+00
+iter = 122 ,   residual = -2.477782e-10
+iter = 123 ,  ||Az-v|| residual = 2.001433e+00
+iter = 123 ,   residual = -2.308850e-10
+iter = 124 ,  ||Az-v|| residual = 2.500124e+00
+iter = 124 ,   residual = -2.059296e-10
+iter = 125 ,  ||Az-v|| residual = 2.113639e+00
+iter = 125 ,   residual = -1.877037e-10
+iter = 126 ,  ||Az-v|| residual = 2.380000e+00
+iter = 126 ,   residual = -1.657975e-10
+iter = 127 ,  ||Az-v|| residual = 1.783642e+00
+iter = 127 ,   residual = -1.463656e-10
+iter = 128 ,  ||Az-v|| residual = 2.451982e+00
+iter = 128 ,   residual = -1.297719e-10
+iter = 129 ,  ||Az-v|| residual = 5.280990e+00
+iter = 129 ,   residual = -1.082252e-10
+iter = 130 ,  ||Az-v|| residual = 1.997308e+00
+iter = 130 ,   residual = -9.303159e-11
+iter = 131 ,  ||Az-v|| residual = 3.382498e+00
+iter = 131 ,   residual = -7.961374e-11
+iter = 132 ,  ||Az-v|| residual = 3.092124e+00
+iter = 132 ,   residual = -6.564748e-11
+iter = 133 ,  ||Az-v|| residual = 2.728842e+00
+iter = 133 ,   residual = -5.001097e-11
+iter = 134 ,  ||Az-v|| residual = 2.451762e+00
+iter = 134 ,   residual = -4.214271e-11
+iter = 135 ,  ||Az-v|| residual = 2.569142e+00
+iter = 135 ,   residual = -3.715836e-11
+iter = 136 ,  ||Az-v|| residual = 1.573085e+00
+iter = 136 ,   residual = -3.405438e-11
+iter = 137 ,  ||Az-v|| residual = 1.903775e+00
+iter = 137 ,   residual = -3.100715e-11
+iter = 138 ,  ||Az-v|| residual = 1.812429e+00
+iter = 138 ,   residual = -2.716555e-11
+iter = 139 ,  ||Az-v|| residual = 2.563370e+00
+iter = 139 ,   residual = -2.411055e-11
+iter = 140 ,  ||Az-v|| residual = 6.080038e+00
+iter = 140 ,   residual = -2.123157e-11
+iter = 141 ,  ||Az-v|| residual = 2.491037e+00
+iter = 141 ,   residual = -1.859405e-11
+iter = 142 ,  ||Az-v|| residual = 6.824782e+00
+iter = 142 ,   residual = -1.605413e-11
+iter = 143 ,  ||Az-v|| residual = 2.393869e+00
+iter = 143 ,   residual = -1.365475e-11
+iter = 144 ,  ||Az-v|| residual = 2.876596e+00
+iter = 144 ,   residual = -1.229372e-11
+iter = 145 ,  ||Az-v|| residual = 2.507390e+00
+iter = 145 ,   residual = -1.010151e-11
+iter = 146 ,  ||Az-v|| residual = 3.488445e+00
+iter = 146 ,   residual = -8.490384e-12
+iter = 147 ,  ||Az-v|| residual = 3.725428e+00
+iter = 147 ,   residual = -7.150569e-12
+iter = 148 ,  ||Az-v|| residual = 2.288038e+00
+iter = 148 ,   residual = -6.119032e-12
+iter = 149 ,  ||Az-v|| residual = 5.180295e+00
+iter = 149 ,   residual = -5.242697e-12
+iter = 150 ,  ||Az-v|| residual = 2.613630e+00
+iter = 150 ,   residual = -4.317334e-12
+iter = 151 ,  ||Az-v|| residual = 4.859935e+00
+iter = 151 ,   residual = -4.081524e-12
+iter = 152 ,  ||Az-v|| residual = 3.891011e+00
+iter = 152 ,   residual = -3.791560e-12
+iter = 153 ,  ||Az-v|| residual = 1.615645e+00
+iter = 153 ,   residual = -3.375364e-12
+iter = 154 ,  ||Az-v|| residual = 3.059962e+00
+iter = 154 ,   residual = -2.738627e-12
+iter = 155 ,  ||Az-v|| residual = 2.933097e+00
+iter = 155 ,   residual = -2.486509e-12
+iter = 156 ,  ||Az-v|| residual = 1.737379e+00
+iter = 156 ,   residual = -2.222965e-12
+iter = 157 ,  ||Az-v|| residual = 2.563530e+00
+iter = 157 ,   residual = -1.823109e-12
+iter = 158 ,  ||Az-v|| residual = 3.859633e+00
+iter = 158 ,   residual = -1.470159e-12
+iter = 159 ,  ||Az-v|| residual = 2.188088e+00
+iter = 159 ,   residual = -1.186985e-12
+iter = 160 ,  ||Az-v|| residual = 2.219554e+00
+iter = 160 ,   residual = -9.645787e-13
+111real residual = 7.55334e-06,	 iter = 160,	 iter residual = 7.55344e-06
+#iterations: 105
+estimated error: 9.34915e-13
+real residual = 7.32084e-06,	 iter = 105,	 iter residual = 9.34915e-13
+iter = 0 ,  ||Az-v|| residual = 8.164921e-01
+iter = 0 ,   residual = 7.258400e-01
+iter = 1 ,  ||Az-v|| residual = 1.321346e+00
+iter = 1 ,   residual = 7.034686e-01
+iter = 2 ,  ||Az-v|| residual = 2.113557e+00
+iter = 2 ,   residual = 6.879634e-01
+iter = 3 ,  ||Az-v|| residual = 7.734094e-01
+iter = 3 ,   residual = 6.647046e-01
+iter = 4 ,  ||Az-v|| residual = 1.146773e+00
+iter = 4 ,   residual = 6.418439e-01
+iter = 5 ,  ||Az-v|| residual = 9.390007e-01
+iter = 5 ,   residual = 4.893054e-01
+iter = 6 ,  ||Az-v|| residual = 1.687297e+00
+iter = 6 ,   residual = -3.451839e-01
+iter = 7 ,  ||Az-v|| residual = 1.062435e+00
+iter = 7 ,   residual = 2.226150e-01
+iter = 8 ,  ||Az-v|| residual = 1.067785e+00
+iter = 8 ,   residual = -1.390601e-01
+iter = 9 ,  ||Az-v|| residual = 1.385601e+00
+iter = 9 ,   residual = -1.077943e-01
+iter = 10 ,  ||Az-v|| residual = 1.937110e+00
+iter = 10 ,   residual = -7.247993e-02
+iter = 11 ,  ||Az-v|| residual = 1.481618e+00
+iter = 11 ,   residual = -5.186819e-02
+iter = 12 ,  ||Az-v|| residual = 1.213323e+00
+iter = 12 ,   residual = -3.583241e-02
+iter = 13 ,  ||Az-v|| residual = 1.595332e+00
+iter = 13 ,   residual = 2.408954e-02
+iter = 14 ,  ||Az-v|| residual = 2.502422e+00
+iter = 14 ,   residual = 1.776079e-02
+iter = 15 ,  ||Az-v|| residual = 2.969880e+00
+iter = 15 ,   residual = 1.241473e-02
+iter = 16 ,  ||Az-v|| residual = 2.632071e+00
+iter = 16 ,   residual = 9.454756e-03
+iter = 17 ,  ||Az-v|| residual = 2.653531e+00
+iter = 17 ,   residual = 6.914363e-03
+iter = 18 ,  ||Az-v|| residual = 2.424244e+00
+iter = 18 ,   residual = 5.287728e-03
+iter = 19 ,  ||Az-v|| residual = 3.686876e+00
+iter = 19 ,   residual = 3.878968e-03
+iter = 20 ,  ||Az-v|| residual = 3.109728e+00
+iter = 20 ,   residual = 2.873953e-03
+iter = 21 ,  ||Az-v|| residual = 2.990539e+00
+iter = 21 ,   residual = 2.343083e-03
+iter = 22 ,  ||Az-v|| residual = 2.535196e+00
+iter = 22 ,   residual = 1.756593e-03
+iter = 23 ,  ||Az-v|| residual = 3.256930e+00
+iter = 23 ,   residual = 1.282015e-03
+iter = 24 ,  ||Az-v|| residual = 5.480623e+00
+iter = 24 ,   residual = 9.965903e-04
+iter = 25 ,  ||Az-v|| residual = 4.262569e+00
+iter = 25 ,   residual = 7.995646e-04
+iter = 26 ,  ||Az-v|| residual = 2.925879e+00
+iter = 26 ,   residual = 7.063718e-04
+iter = 27 ,  ||Az-v|| residual = 1.896505e+00
+iter = 27 ,   residual = 6.091674e-04
+iter = 28 ,  ||Az-v|| residual = 2.232116e+00
+iter = 28 ,   residual = 4.768223e-04
+iter = 29 ,  ||Az-v|| residual = 5.175178e+00
+iter = 29 ,   residual = 3.793102e-04
+iter = 30 ,  ||Az-v|| residual = 5.103868e+00
+iter = 30 ,   residual = 3.265132e-04
+iter = 31 ,  ||Az-v|| residual = 2.977322e+00
+iter = 31 ,   residual = 2.765434e-04
+iter = 32 ,  ||Az-v|| residual = 1.226033e+00
+iter = 32 ,   residual = 2.507431e-04
+iter = 33 ,  ||Az-v|| residual = 2.451478e+00
+iter = 33 ,   residual = 2.116928e-04
+iter = 34 ,  ||Az-v|| residual = 1.242125e+00
+iter = 34 ,   residual = 1.779818e-04
+iter = 35 ,  ||Az-v|| residual = 1.098813e+00
+iter = 35 ,   residual = 1.445247e-04
+iter = 36 ,  ||Az-v|| residual = 2.424829e+00
+iter = 36 ,   residual = 1.197374e-04
+iter = 37 ,  ||Az-v|| residual = 1.547144e+00
+iter = 37 ,   residual = 1.008883e-04
+iter = 38 ,  ||Az-v|| residual = 9.930977e-01
+iter = 38 ,   residual = 8.619822e-05
+iter = 39 ,  ||Az-v|| residual = 1.401910e+00
+iter = 39 ,   residual = 7.575928e-05
+iter = 40 ,  ||Az-v|| residual = 2.400023e+00
+iter = 40 ,   residual = 6.213185e-05
+iter = 41 ,  ||Az-v|| residual = 1.655292e+00
+iter = 41 ,   residual = 5.058347e-05
+iter = 42 ,  ||Az-v|| residual = 1.526673e+00
+iter = 42 ,   residual = 4.341930e-05
+iter = 43 ,  ||Az-v|| residual = 1.144280e+00
+iter = 43 ,   residual = 3.620820e-05
+iter = 44 ,  ||Az-v|| residual = 1.242057e+00
+iter = 44 ,   residual = 3.075703e-05
+iter = 45 ,  ||Az-v|| residual = 1.364768e+00
+iter = 45 ,   residual = 2.670298e-05
+iter = 46 ,  ||Az-v|| residual = 1.815920e+00
+iter = 46 ,   residual = 2.175107e-05
+iter = 47 ,  ||Az-v|| residual = 1.787173e+00
+iter = 47 ,   residual = 1.751538e-05
+iter = 48 ,  ||Az-v|| residual = 1.400879e+00
+iter = 48 ,   residual = 1.484063e-05
+iter = 49 ,  ||Az-v|| residual = 1.545932e+00
+iter = 49 ,   residual = 1.295996e-05
+iter = 50 ,  ||Az-v|| residual = 2.030209e+00
+iter = 50 ,   residual = 1.155667e-05
+iter = 51 ,  ||Az-v|| residual = 1.743990e+00
+iter = 51 ,   residual = 9.887011e-06
+iter = 52 ,  ||Az-v|| residual = 2.289137e+00
+iter = 52 ,   residual = 8.462395e-06
+iter = 53 ,  ||Az-v|| residual = 1.656261e+00
+iter = 53 ,   residual = 7.205331e-06
+iter = 54 ,  ||Az-v|| residual = 2.223146e+00
+iter = 54 ,   residual = 5.842324e-06
+iter = 55 ,  ||Az-v|| residual = 1.758593e+00
+iter = 55 ,   residual = 4.800000e-06
+iter = 56 ,  ||Az-v|| residual = 2.027735e+00
+iter = 56 ,   residual = 4.063172e-06
+iter = 57 ,  ||Az-v|| residual = 1.725925e+00
+iter = 57 ,   residual = 3.490675e-06
+iter = 58 ,  ||Az-v|| residual = 1.288396e+00
+iter = 58 ,   residual = 2.807925e-06
+iter = 59 ,  ||Az-v|| residual = 2.277035e+00
+iter = 59 ,   residual = 2.212605e-06
+iter = 60 ,  ||Az-v|| residual = 1.449890e+00
+iter = 60 ,   residual = 1.769540e-06
+iter = 61 ,  ||Az-v|| residual = 1.505282e+00
+iter = 61 ,   residual = 1.538958e-06
+iter = 62 ,  ||Az-v|| residual = 2.942065e+00
+iter = 62 ,   residual = 1.338479e-06
+iter = 63 ,  ||Az-v|| residual = 1.538265e+00
+iter = 63 ,   residual = 1.201401e-06
+iter = 64 ,  ||Az-v|| residual = 1.486018e+00
+iter = 64 ,   residual = 1.057519e-06
+iter = 65 ,  ||Az-v|| residual = 2.840688e+00
+iter = 65 ,   residual = 9.002755e-07
+iter = 66 ,  ||Az-v|| residual = 2.917312e+00
+iter = 66 ,   residual = 8.412614e-07
+iter = 67 ,  ||Az-v|| residual = 4.931195e+00
+iter = 67 ,   residual = 7.251990e-07
+iter = 68 ,  ||Az-v|| residual = 4.433584e+00
+iter = 68 ,   residual = 5.758952e-07
+iter = 69 ,  ||Az-v|| residual = 4.579963e+00
+iter = 69 ,   residual = 4.401520e-07
+iter = 70 ,  ||Az-v|| residual = 2.706634e+00
+iter = 70 ,   residual = -3.094542e-07
+iter = 71 ,  ||Az-v|| residual = 5.043882e+00
+iter = 71 ,   residual = -2.312897e-07
+iter = 72 ,  ||Az-v|| residual = 4.379555e+00
+iter = 72 ,   residual = -1.809424e-07
+iter = 73 ,  ||Az-v|| residual = 5.030729e+00
+iter = 73 ,   residual = -1.552578e-07
+iter = 74 ,  ||Az-v|| residual = 2.982943e+00
+iter = 74 ,   residual = -1.363064e-07
+iter = 75 ,  ||Az-v|| residual = 2.106310e+00
+iter = 75 ,   residual = -1.132478e-07
+iter = 76 ,  ||Az-v|| residual = 1.792398e+00
+iter = 76 ,   residual = -9.963519e-08
+iter = 77 ,  ||Az-v|| residual = 1.670023e+00
+iter = 77 ,   residual = -9.240342e-08
+iter = 78 ,  ||Az-v|| residual = 1.940486e+00
+iter = 78 ,   residual = -8.808140e-08
+iter = 79 ,  ||Az-v|| residual = 2.353019e+00
+iter = 79 ,   residual = -8.511208e-08
+iter = 80 ,  ||Az-v|| residual = 1.535706e+00
+iter = 80 ,   residual = -8.192044e-08
+iter = 81 ,  ||Az-v|| residual = 4.148629e+00
+iter = 81 ,   residual = -7.314021e-08
+iter = 82 ,  ||Az-v|| residual = 1.867328e+00
+iter = 82 ,   residual = -6.057092e-08
+iter = 83 ,  ||Az-v|| residual = 2.195562e+00
+iter = 83 ,   residual = -5.116758e-08
+iter = 84 ,  ||Az-v|| residual = 1.536494e+00
+iter = 84 ,   residual = -4.407268e-08
+iter = 85 ,  ||Az-v|| residual = 2.921954e+00
+iter = 85 ,   residual = -3.756605e-08
+iter = 86 ,  ||Az-v|| residual = 2.419827e+00
+iter = 86 ,   residual = -3.321411e-08
+iter = 87 ,  ||Az-v|| residual = 3.847868e+00
+iter = 87 ,   residual = -2.920133e-08
+iter = 88 ,  ||Az-v|| residual = 4.574439e+00
+iter = 88 ,   residual = -2.758770e-08
+iter = 89 ,  ||Az-v|| residual = 4.246706e+00
+iter = 89 ,   residual = -2.359488e-08
+iter = 90 ,  ||Az-v|| residual = 4.096635e+00
+iter = 90 ,   residual = -1.818391e-08
+iter = 91 ,  ||Az-v|| residual = 6.691211e+00
+iter = 91 ,   residual = -1.597571e-08
+iter = 92 ,  ||Az-v|| residual = 2.224783e+00
+iter = 92 ,   residual = -1.342673e-08
+iter = 93 ,  ||Az-v|| residual = 3.558594e+00
+iter = 93 ,   residual = -1.187088e-08
+iter = 94 ,  ||Az-v|| residual = 2.099016e+00
+iter = 94 ,   residual = -1.000698e-08
+iter = 95 ,  ||Az-v|| residual = 2.496422e+00
+iter = 95 ,   residual = -8.483787e-09
+iter = 96 ,  ||Az-v|| residual = 1.787517e+00
+iter = 96 ,   residual = -7.241369e-09
+iter = 97 ,  ||Az-v|| residual = 1.998309e+00
+iter = 97 ,   residual = -6.680005e-09
+iter = 98 ,  ||Az-v|| residual = 3.527953e+00
+iter = 98 ,   residual = -6.313337e-09
+iter = 99 ,  ||Az-v|| residual = 2.341148e+00
+iter = 99 ,   residual = -5.934228e-09
+iter = 100 ,  ||Az-v|| residual = 2.930822e+00
+iter = 100 ,   residual = -5.397245e-09
+iter = 101 ,  ||Az-v|| residual = 1.407424e+00
+iter = 101 ,   residual = -4.916311e-09
+iter = 102 ,  ||Az-v|| residual = 1.717104e+00
+iter = 102 ,   residual = -4.300934e-09
+iter = 103 ,  ||Az-v|| residual = 3.355460e+00
+iter = 103 ,   residual = -3.717494e-09
+iter = 104 ,  ||Az-v|| residual = 3.108118e+00
+iter = 104 ,   residual = -3.255169e-09
+iter = 105 ,  ||Az-v|| residual = 1.778264e+00
+iter = 105 ,   residual = -2.701887e-09
+iter = 106 ,  ||Az-v|| residual = 2.333531e+00
+iter = 106 ,   residual = -2.262698e-09
+iter = 107 ,  ||Az-v|| residual = 2.104871e+00
+iter = 107 ,   residual = -1.903642e-09
+iter = 108 ,  ||Az-v|| residual = 2.901324e+00
+iter = 108 ,   residual = -1.680131e-09
+iter = 109 ,  ||Az-v|| residual = 2.145504e+00
+iter = 109 ,   residual = -1.418697e-09
+iter = 110 ,  ||Az-v|| residual = 2.189301e+00
+iter = 110 ,   residual = -1.172144e-09
+iter = 111 ,  ||Az-v|| residual = 3.076248e+00
+iter = 111 ,   residual = -1.016953e-09
+iter = 112 ,  ||Az-v|| residual = 1.844683e+00
+iter = 112 ,   residual = -8.708661e-10
+iter = 113 ,  ||Az-v|| residual = 3.346509e+00
+iter = 113 ,   residual = -7.449294e-10
+iter = 114 ,  ||Az-v|| residual = 3.293619e+00
+iter = 114 ,   residual = -6.476961e-10
+iter = 115 ,  ||Az-v|| residual = 2.467157e+00
+iter = 115 ,   residual = -5.737264e-10
+iter = 116 ,  ||Az-v|| residual = 3.647774e+00
+iter = 116 ,   residual = -4.905433e-10
+iter = 117 ,  ||Az-v|| residual = 2.415297e+00
+iter = 117 ,   residual = -4.060662e-10
+iter = 118 ,  ||Az-v|| residual = 2.449117e+00
+iter = 118 ,   residual = -3.578636e-10
+iter = 119 ,  ||Az-v|| residual = 1.596634e+00
+iter = 119 ,   residual = -3.219927e-10
+iter = 120 ,  ||Az-v|| residual = 3.452884e+00
+iter = 120 ,   residual = -2.994672e-10
+iter = 121 ,  ||Az-v|| residual = 1.807904e+00
+iter = 121 ,   residual = -2.662895e-10
+iter = 122 ,  ||Az-v|| residual = 4.542492e+00
+iter = 122 ,   residual = -2.476020e-10
+iter = 123 ,  ||Az-v|| residual = 1.999439e+00
+iter = 123 ,   residual = -2.307395e-10
+iter = 124 ,  ||Az-v|| residual = 2.491361e+00
+iter = 124 ,   residual = -2.057542e-10
+iter = 125 ,  ||Az-v|| residual = 2.105555e+00
+iter = 125 ,   residual = -1.876375e-10
+iter = 126 ,  ||Az-v|| residual = 2.369811e+00
+iter = 126 ,   residual = -1.657293e-10
+iter = 127 ,  ||Az-v|| residual = 1.791726e+00
+iter = 127 ,   residual = -1.462957e-10
+iter = 128 ,  ||Az-v|| residual = 2.454776e+00
+iter = 128 ,   residual = -1.298211e-10
+iter = 129 ,  ||Az-v|| residual = 5.290042e+00
+iter = 129 ,   residual = -1.082008e-10
+iter = 130 ,  ||Az-v|| residual = 2.007420e+00
+iter = 130 ,   residual = -9.305482e-11
+iter = 131 ,  ||Az-v|| residual = 3.363448e+00
+iter = 131 ,   residual = -7.966700e-11
+iter = 132 ,  ||Az-v|| residual = 3.100320e+00
+iter = 132 ,   residual = -6.575464e-11
+iter = 133 ,  ||Az-v|| residual = 2.703060e+00
+iter = 133 ,   residual = -5.004922e-11
+iter = 134 ,  ||Az-v|| residual = 2.448840e+00
+iter = 134 ,   residual = -4.216959e-11
+iter = 135 ,  ||Az-v|| residual = 2.592633e+00
+iter = 135 ,   residual = -3.716828e-11
+iter = 136 ,  ||Az-v|| residual = 1.567099e+00
+iter = 136 ,   residual = -3.406188e-11
+iter = 137 ,  ||Az-v|| residual = 1.908379e+00
+iter = 137 ,   residual = -3.101256e-11
+iter = 138 ,  ||Az-v|| residual = 1.819860e+00
+iter = 138 ,   residual = -2.717722e-11
+iter = 139 ,  ||Az-v|| residual = 2.550561e+00
+iter = 139 ,   residual = -2.412332e-11
+iter = 140 ,  ||Az-v|| residual = 6.058398e+00
+iter = 140 ,   residual = -2.123089e-11
+iter = 141 ,  ||Az-v|| residual = 2.504088e+00
+iter = 141 ,   residual = -1.860690e-11
+iter = 142 ,  ||Az-v|| residual = 6.791478e+00
+iter = 142 ,   residual = -1.606054e-11
+iter = 143 ,  ||Az-v|| residual = 2.408836e+00
+iter = 143 ,   residual = -1.366411e-11
+iter = 144 ,  ||Az-v|| residual = 2.846611e+00
+iter = 144 ,   residual = -1.229765e-11
+iter = 145 ,  ||Az-v|| residual = 2.538043e+00
+iter = 145 ,   residual = -1.010592e-11
+iter = 146 ,  ||Az-v|| residual = 3.502544e+00
+iter = 146 ,   residual = -8.489389e-12
+iter = 147 ,  ||Az-v|| residual = 3.726309e+00
+iter = 147 ,   residual = -7.153040e-12
+iter = 148 ,  ||Az-v|| residual = 2.290331e+00
+iter = 148 ,   residual = -6.122039e-12
+iter = 149 ,  ||Az-v|| residual = 5.228579e+00
+iter = 149 ,   residual = -5.243861e-12
+iter = 150 ,  ||Az-v|| residual = 2.613040e+00
+iter = 150 ,   residual = -4.316448e-12
+iter = 151 ,  ||Az-v|| residual = 4.847547e+00
+iter = 151 ,   residual = -4.081959e-12
+iter = 152 ,  ||Az-v|| residual = 3.895973e+00
+iter = 152 ,   residual = -3.793721e-12
+iter = 153 ,  ||Az-v|| residual = 1.617769e+00
+iter = 153 ,   residual = -3.376338e-12
+iter = 154 ,  ||Az-v|| residual = 3.079004e+00
+iter = 154 ,   residual = -2.738320e-12
+iter = 155 ,  ||Az-v|| residual = 2.922797e+00
+iter = 155 ,   residual = -2.486338e-12
+iter = 156 ,  ||Az-v|| residual = 1.735392e+00
+iter = 156 ,   residual = -2.223030e-12
+iter = 157 ,  ||Az-v|| residual = 2.553457e+00
+iter = 157 ,   residual = -1.823220e-12
+iter = 158 ,  ||Az-v|| residual = 3.835254e+00
+iter = 158 ,   residual = -1.470179e-12
+iter = 159 ,  ||Az-v|| residual = 2.184068e+00
+iter = 159 ,   residual = -1.186639e-12
+iter = 160 ,  ||Az-v|| residual = 2.247210e+00
+iter = 160 ,   residual = -9.643145e-13
+111real residual = 7.55142e-06,	 iter = 160,	 iter residual = 7.55139e-06
+#iterations: 103
+estimated error: 8.61185e-13
+real residual = 6.74371e-06,	 iter = 103,	 iter residual = 8.61185e-13
+iter = 0 ,  ||Az-v|| residual = 8.164888e-01
+iter = 0 ,   residual = 7.258385e-01
+iter = 1 ,  ||Az-v|| residual = 1.321337e+00
+iter = 1 ,   residual = 7.034667e-01
+iter = 2 ,  ||Az-v|| residual = 2.113547e+00
+iter = 2 ,   residual = 6.879612e-01
+iter = 3 ,  ||Az-v|| residual = 7.734161e-01
+iter = 3 ,   residual = 6.647028e-01
+iter = 4 ,  ||Az-v|| residual = 1.146773e+00
+iter = 4 ,   residual = 6.418424e-01
+iter = 5 ,  ||Az-v|| residual = 9.389947e-01
+iter = 5 ,   residual = 4.893039e-01
+iter = 6 ,  ||Az-v|| residual = 1.687285e+00
+iter = 6 ,   residual = -3.451816e-01
+iter = 7 ,  ||Az-v|| residual = 1.062426e+00
+iter = 7 ,   residual = 2.226133e-01
+iter = 8 ,  ||Az-v|| residual = 1.067790e+00
+iter = 8 ,   residual = -1.390585e-01
+iter = 9 ,  ||Az-v|| residual = 1.385608e+00
+iter = 9 ,   residual = -1.077930e-01
+iter = 10 ,  ||Az-v|| residual = 1.937102e+00
+iter = 10 ,   residual = -7.247922e-02
+iter = 11 ,  ||Az-v|| residual = 1.481621e+00
+iter = 11 ,   residual = -5.186776e-02
+iter = 12 ,  ||Az-v|| residual = 1.213327e+00
+iter = 12 ,   residual = -3.583218e-02
+iter = 13 ,  ||Az-v|| residual = 1.595351e+00
+iter = 13 ,   residual = 2.408938e-02
+iter = 14 ,  ||Az-v|| residual = 2.502390e+00
+iter = 14 ,   residual = 1.776055e-02
+iter = 15 ,  ||Az-v|| residual = 2.969892e+00
+iter = 15 ,   residual = 1.241459e-02
+iter = 16 ,  ||Az-v|| residual = 2.632113e+00
+iter = 16 ,   residual = 9.454660e-03
+iter = 17 ,  ||Az-v|| residual = 2.653473e+00
+iter = 17 ,   residual = 6.914288e-03
+iter = 18 ,  ||Az-v|| residual = 2.424222e+00
+iter = 18 ,   residual = 5.287680e-03
+iter = 19 ,  ||Az-v|| residual = 3.686873e+00
+iter = 19 ,   residual = 3.878932e-03
+iter = 20 ,  ||Az-v|| residual = 3.109682e+00
+iter = 20 ,   residual = 2.873924e-03
+iter = 21 ,  ||Az-v|| residual = 2.990557e+00
+iter = 21 ,   residual = 2.343053e-03
+iter = 22 ,  ||Az-v|| residual = 2.535232e+00
+iter = 22 ,   residual = 1.756578e-03
+iter = 23 ,  ||Az-v|| residual = 3.256908e+00
+iter = 23 ,   residual = 1.281996e-03
+iter = 24 ,  ||Az-v|| residual = 5.480602e+00
+iter = 24 ,   residual = 9.965705e-04
+iter = 25 ,  ||Az-v|| residual = 4.262764e+00
+iter = 25 ,   residual = 7.995504e-04
+iter = 26 ,  ||Az-v|| residual = 2.925978e+00
+iter = 26 ,   residual = 7.063605e-04
+iter = 27 ,  ||Az-v|| residual = 1.896510e+00
+iter = 27 ,   residual = 6.091551e-04
+iter = 28 ,  ||Az-v|| residual = 2.232146e+00
+iter = 28 ,   residual = 4.768173e-04
+iter = 29 ,  ||Az-v|| residual = 5.175070e+00
+iter = 29 ,   residual = 3.793038e-04
+iter = 30 ,  ||Az-v|| residual = 5.104084e+00
+iter = 30 ,   residual = 3.265087e-04
+iter = 31 ,  ||Az-v|| residual = 2.977400e+00
+iter = 31 ,   residual = 2.765370e-04
+iter = 32 ,  ||Az-v|| residual = 1.226165e+00
+iter = 32 ,   residual = 2.507386e-04
+iter = 33 ,  ||Az-v|| residual = 2.451657e+00
+iter = 33 ,   residual = 2.116909e-04
+iter = 34 ,  ||Az-v|| residual = 1.242201e+00
+iter = 34 ,   residual = 1.779798e-04
+iter = 35 ,  ||Az-v|| residual = 1.098867e+00
+iter = 35 ,   residual = 1.445240e-04
+iter = 36 ,  ||Az-v|| residual = 2.424823e+00
+iter = 36 ,   residual = 1.197367e-04
+iter = 37 ,  ||Az-v|| residual = 1.547145e+00
+iter = 37 ,   residual = 1.008874e-04
+iter = 38 ,  ||Az-v|| residual = 9.930854e-01
+iter = 38 ,   residual = 8.619699e-05
+iter = 39 ,  ||Az-v|| residual = 1.401859e+00
+iter = 39 ,   residual = 7.575906e-05
+iter = 40 ,  ||Az-v|| residual = 2.400108e+00
+iter = 40 ,   residual = 6.213187e-05
+iter = 41 ,  ||Az-v|| residual = 1.655236e+00
+iter = 41 ,   residual = 5.058333e-05
+iter = 42 ,  ||Az-v|| residual = 1.526691e+00
+iter = 42 ,   residual = 4.341913e-05
+iter = 43 ,  ||Az-v|| residual = 1.144221e+00
+iter = 43 ,   residual = 3.620803e-05
+iter = 44 ,  ||Az-v|| residual = 1.242104e+00
+iter = 44 ,   residual = 3.075674e-05
+iter = 45 ,  ||Az-v|| residual = 1.364831e+00
+iter = 45 ,   residual = 2.670279e-05
+iter = 46 ,  ||Az-v|| residual = 1.816090e+00
+iter = 46 ,   residual = 2.175121e-05
+iter = 47 ,  ||Az-v|| residual = 1.787280e+00
+iter = 47 ,   residual = 1.751537e-05
+iter = 48 ,  ||Az-v|| residual = 1.400989e+00
+iter = 48 ,   residual = 1.484057e-05
+iter = 49 ,  ||Az-v|| residual = 1.545934e+00
+iter = 49 ,   residual = 1.295983e-05
+iter = 50 ,  ||Az-v|| residual = 2.030442e+00
+iter = 50 ,   residual = 1.155653e-05
+iter = 51 ,  ||Az-v|| residual = 1.743912e+00
+iter = 51 ,   residual = 9.886914e-06
+iter = 52 ,  ||Az-v|| residual = 2.289128e+00
+iter = 52 ,   residual = 8.462354e-06
+iter = 53 ,  ||Az-v|| residual = 1.656310e+00
+iter = 53 ,   residual = 7.205319e-06
+iter = 54 ,  ||Az-v|| residual = 2.223267e+00
+iter = 54 ,   residual = 5.842304e-06
+iter = 55 ,  ||Az-v|| residual = 1.758720e+00
+iter = 55 ,   residual = 4.799979e-06
+iter = 56 ,  ||Az-v|| residual = 2.027435e+00
+iter = 56 ,   residual = 4.063158e-06
+iter = 57 ,  ||Az-v|| residual = 1.725792e+00
+iter = 57 ,   residual = 3.490634e-06
+iter = 58 ,  ||Az-v|| residual = 1.288321e+00
+iter = 58 ,   residual = 2.807867e-06
+iter = 59 ,  ||Az-v|| residual = 2.276411e+00
+iter = 59 ,   residual = 2.212585e-06
+iter = 60 ,  ||Az-v|| residual = 1.450026e+00
+iter = 60 ,   residual = 1.769538e-06
+iter = 61 ,  ||Az-v|| residual = 1.505159e+00
+iter = 61 ,   residual = 1.538931e-06
+iter = 62 ,  ||Az-v|| residual = 2.942641e+00
+iter = 62 ,   residual = 1.338479e-06
+iter = 63 ,  ||Az-v|| residual = 1.538283e+00
+iter = 63 ,   residual = 1.201395e-06
+iter = 64 ,  ||Az-v|| residual = 1.486052e+00
+iter = 64 ,   residual = 1.057490e-06
+iter = 65 ,  ||Az-v|| residual = 2.841354e+00
+iter = 65 ,   residual = 9.002218e-07
+iter = 66 ,  ||Az-v|| residual = 2.918476e+00
+iter = 66 ,   residual = 8.412270e-07
+iter = 67 ,  ||Az-v|| residual = 4.932563e+00
+iter = 67 ,   residual = 7.251679e-07
+iter = 68 ,  ||Az-v|| residual = 4.433617e+00
+iter = 68 ,   residual = 5.758572e-07
+iter = 69 ,  ||Az-v|| residual = 4.581010e+00
+iter = 69 ,   residual = 4.401227e-07
+iter = 70 ,  ||Az-v|| residual = 2.706378e+00
+iter = 70 ,   residual = -3.094306e-07
+iter = 71 ,  ||Az-v|| residual = 5.046359e+00
+iter = 71 ,   residual = -2.312725e-07
+iter = 72 ,  ||Az-v|| residual = 4.379941e+00
+iter = 72 ,   residual = -1.809181e-07
+iter = 73 ,  ||Az-v|| residual = 5.033729e+00
+iter = 73 ,   residual = -1.552360e-07
+iter = 74 ,  ||Az-v|| residual = 2.982977e+00
+iter = 74 ,   residual = -1.362711e-07
+iter = 75 ,  ||Az-v|| residual = 2.109610e+00
+iter = 75 ,   residual = -1.132192e-07
+iter = 76 ,  ||Az-v|| residual = 1.790981e+00
+iter = 76 ,   residual = -9.961111e-08
+iter = 77 ,  ||Az-v|| residual = 1.672447e+00
+iter = 77 ,   residual = -9.238339e-08
+iter = 78 ,  ||Az-v|| residual = 1.936087e+00
+iter = 78 ,   residual = -8.806363e-08
+iter = 79 ,  ||Az-v|| residual = 2.350604e+00
+iter = 79 ,   residual = -8.509798e-08
+iter = 80 ,  ||Az-v|| residual = 1.534730e+00
+iter = 80 ,   residual = -8.190537e-08
+iter = 81 ,  ||Az-v|| residual = 4.150761e+00
+iter = 81 ,   residual = -7.312764e-08
+iter = 82 ,  ||Az-v|| residual = 1.866982e+00
+iter = 82 ,   residual = -6.056651e-08
+iter = 83 ,  ||Az-v|| residual = 2.193617e+00
+iter = 83 ,   residual = -5.115884e-08
+iter = 84 ,  ||Az-v|| residual = 1.536081e+00
+iter = 84 ,   residual = -4.406672e-08
+iter = 85 ,  ||Az-v|| residual = 2.925401e+00
+iter = 85 ,   residual = -3.756451e-08
+iter = 86 ,  ||Az-v|| residual = 2.419764e+00
+iter = 86 ,   residual = -3.320923e-08
+iter = 87 ,  ||Az-v|| residual = 3.849683e+00
+iter = 87 ,   residual = -2.919626e-08
+iter = 88 ,  ||Az-v|| residual = 4.579425e+00
+iter = 88 ,   residual = -2.758306e-08
+iter = 89 ,  ||Az-v|| residual = 4.245644e+00
+iter = 89 ,   residual = -2.359128e-08
+iter = 90 ,  ||Az-v|| residual = 4.100862e+00
+iter = 90 ,   residual = -1.817827e-08
+iter = 91 ,  ||Az-v|| residual = 6.698517e+00
+iter = 91 ,   residual = -1.597369e-08
+iter = 92 ,  ||Az-v|| residual = 2.221303e+00
+iter = 92 ,   residual = -1.342593e-08
+iter = 93 ,  ||Az-v|| residual = 3.561186e+00
+iter = 93 ,   residual = -1.186949e-08
+iter = 94 ,  ||Az-v|| residual = 2.102552e+00
+iter = 94 ,   residual = -1.000668e-08
+iter = 95 ,  ||Az-v|| residual = 2.492234e+00
+iter = 95 ,   residual = -8.485950e-09
+iter = 96 ,  ||Az-v|| residual = 1.786531e+00
+iter = 96 ,   residual = -7.241788e-09
+iter = 97 ,  ||Az-v|| residual = 1.994413e+00
+iter = 97 ,   residual = -6.679618e-09
+iter = 98 ,  ||Az-v|| residual = 3.524498e+00
+iter = 98 ,   residual = -6.313402e-09
+iter = 99 ,  ||Az-v|| residual = 2.343067e+00
+iter = 99 ,   residual = -5.934447e-09
+iter = 100 ,  ||Az-v|| residual = 2.930635e+00
+iter = 100 ,   residual = -5.397355e-09
+iter = 101 ,  ||Az-v|| residual = 1.407646e+00
+iter = 101 ,   residual = -4.916391e-09
+iter = 102 ,  ||Az-v|| residual = 1.714162e+00
+iter = 102 ,   residual = -4.301507e-09
+iter = 103 ,  ||Az-v|| residual = 3.354642e+00
+iter = 103 ,   residual = -3.717698e-09
+iter = 104 ,  ||Az-v|| residual = 3.110073e+00
+iter = 104 ,   residual = -3.255659e-09
+iter = 105 ,  ||Az-v|| residual = 1.777549e+00
+iter = 105 ,   residual = -2.702056e-09
+iter = 106 ,  ||Az-v|| residual = 2.338424e+00
+iter = 106 ,   residual = -2.262877e-09
+iter = 107 ,  ||Az-v|| residual = 2.105236e+00
+iter = 107 ,   residual = -1.903470e-09
+iter = 108 ,  ||Az-v|| residual = 2.901925e+00
+iter = 108 ,   residual = -1.680213e-09
+iter = 109 ,  ||Az-v|| residual = 2.145112e+00
+iter = 109 ,   residual = -1.418520e-09
+iter = 110 ,  ||Az-v|| residual = 2.196033e+00
+iter = 110 ,   residual = -1.172017e-09
+iter = 111 ,  ||Az-v|| residual = 3.082536e+00
+iter = 111 ,   residual = -1.016716e-09
+iter = 112 ,  ||Az-v|| residual = 1.843530e+00
+iter = 112 ,   residual = -8.706489e-10
+iter = 113 ,  ||Az-v|| residual = 3.336886e+00
+iter = 113 ,   residual = -7.447301e-10
+iter = 114 ,  ||Az-v|| residual = 3.291325e+00
+iter = 114 ,   residual = -6.473806e-10
+iter = 115 ,  ||Az-v|| residual = 2.467852e+00
+iter = 115 ,   residual = -5.734822e-10
+iter = 116 ,  ||Az-v|| residual = 3.648324e+00
+iter = 116 ,   residual = -4.903971e-10
+iter = 117 ,  ||Az-v|| residual = 2.415381e+00
+iter = 117 ,   residual = -4.059575e-10
+iter = 118 ,  ||Az-v|| residual = 2.451479e+00
+iter = 118 ,   residual = -3.577038e-10
+iter = 119 ,  ||Az-v|| residual = 1.592552e+00
+iter = 119 ,   residual = -3.218169e-10
+iter = 120 ,  ||Az-v|| residual = 3.451978e+00
+iter = 120 ,   residual = -2.993163e-10
+iter = 121 ,  ||Az-v|| residual = 1.806221e+00
+iter = 121 ,   residual = -2.661756e-10
+iter = 122 ,  ||Az-v|| residual = 4.545536e+00
+iter = 122 ,   residual = -2.475509e-10
+iter = 123 ,  ||Az-v|| residual = 1.997247e+00
+iter = 123 ,   residual = -2.306809e-10
+iter = 124 ,  ||Az-v|| residual = 2.491932e+00
+iter = 124 ,   residual = -2.056996e-10
+iter = 125 ,  ||Az-v|| residual = 2.104003e+00
+iter = 125 ,   residual = -1.876230e-10
+iter = 126 ,  ||Az-v|| residual = 2.364466e+00
+iter = 126 ,   residual = -1.657315e-10
+iter = 127 ,  ||Az-v|| residual = 1.798876e+00
+iter = 127 ,   residual = -1.462727e-10
+iter = 128 ,  ||Az-v|| residual = 2.456569e+00
+iter = 128 ,   residual = -1.298538e-10
+iter = 129 ,  ||Az-v|| residual = 5.292786e+00
+iter = 129 ,   residual = -1.081948e-10
+iter = 130 ,  ||Az-v|| residual = 2.012610e+00
+iter = 130 ,   residual = -9.308973e-11
+iter = 131 ,  ||Az-v|| residual = 3.347739e+00
+iter = 131 ,   residual = -7.970249e-11
+iter = 132 ,  ||Az-v|| residual = 3.106062e+00
+iter = 132 ,   residual = -6.579325e-11
+iter = 133 ,  ||Az-v|| residual = 2.694514e+00
+iter = 133 ,   residual = -5.006435e-11
+iter = 134 ,  ||Az-v|| residual = 2.442985e+00
+iter = 134 ,   residual = -4.218836e-11
+iter = 135 ,  ||Az-v|| residual = 2.604849e+00
+iter = 135 ,   residual = -3.717153e-11
+iter = 136 ,  ||Az-v|| residual = 1.564231e+00
+iter = 136 ,   residual = -3.406548e-11
+iter = 137 ,  ||Az-v|| residual = 1.912625e+00
+iter = 137 ,   residual = -3.101879e-11
+iter = 138 ,  ||Az-v|| residual = 1.825417e+00
+iter = 138 ,   residual = -2.718501e-11
+iter = 139 ,  ||Az-v|| residual = 2.549453e+00
+iter = 139 ,   residual = -2.413036e-11
+iter = 140 ,  ||Az-v|| residual = 6.040105e+00
+iter = 140 ,   residual = -2.123164e-11
+iter = 141 ,  ||Az-v|| residual = 2.511525e+00
+iter = 141 ,   residual = -1.861609e-11
+iter = 142 ,  ||Az-v|| residual = 6.771123e+00
+iter = 142 ,   residual = -1.606670e-11
+iter = 143 ,  ||Az-v|| residual = 2.416400e+00
+iter = 143 ,   residual = -1.366653e-11
+iter = 144 ,  ||Az-v|| residual = 2.833360e+00
+iter = 144 ,   residual = -1.229848e-11
+iter = 145 ,  ||Az-v|| residual = 2.558492e+00
+iter = 145 ,   residual = -1.010821e-11
+iter = 146 ,  ||Az-v|| residual = 3.516527e+00
+iter = 146 ,   residual = -8.489666e-12
+iter = 147 ,  ||Az-v|| residual = 3.726253e+00
+iter = 147 ,   residual = -7.153639e-12
+iter = 148 ,  ||Az-v|| residual = 2.292676e+00
+iter = 148 ,   residual = -6.123157e-12
+iter = 149 ,  ||Az-v|| residual = 5.238574e+00
+iter = 149 ,   residual = -5.243649e-12
+iter = 150 ,  ||Az-v|| residual = 2.615024e+00
+iter = 150 ,   residual = -4.316832e-12
+iter = 151 ,  ||Az-v|| residual = 4.838609e+00
+iter = 151 ,   residual = -4.082676e-12
+iter = 152 ,  ||Az-v|| residual = 3.882943e+00
+iter = 152 ,   residual = -3.795382e-12
+iter = 153 ,  ||Az-v|| residual = 1.614772e+00
+iter = 153 ,   residual = -3.376756e-12
+iter = 154 ,  ||Az-v|| residual = 3.076495e+00
+iter = 154 ,   residual = -2.739224e-12
+iter = 155 ,  ||Az-v|| residual = 2.928506e+00
+iter = 155 ,   residual = -2.486734e-12
+iter = 156 ,  ||Az-v|| residual = 1.742174e+00
+iter = 156 ,   residual = -2.223878e-12
+iter = 157 ,  ||Az-v|| residual = 2.549545e+00
+iter = 157 ,   residual = -1.823553e-12
+iter = 158 ,  ||Az-v|| residual = 3.841193e+00
+iter = 158 ,   residual = -1.470769e-12
+iter = 159 ,  ||Az-v|| residual = 2.183473e+00
+iter = 159 ,   residual = -1.186895e-12
+iter = 160 ,  ||Az-v|| residual = 2.258359e+00
+iter = 160 ,   residual = -9.641967e-13
+111real residual = 7.5497e-06,	 iter = 160,	 iter residual = 7.5505e-06
+#iterations: 103
+estimated error: 9.72248e-13
+real residual = 7.61435e-06,	 iter = 103,	 iter residual = 9.72248e-13
+iter = 0 ,  ||Az-v|| residual = 8.164864e-01
+iter = 0 ,   residual = 7.258372e-01
+iter = 1 ,  ||Az-v|| residual = 1.321331e+00
+iter = 1 ,   residual = 7.034652e-01
+iter = 2 ,  ||Az-v|| residual = 2.113539e+00
+iter = 2 ,   residual = 6.879595e-01
+iter = 3 ,  ||Az-v|| residual = 7.734208e-01
+iter = 3 ,   residual = 6.647015e-01
+iter = 4 ,  ||Az-v|| residual = 1.146774e+00
+iter = 4 ,   residual = 6.418412e-01
+iter = 5 ,  ||Az-v|| residual = 9.389904e-01
+iter = 5 ,   residual = 4.893028e-01
+iter = 6 ,  ||Az-v|| residual = 1.687277e+00
+iter = 6 ,   residual = -3.451798e-01
+iter = 7 ,  ||Az-v|| residual = 1.062423e+00
+iter = 7 ,   residual = 2.226116e-01
+iter = 8 ,  ||Az-v|| residual = 1.067797e+00
+iter = 8 ,   residual = -1.390570e-01
+iter = 9 ,  ||Az-v|| residual = 1.385615e+00
+iter = 9 ,   residual = -1.077917e-01
+iter = 10 ,  ||Az-v|| residual = 1.937102e+00
+iter = 10 ,   residual = -7.247852e-02
+iter = 11 ,  ||Az-v|| residual = 1.481626e+00
+iter = 11 ,   residual = -5.186717e-02
+iter = 12 ,  ||Az-v|| residual = 1.213332e+00
+iter = 12 ,   residual = -3.583181e-02
+iter = 13 ,  ||Az-v|| residual = 1.595372e+00
+iter = 13 ,   residual = 2.408914e-02
+iter = 14 ,  ||Az-v|| residual = 2.502392e+00
+iter = 14 ,   residual = 1.776028e-02
+iter = 15 ,  ||Az-v|| residual = 2.969886e+00
+iter = 15 ,   residual = 1.241444e-02
+iter = 16 ,  ||Az-v|| residual = 2.632174e+00
+iter = 16 ,   residual = 9.454538e-03
+iter = 17 ,  ||Az-v|| residual = 2.653431e+00
+iter = 17 ,   residual = 6.914194e-03
+iter = 18 ,  ||Az-v|| residual = 2.424217e+00
+iter = 18 ,   residual = 5.287622e-03
+iter = 19 ,  ||Az-v|| residual = 3.686884e+00
+iter = 19 ,   residual = 3.878896e-03
+iter = 20 ,  ||Az-v|| residual = 3.109638e+00
+iter = 20 ,   residual = 2.873884e-03
+iter = 21 ,  ||Az-v|| residual = 2.990627e+00
+iter = 21 ,   residual = 2.343014e-03
+iter = 22 ,  ||Az-v|| residual = 2.535294e+00
+iter = 22 ,   residual = 1.756568e-03
+iter = 23 ,  ||Az-v|| residual = 3.256847e+00
+iter = 23 ,   residual = 1.281991e-03
+iter = 24 ,  ||Az-v|| residual = 5.480497e+00
+iter = 24 ,   residual = 9.965590e-04
+iter = 25 ,  ||Az-v|| residual = 4.262910e+00
+iter = 25 ,   residual = 7.995409e-04
+iter = 26 ,  ||Az-v|| residual = 2.926060e+00
+iter = 26 ,   residual = 7.063518e-04
+iter = 27 ,  ||Az-v|| residual = 1.896474e+00
+iter = 27 ,   residual = 6.091466e-04
+iter = 28 ,  ||Az-v|| residual = 2.232078e+00
+iter = 28 ,   residual = 4.768148e-04
+iter = 29 ,  ||Az-v|| residual = 5.174842e+00
+iter = 29 ,   residual = 3.793014e-04
+iter = 30 ,  ||Az-v|| residual = 5.104213e+00
+iter = 30 ,   residual = 3.265083e-04
+iter = 31 ,  ||Az-v|| residual = 2.977422e+00
+iter = 31 ,   residual = 2.765334e-04
+iter = 32 ,  ||Az-v|| residual = 1.226311e+00
+iter = 32 ,   residual = 2.507349e-04
+iter = 33 ,  ||Az-v|| residual = 2.451762e+00
+iter = 33 ,   residual = 2.116905e-04
+iter = 34 ,  ||Az-v|| residual = 1.242342e+00
+iter = 34 ,   residual = 1.779783e-04
+iter = 35 ,  ||Az-v|| residual = 1.098916e+00
+iter = 35 ,   residual = 1.445232e-04
+iter = 36 ,  ||Az-v|| residual = 2.424872e+00
+iter = 36 ,   residual = 1.197374e-04
+iter = 37 ,  ||Az-v|| residual = 1.547089e+00
+iter = 37 ,   residual = 1.008868e-04
+iter = 38 ,  ||Az-v|| residual = 9.930755e-01
+iter = 38 ,   residual = 8.619591e-05
+iter = 39 ,  ||Az-v|| residual = 1.401784e+00
+iter = 39 ,   residual = 7.575916e-05
+iter = 40 ,  ||Az-v|| residual = 2.400150e+00
+iter = 40 ,   residual = 6.213191e-05
+iter = 41 ,  ||Az-v|| residual = 1.655226e+00
+iter = 41 ,   residual = 5.058314e-05
+iter = 42 ,  ||Az-v|| residual = 1.526783e+00
+iter = 42 ,   residual = 4.341885e-05
+iter = 43 ,  ||Az-v|| residual = 1.144162e+00
+iter = 43 ,   residual = 3.620772e-05
+iter = 44 ,  ||Az-v|| residual = 1.242142e+00
+iter = 44 ,   residual = 3.075635e-05
+iter = 45 ,  ||Az-v|| residual = 1.364949e+00
+iter = 45 ,   residual = 2.670242e-05
+iter = 46 ,  ||Az-v|| residual = 1.816348e+00
+iter = 46 ,   residual = 2.175129e-05
+iter = 47 ,  ||Az-v|| residual = 1.787227e+00
+iter = 47 ,   residual = 1.751533e-05
+iter = 48 ,  ||Az-v|| residual = 1.401169e+00
+iter = 48 ,   residual = 1.484042e-05
+iter = 49 ,  ||Az-v|| residual = 1.545759e+00
+iter = 49 ,   residual = 1.295959e-05
+iter = 50 ,  ||Az-v|| residual = 2.030797e+00
+iter = 50 ,   residual = 1.155635e-05
+iter = 51 ,  ||Az-v|| residual = 1.743758e+00
+iter = 51 ,   residual = 9.886791e-06
+iter = 52 ,  ||Az-v|| residual = 2.289082e+00
+iter = 52 ,   residual = 8.462320e-06
+iter = 53 ,  ||Az-v|| residual = 1.656356e+00
+iter = 53 ,   residual = 7.205296e-06
+iter = 54 ,  ||Az-v|| residual = 2.223565e+00
+iter = 54 ,   residual = 5.842321e-06
+iter = 55 ,  ||Az-v|| residual = 1.758874e+00
+iter = 55 ,   residual = 4.799951e-06
+iter = 56 ,  ||Az-v|| residual = 2.027444e+00
+iter = 56 ,   residual = 4.063115e-06
+iter = 57 ,  ||Az-v|| residual = 1.725781e+00
+iter = 57 ,   residual = 3.490582e-06
+iter = 58 ,  ||Az-v|| residual = 1.288242e+00
+iter = 58 ,   residual = 2.807815e-06
+iter = 59 ,  ||Az-v|| residual = 2.275979e+00
+iter = 59 ,   residual = 2.212549e-06
+iter = 60 ,  ||Az-v|| residual = 1.450188e+00
+iter = 60 ,   residual = 1.769530e-06
+iter = 61 ,  ||Az-v|| residual = 1.505104e+00
+iter = 61 ,   residual = 1.538916e-06
+iter = 62 ,  ||Az-v|| residual = 2.942789e+00
+iter = 62 ,   residual = 1.338484e-06
+iter = 63 ,  ||Az-v|| residual = 1.538279e+00
+iter = 63 ,   residual = 1.201401e-06
+iter = 64 ,  ||Az-v|| residual = 1.485959e+00
+iter = 64 ,   residual = 1.057480e-06
+iter = 65 ,  ||Az-v|| residual = 2.842019e+00
+iter = 65 ,   residual = 9.001751e-07
+iter = 66 ,  ||Az-v|| residual = 2.918980e+00
+iter = 66 ,   residual = 8.411801e-07
+iter = 67 ,  ||Az-v|| residual = 4.933115e+00
+iter = 67 ,   residual = 7.251196e-07
+iter = 68 ,  ||Az-v|| residual = 4.433902e+00
+iter = 68 ,   residual = 5.758107e-07
+iter = 69 ,  ||Az-v|| residual = 4.581725e+00
+iter = 69 ,   residual = 4.400920e-07
+iter = 70 ,  ||Az-v|| residual = 2.706282e+00
+iter = 70 ,   residual = -3.094119e-07
+iter = 71 ,  ||Az-v|| residual = 5.047441e+00
+iter = 71 ,   residual = -2.312574e-07
+iter = 72 ,  ||Az-v|| residual = 4.380007e+00
+iter = 72 ,   residual = -1.809033e-07
+iter = 73 ,  ||Az-v|| residual = 5.034635e+00
+iter = 73 ,   residual = -1.552195e-07
+iter = 74 ,  ||Az-v|| residual = 2.983373e+00
+iter = 74 ,   residual = -1.362518e-07
+iter = 75 ,  ||Az-v|| residual = 2.110928e+00
+iter = 75 ,   residual = -1.132048e-07
+iter = 76 ,  ||Az-v|| residual = 1.790217e+00
+iter = 76 ,   residual = -9.959804e-08
+iter = 77 ,  ||Az-v|| residual = 1.673730e+00
+iter = 77 ,   residual = -9.237333e-08
+iter = 78 ,  ||Az-v|| residual = 1.933875e+00
+iter = 78 ,   residual = -8.805424e-08
+iter = 79 ,  ||Az-v|| residual = 2.349404e+00
+iter = 79 ,   residual = -8.509037e-08
+iter = 80 ,  ||Az-v|| residual = 1.533892e+00
+iter = 80 ,   residual = -8.189649e-08
+iter = 81 ,  ||Az-v|| residual = 4.151639e+00
+iter = 81 ,   residual = -7.312007e-08
+iter = 82 ,  ||Az-v|| residual = 1.866840e+00
+iter = 82 ,   residual = -6.056318e-08
+iter = 83 ,  ||Az-v|| residual = 2.192063e+00
+iter = 83 ,   residual = -5.115059e-08
+iter = 84 ,  ||Az-v|| residual = 1.535827e+00
+iter = 84 ,   residual = -4.406084e-08
+iter = 85 ,  ||Az-v|| residual = 2.928263e+00
+iter = 85 ,   residual = -3.756217e-08
+iter = 86 ,  ||Az-v|| residual = 2.418915e+00
+iter = 86 ,   residual = -3.320467e-08
+iter = 87 ,  ||Az-v|| residual = 3.851481e+00
+iter = 87 ,   residual = -2.919071e-08
+iter = 88 ,  ||Az-v|| residual = 4.583225e+00
+iter = 88 ,   residual = -2.757928e-08
+iter = 89 ,  ||Az-v|| residual = 4.243523e+00
+iter = 89 ,   residual = -2.358848e-08
+iter = 90 ,  ||Az-v|| residual = 4.103498e+00
+iter = 90 ,   residual = -1.817333e-08
+iter = 91 ,  ||Az-v|| residual = 6.703577e+00
+iter = 91 ,   residual = -1.597152e-08
+iter = 92 ,  ||Az-v|| residual = 2.219029e+00
+iter = 92 ,   residual = -1.342506e-08
+iter = 93 ,  ||Az-v|| residual = 3.563190e+00
+iter = 93 ,   residual = -1.186820e-08
+iter = 94 ,  ||Az-v|| residual = 2.103667e+00
+iter = 94 ,   residual = -1.000593e-08
+iter = 95 ,  ||Az-v|| residual = 2.490283e+00
+iter = 95 ,   residual = -8.486372e-09
+iter = 96 ,  ||Az-v|| residual = 1.785388e+00
+iter = 96 ,   residual = -7.241165e-09
+iter = 97 ,  ||Az-v|| residual = 1.993221e+00
+iter = 97 ,   residual = -6.679208e-09
+iter = 98 ,  ||Az-v|| residual = 3.522413e+00
+iter = 98 ,   residual = -6.313241e-09
+iter = 99 ,  ||Az-v|| residual = 2.342578e+00
+iter = 99 ,   residual = -5.934072e-09
+iter = 100 ,  ||Az-v|| residual = 2.930830e+00
+iter = 100 ,   residual = -5.397253e-09
+iter = 101 ,  ||Az-v|| residual = 1.408169e+00
+iter = 101 ,   residual = -4.916356e-09
+iter = 102 ,  ||Az-v|| residual = 1.714491e+00
+iter = 102 ,   residual = -4.301586e-09
+iter = 103 ,  ||Az-v|| residual = 3.354790e+00
+iter = 103 ,   residual = -3.717648e-09
+iter = 104 ,  ||Az-v|| residual = 3.111656e+00
+iter = 104 ,   residual = -3.255694e-09
+iter = 105 ,  ||Az-v|| residual = 1.776824e+00
+iter = 105 ,   residual = -2.702043e-09
+iter = 106 ,  ||Az-v|| residual = 2.339632e+00
+iter = 106 ,   residual = -2.262730e-09
+iter = 107 ,  ||Az-v|| residual = 2.105803e+00
+iter = 107 ,   residual = -1.903263e-09
+iter = 108 ,  ||Az-v|| residual = 2.902846e+00
+iter = 108 ,   residual = -1.680020e-09
+iter = 109 ,  ||Az-v|| residual = 2.147001e+00
+iter = 109 ,   residual = -1.418274e-09
+iter = 110 ,  ||Az-v|| residual = 2.198121e+00
+iter = 110 ,   residual = -1.171825e-09
+iter = 111 ,  ||Az-v|| residual = 3.085493e+00
+iter = 111 ,   residual = -1.016519e-09
+iter = 112 ,  ||Az-v|| residual = 1.842276e+00
+iter = 112 ,   residual = -8.704022e-10
+iter = 113 ,  ||Az-v|| residual = 3.334310e+00
+iter = 113 ,   residual = -7.444864e-10
+iter = 114 ,  ||Az-v|| residual = 3.289742e+00
+iter = 114 ,   residual = -6.471355e-10
+iter = 115 ,  ||Az-v|| residual = 2.466168e+00
+iter = 115 ,   residual = -5.732889e-10
+iter = 116 ,  ||Az-v|| residual = 3.648011e+00
+iter = 116 ,   residual = -4.902258e-10
+iter = 117 ,  ||Az-v|| residual = 2.416585e+00
+iter = 117 ,   residual = -4.058448e-10
+iter = 118 ,  ||Az-v|| residual = 2.452497e+00
+iter = 118 ,   residual = -3.575688e-10
+iter = 119 ,  ||Az-v|| residual = 1.592431e+00
+iter = 119 ,   residual = -3.217196e-10
+iter = 120 ,  ||Az-v|| residual = 3.452975e+00
+iter = 120 ,   residual = -2.992300e-10
+iter = 121 ,  ||Az-v|| residual = 1.806491e+00
+iter = 121 ,   residual = -2.661115e-10
+iter = 122 ,  ||Az-v|| residual = 4.547006e+00
+iter = 122 ,   residual = -2.475018e-10
+iter = 123 ,  ||Az-v|| residual = 1.996599e+00
+iter = 123 ,   residual = -2.306362e-10
+iter = 124 ,  ||Az-v|| residual = 2.492438e+00
+iter = 124 ,   residual = -2.056751e-10
+iter = 125 ,  ||Az-v|| residual = 2.103939e+00
+iter = 125 ,   residual = -1.875948e-10
+iter = 126 ,  ||Az-v|| residual = 2.364056e+00
+iter = 126 ,   residual = -1.657248e-10
+iter = 127 ,  ||Az-v|| residual = 1.800250e+00
+iter = 127 ,   residual = -1.462539e-10
+iter = 128 ,  ||Az-v|| residual = 2.457213e+00
+iter = 128 ,   residual = -1.298391e-10
+iter = 129 ,  ||Az-v|| residual = 5.294046e+00
+iter = 129 ,   residual = -1.081882e-10
+iter = 130 ,  ||Az-v|| residual = 2.014587e+00
+iter = 130 ,   residual = -9.309565e-11
+iter = 131 ,  ||Az-v|| residual = 3.338253e+00
+iter = 131 ,   residual = -7.970335e-11
+iter = 132 ,  ||Az-v|| residual = 3.113789e+00
+iter = 132 ,   residual = -6.578253e-11
+iter = 133 ,  ||Az-v|| residual = 2.694871e+00
+iter = 133 ,   residual = -5.005561e-11
+iter = 134 ,  ||Az-v|| residual = 2.441170e+00
+iter = 134 ,   residual = -4.218763e-11
+iter = 135 ,  ||Az-v|| residual = 2.605179e+00
+iter = 135 ,   residual = -3.716933e-11
+iter = 136 ,  ||Az-v|| residual = 1.564154e+00
+iter = 136 ,   residual = -3.406397e-11
+iter = 137 ,  ||Az-v|| residual = 1.914084e+00
+iter = 137 ,   residual = -3.101866e-11
+iter = 138 ,  ||Az-v|| residual = 1.827109e+00
+iter = 138 ,   residual = -2.718514e-11
+iter = 139 ,  ||Az-v|| residual = 2.550508e+00
+iter = 139 ,   residual = -2.412986e-11
+iter = 140 ,  ||Az-v|| residual = 6.034411e+00
+iter = 140 ,   residual = -2.123178e-11
+iter = 141 ,  ||Az-v|| residual = 2.514324e+00
+iter = 141 ,   residual = -1.861892e-11
+iter = 142 ,  ||Az-v|| residual = 6.751999e+00
+iter = 142 ,   residual = -1.606842e-11
+iter = 143 ,  ||Az-v|| residual = 2.426236e+00
+iter = 143 ,   residual = -1.366427e-11
+iter = 144 ,  ||Az-v|| residual = 2.824842e+00
+iter = 144 ,   residual = -1.229732e-11
+iter = 145 ,  ||Az-v|| residual = 2.569717e+00
+iter = 145 ,   residual = -1.010847e-11
+iter = 146 ,  ||Az-v|| residual = 3.531111e+00
+iter = 146 ,   residual = -8.488989e-12
+iter = 147 ,  ||Az-v|| residual = 3.729968e+00
+iter = 147 ,   residual = -7.152930e-12
+iter = 148 ,  ||Az-v|| residual = 2.293797e+00
+iter = 148 ,   residual = -6.122654e-12
+iter = 149 ,  ||Az-v|| residual = 5.232382e+00
+iter = 149 ,   residual = -5.242845e-12
+iter = 150 ,  ||Az-v|| residual = 2.617253e+00
+iter = 150 ,   residual = -4.317020e-12
+iter = 151 ,  ||Az-v|| residual = 4.833034e+00
+iter = 151 ,   residual = -4.082879e-12
+iter = 152 ,  ||Az-v|| residual = 3.873072e+00
+iter = 152 ,   residual = -3.795736e-12
+iter = 153 ,  ||Az-v|| residual = 1.611406e+00
+iter = 153 ,   residual = -3.376677e-12
+iter = 154 ,  ||Az-v|| residual = 3.059758e+00
+iter = 154 ,   residual = -2.740171e-12
+iter = 155 ,  ||Az-v|| residual = 2.936584e+00
+iter = 155 ,   residual = -2.486815e-12
+iter = 156 ,  ||Az-v|| residual = 1.751233e+00
+iter = 156 ,   residual = -2.224570e-12
+iter = 157 ,  ||Az-v|| residual = 2.552517e+00
+iter = 157 ,   residual = -1.823793e-12
+iter = 158 ,  ||Az-v|| residual = 3.852628e+00
+iter = 158 ,   residual = -1.471163e-12
+iter = 159 ,  ||Az-v|| residual = 2.179526e+00
+iter = 159 ,   residual = -1.187100e-12
+iter = 160 ,  ||Az-v|| residual = 2.255307e+00
+iter = 160 ,   residual = -9.640387e-13
+111real residual = 7.54933e-06,	 iter = 160,	 iter residual = 7.54929e-06

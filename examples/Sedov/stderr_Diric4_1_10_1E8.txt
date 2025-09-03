@@ -1,0 +1,5 @@
+Start   0.000000
+Time  0.001355  	sec      Split Hex Mesh to Tet
+Time  0.002682  	sec      Set Init Value
+Time  1.094705  	sec      Picard iter 0  3.3487e+30
+Time  1.094859  	sec      Picard iter 0  53.601

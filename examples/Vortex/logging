@@ -1,0 +1,188 @@
+Start   0.000000
+Time  0.002159  	sec      Split Hex Mesh to Tet
+Time  0.005332  	sec      Set Init Value
+Time  0.187458  	sec      Picard iter 0	 before = 1.74779
+Time  0.189864  	sec      Picard iter 0	 init : 1.74779
+Time  0.263834  	sec      Picard iter 0	 only Arr : 1.73002
+Time  1.057475  	sec      Picard iter 0	 only Amm = 1.46655
+Time  1.119325  	sec      Picard iter 0	 only Aee = 1.02624
+Time  1.243185  	sec      Picard iter 0	 Arr + Aee = 0.97062
+Time  1.244167  	sec      Picard iter 0	 Submat residual = 0.343749
+Time  1.246372  	sec      Picard iter 0	 Submat residual = 0.967741
+Time  1.247168  	sec      Picard iter 0	 Submat residual = 1.41424
+Time  1.247196  	sec      Start linear solver
+Time  1.549648  	sec      Picard iter 0  0.189156
+Time  1.551313  	sec      Picard iter 0  0.773171
+Time  1.652466  	sec      Picard iter 1	 before = 0.189156
+Time  1.654816  	sec      Picard iter 1	 init : 0.189156
+Time  1.722186  	sec      Picard iter 1	 only Arr : 0.18531
+Time  2.466894  	sec      Picard iter 1	 only Amm = 0.166373
+Time  2.530105  	sec      Picard iter 1	 only Aee = 0.110859
+Time  2.651101  	sec      Picard iter 1	 Arr + Aee = 0.104377
+Time  2.652084  	sec      Picard iter 1	 Submat residual = 0.0380187
+Time  2.654995  	sec      Picard iter 1	 Submat residual = 0.103146
+Time  2.656071  	sec      Picard iter 1	 Submat residual = 0.153933
+Time  2.656104  	sec      Start linear solver
+Time  2.942189  	sec      Picard iter 1  0.0778646
+Time  2.943655  	sec      Picard iter 1  0.148162
+Time  3.021694  	sec      Picard iter 2	 before = 0.0778646
+Time  3.024098  	sec      Picard iter 2	 init : 0.0778646
+Time  3.086052  	sec      Picard iter 2	 only Arr : 0.0758182
+Time  3.712415  	sec      Picard iter 2	 only Amm = 0.0682494
+Time  3.774803  	sec      Picard iter 2	 only Aee = 0.0468705
+Time  3.887742  	sec      Picard iter 2	 Arr + Aee = 0.0440518
+Time  3.888515  	sec      Picard iter 2	 Submat residual = 0.0161244
+Time  3.890281  	sec      Picard iter 2	 Submat residual = 0.0435562
+Time  3.890988  	sec      Picard iter 2	 Submat residual = 0.0624961
+Time  3.891009  	sec      Start linear solver
+Time  4.167547  	sec      Picard iter 2  0.0334725
+Time  4.169040  	sec      Picard iter 2  0.0566902
+Time  4.254942  	sec      Picard iter 3	 before = 0.0334725
+Time  4.257087  	sec      Picard iter 3	 init : 0.0334725
+Time  4.317711  	sec      Picard iter 3	 only Arr : 0.0325017
+Time  5.110665  	sec      Picard iter 3	 only Amm = 0.0291626
+Time  5.177135  	sec      Picard iter 3	 only Aee = 0.0205183
+Time  5.300927  	sec      Picard iter 3	 Arr + Aee = 0.019271
+Time  5.301912  	sec      Picard iter 3	 Submat residual = 0.00707626
+Time  5.304168  	sec      Picard iter 3	 Submat residual = 0.0190712
+Time  5.305455  	sec      Picard iter 3	 Submat residual = 0.0265824
+Time  5.305515  	sec      Start linear solver
+Time  5.616959  	sec      Picard iter 3  0.0146488
+Time  5.618554  	sec      Picard iter 3  0.0234892
+Time  5.718709  	sec      Picard iter 4	 before = 0.0146488
+Time  5.721181  	sec      Picard iter 4	 init : 0.0146488
+Time  5.793319  	sec      Picard iter 4	 only Arr : 0.014203
+Time  6.485213  	sec      Picard iter 4	 only Amm = 0.0126803
+Time  6.555206  	sec      Picard iter 4	 only Aee = 0.00913319
+Time  6.695706  	sec      Picard iter 4	 Arr + Aee = 0.00857612
+Time  6.696922  	sec      Picard iter 4	 Submat residual = 0.00315615
+Time  6.700010  	sec      Picard iter 4	 Submat residual = 0.00849705
+Time  6.701118  	sec      Picard iter 4	 Submat residual = 0.0115076
+Time  6.701150  	sec      Start linear solver
+Time  7.099510  	sec      Picard iter 4  0.00648928
+Time  7.101217  	sec      Picard iter 4  0.010136
+Time  7.186207  	sec      Picard iter 5	 before = 0.00648928
+Time  7.188339  	sec      Picard iter 5	 init : 0.00648928
+Time  7.250675  	sec      Picard iter 5	 only Arr : 0.0062874
+Time  7.994354  	sec      Picard iter 5	 only Amm = 0.00558501
+Time  8.059296  	sec      Picard iter 5	 only Aee = 0.00411479
+Time  8.183028  	sec      Picard iter 5	 Arr + Aee = 0.00386468
+Time  8.183987  	sec      Picard iter 5	 Submat residual = 0.00142274
+Time  8.186502  	sec      Picard iter 5	 Submat residual = 0.00383354
+Time  8.187477  	sec      Picard iter 5	 Submat residual = 0.0050389
+Time  8.187501  	sec      Start linear solver
+Time  8.471738  	sec      Picard iter 5  0.00290649
+Time  8.473291  	sec      Picard iter 5  0.00449283
+Time  8.559879  	sec      Picard iter 6	 before = 0.00290649
+Time  8.562027  	sec      Picard iter 6	 init : 0.00290649
+Time  8.632953  	sec      Picard iter 6	 only Arr : 0.00281593
+Time  9.320133  	sec      Picard iter 6	 only Amm = 0.00249061
+Time  9.383199  	sec      Picard iter 6	 only Aee = 0.00187345
+Time  9.501165  	sec      Picard iter 6	 Arr + Aee = 0.00176081
+Time  9.502098  	sec      Picard iter 6	 Submat residual = 0.000646801
+Time  9.504385  	sec      Picard iter 6	 Submat residual = 0.00174846
+Time  9.505271  	sec      Picard iter 6	 Submat residual = 0.00222984
+Time  9.505303  	sec      Start linear solver
+Time  9.793951  	sec      Picard iter 6  0.00131638
+Time  9.795612  	sec      Picard iter 6  0.00203196
+Time  9.904778  	sec      Picard iter 7	 before = 0.00131638
+Time  9.907358  	sec      Picard iter 7	 init : 0.00131638
+Time  9.987581  	sec      Picard iter 7	 only Arr : 0.00127616
+Time  10.766669  	sec      Picard iter 7	 only Amm = 0.00112509
+Time  10.832836  	sec      Picard iter 7	 only Aee = 0.000861347
+Time  10.957626  	sec      Picard iter 7	 Arr + Aee = 0.000810505
+Time  10.958458  	sec      Picard iter 7	 Submat residual = 0.000296265
+Time  10.960487  	sec      Picard iter 7	 Submat residual = 0.000805555
+Time  10.961370  	sec      Picard iter 7	 Submat residual = 0.000998077
+Time  10.961396  	sec      Start linear solver
+Time  11.297712  	sec      Picard iter 7  0.000603079
+Time  11.299496  	sec      Picard iter 7  0.000933989
+Time  11.381046  	sec      Picard iter 8	 before = 0.000603079
+Time  11.383303  	sec      Picard iter 8	 init : 0.000603079
+Time  11.451068  	sec      Picard iter 8	 only Arr : 0.000585413
+Time  12.162767  	sec      Picard iter 8	 only Amm = 0.000515069
+Time  12.235124  	sec      Picard iter 8	 only Aee = 0.000399639
+Time  12.366867  	sec      Picard iter 8	 Arr + Aee = 0.000376635
+Time  12.368018  	sec      Picard iter 8	 Submat residual = 0.000136657
+Time  12.370646  	sec      Picard iter 8	 Submat residual = 0.000374628
+Time  12.371568  	sec      Picard iter 8	 Submat residual = 0.000452419
+Time  12.371595  	sec      Start linear solver
+Time  12.664725  	sec      Picard iter 8  0.00027947
+Time  12.666548  	sec      Picard iter 8  0.000435146
+Time  12.759199  	sec      Picard iter 9	 before = 0.00027947
+Time  12.761537  	sec      Picard iter 9	 init : 0.00027947
+Time  12.832692  	sec      Picard iter 9	 only Arr : 0.000271798
+Time  13.580133  	sec      Picard iter 9	 only Amm = 0.000238938
+Time  13.649671  	sec      Picard iter 9	 only Aee = 0.000186955
+Time  13.782560  	sec      Picard iter 9	 Arr + Aee = 0.000176515
+Time  13.784307  	sec      Picard iter 9	 Submat residual = 6.34533e-05
+Time  13.787089  	sec      Picard iter 9	 Submat residual = 0.000175693
+Time  13.788098  	sec      Picard iter 9	 Submat residual = 0.000207868
+Time  13.788139  	sec      Start linear solver
+Time  14.098399  	sec      Picard iter 9  0.000130916
+Time  14.101065  	sec      Picard iter 9  0.000205039
+Time  14.185508  	sec      Picard iter 10	 before = 0.000130916
+Time  14.187877  	sec      Picard iter 10	 init : 0.000130916
+Time  14.265999  	sec      Picard iter 10	 only Arr : 0.000127619
+Time  14.986345  	sec      Picard iter 10	 only Amm = 0.000112221
+Time  15.057501  	sec      Picard iter 10	 only Aee = 8.80877e-05
+Time  15.208619  	sec      Picard iter 10	 Arr + Aee = 8.33295e-05
+Time  15.209496  	sec      Picard iter 10	 Submat residual = 2.96443e-05
+Time  15.211640  	sec      Picard iter 10	 Submat residual = 8.29906e-05
+Time  15.212482  	sec      Picard iter 10	 Submat residual = 9.68127e-05
+Time  15.212516  	sec      Start linear solver
+Time  15.507342  	sec      Picard iter 10  6.19193e-05
+Time  15.509185  	sec      Picard iter 10  9.7507e-05
+Time  15.592765  	sec      Picard iter 11	 before = 6.19193e-05
+Time  15.595312  	sec      Picard iter 11	 init : 6.19193e-05
+Time  15.659607  	sec      Picard iter 11	 only Arr : 6.0515e-05
+Time  16.455254  	sec      Picard iter 11	 only Amm = 5.32805e-05
+Time  16.533563  	sec      Picard iter 11	 only Aee = 4.175e-05
+Time  16.666670  	sec      Picard iter 11	 Arr + Aee = 3.95706e-05
+Time  16.667658  	sec      Picard iter 11	 Submat residual = 1.39263e-05
+Time  16.669913  	sec      Picard iter 11	 Submat residual = 3.94296e-05
+Time  16.670760  	sec      Picard iter 11	 Submat residual = 4.56658e-05
+Time  16.670789  	sec      Start linear solver
+Time  16.971827  	sec      Picard iter 11  2.95218e-05
+Time  16.973719  	sec      Picard iter 11  4.67003e-05
+Time  17.058206  	sec      Picard iter 12	 before = 2.95218e-05
+Time  17.060435  	sec      Picard iter 12	 init : 2.95218e-05
+Time  17.122611  	sec      Picard iter 12	 only Arr : 2.89271e-05
+Time  17.885526  	sec      Picard iter 12	 only Amm = 2.55219e-05
+Time  17.956732  	sec      Picard iter 12	 only Aee = 1.98789e-05
+Time  18.088007  	sec      Picard iter 12	 Arr + Aee = 1.88751e-05
+Time  18.088860  	sec      Picard iter 12	 Submat residual = 6.57406e-06
+Time  18.090966  	sec      Picard iter 12	 Submat residual = 1.88156e-05
+Time  18.091782  	sec      Picard iter 12	 Submat residual = 2.17782e-05
+Time  18.091806  	sec      Start linear solver
+Time  18.393143  	sec      Picard iter 12  1.41636e-05
+Time  18.395858  	sec      Picard iter 12  2.24809e-05
+Time  18.483573  	sec      Picard iter 13	 before = 1.41636e-05
+Time  18.485831  	sec      Picard iter 13	 init : 1.41636e-05
+Time  18.555928  	sec      Picard iter 13	 only Arr : 1.39126e-05
+Time  19.352380  	sec      Picard iter 13	 only Amm = 1.23083e-05
+Time  19.427373  	sec      Picard iter 13	 only Aee = 9.49676e-06
+Time  19.571679  	sec      Picard iter 13	 Arr + Aee = 9.03174e-06
+Time  19.573067  	sec      Picard iter 13	 Submat residual = 3.11591e-06
+Time  19.575583  	sec      Picard iter 13	 Submat residual = 9.00614e-06
+Time  19.576580  	sec      Picard iter 13	 Submat residual = 1.0478e-05
+Time  19.576615  	sec      Start linear solver
+Time  19.869471  	sec      Picard iter 13  6.82606e-06
+Time  19.871310  	sec      Picard iter 13  1.08574e-05
+Time  19.962150  	sec      Picard iter 14	 before = 6.82606e-06
+Time  19.965196  	sec      Picard iter 14	 init : 6.82606e-06
+Time  20.037763  	sec      Picard iter 14	 only Arr : 6.72021e-06
+Time  20.769145  	sec      Picard iter 14	 only Amm = 5.9642e-06
+Time  20.842510  	sec      Picard iter 14	 only Aee = 4.54688e-06
+Time  20.981969  	sec      Picard iter 14	 Arr + Aee = 4.33028e-06
+Time  20.983044  	sec      Picard iter 14	 Submat residual = 1.48161e-06
+Time  20.985623  	sec      Picard iter 14	 Submat residual = 4.31889e-06
+Time  20.986651  	sec      Picard iter 14	 Submat residual = 5.07416e-06
+Time  20.986683  	sec      Start linear solver
+Time  21.273545  	sec      Picard iter 14  3.29959e-06
+Time  21.275927  	sec      Picard iter 14  5.25279e-06
+Time  21.362342  	sec      Picard iter 15	 before = 3.29959e-06
+Time  21.364568  	sec      Picard iter 15	 init : 3.29959e-06
+Time  21.436634  	sec      Picard iter 15	 only Arr : 3.25493e-06
+Time  22.155028  	sec      Picard iter 15	 only Amm = 2.89883e-06
+Time  22.227391  	sec      Picard iter 15	 only Aee = 2.17964e-06
