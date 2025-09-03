@@ -6,6 +6,7 @@
 #include "Matrix/submat.h"
 #include "Matrix/block_precondition.h"
 #include "Matrix/simple_precondition.h"
+#include "Matrix/fve_precondition.h"
 
 // 模板类实现 PGMRES
 template<uInt BlockDim, uInt Max_dims, bool output_flag = false>

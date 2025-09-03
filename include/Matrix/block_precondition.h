@@ -5,7 +5,7 @@
 #include "Matrix/submat.h"
 
 // 模板类实现 PGMRES
-template<uInt BlockDim, uInt Max_dims, bool output_flag = false>
+template<uInt BlockDim, uInt Max_dims, bool output_flag>
 class PGMRES;
 
 // Max_dims：控制 Hessenberg 最大维数

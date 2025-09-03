@@ -44,6 +44,8 @@ public:
 
     uInt num_block_rows = 0;
     bool finalized = false;
+    
+    using BlockType = DenseMatrix<BlockRows, BlockCols>;
 
 public:
     // ================= 矩阵组装接口 =================

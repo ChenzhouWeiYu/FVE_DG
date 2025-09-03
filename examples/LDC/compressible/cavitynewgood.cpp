@@ -496,14 +496,24 @@ void Run(uInt N, FilesystemManager fsm){
                 std::cout << "real residual = " << (sparse_mat.multiply(U_k_tmp) - rhs).norm()/rhs.norm() 
                     << ",\t iter = "  << eigen_iter << ",\t iter residual = " << eigen_residual << std::endl;
                 
-                SimplePreconditioner<DoFs> precond(sparse_mat, U_k.size());
+                // SimplePreconditioner<DoFs> precond(sparse_mat, U_k.size());
                 //PhysBlockPreconditioner<DoFs> precond(sparse_mat,U_k.size());
                 //IdentityPreconditioner<DoFs> precond(sparse_mat,U_k.size());
                 // DiagPreconditioner<DoFs> precond(sparse_mat,U_k.size());
                 //BJacPreconditioner<DoFs> precond(sparse_mat,U_k.size());
+                // sparse_mat.output_as_scalar("Amat.txt");
+                FVEPreconditioner<DoFs> precond(sparse_mat, U_k.size(), cmesh);
                 PGMRES<DoFs,500,true> pgmres(sparse_mat,precond);
                 LongVector<DoFs> U_tmp(U_k.size());
-
+                const auto& Ru = precond.Rmat.multiply(U_k_tmp);
+                fp.open("Ru_" + std::to_string(picard_iter)+".txt");
+                for(uInt pointId = 0; pointId < cmesh.m_points.size(); pointId++){
+                    vector3f p = cmesh.m_points[pointId];
+                    const auto& sol = Ru[pointId];
+                    fp << p[0] << "\t" << p[1] << "\t" << p[2] << "\t" << sol[0]
+                     << "\t" << sol[1] << "\t" << sol[2] << "\t" << sol[3] << "\t" << sol[4] << std::endl;
+                }
+                fp.close();
                 // SIMPLE 作为预条件，使用 FGMRES 求解全量型的 Ax = b
                 // 由于 Krylov 迭代 x_m = x_0 + sum_k \alpha_k r_k 本身就在求解增量
                
@@ -512,7 +522,7 @@ void Run(uInt N, FilesystemManager fsm){
                 // Scalar pgmres_residual;     //当打开迭代法时，需要把这一行打开
                 
                               
-                auto [pgmres_iter,pgmres_residual] = pgmres.solve(U_tmp, rhs, 500, 1e-12);  //SIMPLE作为FGMRES的预条件
+                // auto [pgmres_iter,pgmres_residual] = pgmres.solve(U_tmp, rhs, 500, 1e-12);  //SIMPLE作为FGMRES的预条件
 
                 // 迭代法：全量型的 SIMPLE, 预条件就可以作为迭代法
                 // U_tmp = precond.apply(rhs,  200,
@@ -526,10 +536,10 @@ void Run(uInt N, FilesystemManager fsm){
                 // printf("real residual = %le,\t iter = %ld, iter residual = %le",
                 //     (sparse_mat.multiply(U_tmp) - rhs).norm(),pgmres_iter,pgmres_residual);
                 // printf("111");
-                std::cout << "CPU Time: " + std::to_string(chrone_clock()) + "  \tsec      " ;
-                std::cout << "real residual = " << (sparse_mat.multiply(U_tmp) - rhs).norm()/rhs.norm()
-                    << ",\t iter = "  << pgmres_iter << ",\t iter residual = " << pgmres_residual << std::endl;
-                logging("Linear solver finished");
+                // std::cout << "CPU Time: " + std::to_string(chrone_clock()) + "  \tsec      " ;
+                // std::cout << "real residual = " << (sparse_mat.multiply(U_tmp) - rhs).norm()/rhs.norm()
+                //     << ",\t iter = "  << pgmres_iter << ",\t iter residual = " << pgmres_residual << std::endl;
+                // logging("Linear solver finished");
 
                 if(picard_iter>3){
                     LongVector<DoFs> rhs(U_n.size());

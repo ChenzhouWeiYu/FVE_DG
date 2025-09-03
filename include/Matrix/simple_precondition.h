@@ -6,7 +6,7 @@
 #include "Matrix/block_precondition.h"
 
 // 模板类实现 PGMRES
-template<uInt BlockDim, uInt Max_dims, bool output_flag = false>
+template<uInt BlockDim, uInt Max_dims, bool output_flag>
 class PGMRES;
 
 
@@ -114,7 +114,7 @@ public:
     constexpr Scalar sor_weight_m = 0.125;
     constexpr Scalar sor_weight_e = 0.125;
 
-    for (int sweep = 0; sweep < max_sweeps; ++sweep) {
+    for (uInt sweep = 0; sweep < max_sweeps; ++sweep) {
         std::cout << "================ Sweep " << sweep << " ================\n";  //暂时注释掉
         // ---------- Step 1: 密度 ----------
         LongVector<1*NumBasis> Arm_Um = Arm.multiply(Um_tmp);
