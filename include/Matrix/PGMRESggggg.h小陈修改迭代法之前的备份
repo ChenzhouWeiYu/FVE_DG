@@ -1,0 +1,677 @@
+// 文件名：PGMRES.hpp
+#pragma once
+#include "Matrix/DenseMatrix.h"
+#include "Matrix/SparseMatrix.h"
+#include "Matrix/LongVector.h"
+#include "Matrix/submat.h"
+
+// 模板类实现 PGMRES
+template<uInt BlockDim, uInt Max_dims, bool output_flag = false>
+class PGMRES;
+
+// Max_dims：控制 Hessenberg 最大维数
+// Preconditioner：预条件器类型，接口为 apply(const Vec&, Vec&)
+template<uInt BlockDim>
+class Preconditioner {
+public:
+    using Vec = LongVector<BlockDim>;
+    virtual Vec apply(const Vec& rhs) = 0;
+    virtual ~Preconditioner() = default;
+};
+
+template<uInt BlockDim>
+class IdentityPreconditioner : public Preconditioner<BlockDim>{
+public:
+    using Vec = LongVector<BlockDim>;
+    IdentityPreconditioner(const BlockSparseMatrix<BlockDim, BlockDim>& A_, uInt DoFs) : A(A_) {     
+    }
+    Vec apply(const Vec& rhs) override {
+        return rhs;
+    }
+private:
+    static constexpr uInt NumBasis = BlockDim/5;
+    const BlockSparseMatrix<BlockDim, BlockDim>& A;
+};
+template<uInt BlockDim>
+class DiagPreconditioner : public Preconditioner<BlockDim>{
+public:
+    using Vec = LongVector<BlockDim>;
+    DiagPreconditioner(const BlockSparseMatrix<BlockDim, BlockDim>& A_, uInt DoFs) : A(A_) { 
+        DiagVec.resize(DoFs);
+        for(uInt brow=0; brow<A.num_block_rows; ++brow){
+            for(uInt i=0; i<A.storage.ell_max_per_row; ++i){
+                const uInt bcol = A.storage.ell_cols[brow][i];
+                if(bcol == brow) {
+                    const auto& block = A.storage.ell_blocks[brow][i];
+                    for(uInt row = 0; row < BlockDim; row++){
+                        DiagVec[brow][row] = 1/block(row,row);
+                    }
+                }
+                
+            }
+            const uInt start = A.storage.csr_row_ptr[brow];
+            const uInt end = A.storage.csr_row_ptr[brow+1];
+            
+            for(uInt idx = start; idx < end; ++idx) {
+                const uInt bcol = A.storage.csr_cols[idx];
+                if(bcol == brow) {
+                    const auto& block = A.storage.csr_blocks[idx];
+                    for(uInt row = 0; row < BlockDim; row++){
+                        DiagVec[brow][row] = 1/block(row,row);
+                    }
+                }
+            }
+        }
+    }
+    Vec apply(const Vec& rhs) override {
+        return rhs * DiagVec;
+    }
+private:
+    static constexpr uInt NumBasis = BlockDim/5;
+    const BlockSparseMatrix<BlockDim, BlockDim>& A;
+    Vec DiagVec;
+};
+
+template<uInt BlockDim>
+class BJacPreconditioner : public Preconditioner<BlockDim>{
+public:
+    using Vec = LongVector<BlockDim>;
+    BJacPreconditioner(const BlockSparseMatrix<BlockDim, BlockDim>& A_, uInt DoFs) : A(A_) { 
+        DiagVec.resize(DoFs);
+        #pragma omp parallel for schedule(dynamic)
+        for(uInt brow=0; brow<A.num_block_rows; ++brow){
+            for(uInt i=0; i<A.storage.ell_max_per_row; ++i){
+                const uInt bcol = A.storage.ell_cols[brow][i];
+                if(bcol == brow) {
+                    const auto& block = A.storage.ell_blocks[brow][i];
+                    DiagVec[brow] = block.lu();
+                }
+                
+            }
+            const uInt start = A.storage.csr_row_ptr[brow];
+            const uInt end = A.storage.csr_row_ptr[brow+1];
+            
+            for(uInt idx = start; idx < end; ++idx) {
+                const uInt bcol = A.storage.csr_cols[idx];
+                if(bcol == brow) {
+                    const auto& block = A.storage.csr_blocks[idx];
+                    DiagVec[brow] = block.lu();
+                }
+            }
+        }
+    }
+    Vec apply(const Vec& rhs) override {
+        Vec ret(rhs.size());
+        #pragma omp parallel for schedule(dynamic)
+        for(uInt brow=0; brow<rhs.size(); ++brow){
+            ret[brow] = DiagVec[brow].solve(rhs[brow],DiagVec[brow]);
+        }
+        return ret;
+    }
+private:
+    static constexpr uInt NumBasis = BlockDim/5;
+    const BlockSparseMatrix<BlockDim, BlockDim>& A;
+    std::vector<DenseMatrix<BlockDim, BlockDim>> DiagVec;
+};
+
+///////SIMPLE 预条件
+template<uInt BlockDim, uInt InnerMaxIters = 100>
+class SimplePreconditioner : public Preconditioner<BlockDim> {
+public:
+    using Vec = LongVector<BlockDim>;
+    static constexpr uInt NumBasis = BlockDim / 5;
+
+    SimplePreconditioner(const BlockSparseMatrix<BlockDim, BlockDim>& A_, uInt DoFs)
+        : A(A_),
+          // 提取子块
+          Arr(get_sub_sparse<NumBasis,1,1,0,0>(A)),
+          Arm(get_sub_sparse<NumBasis,1,3,0,1>(A)),
+          Are(get_sub_sparse<NumBasis,1,1,0,4>(A)),
+
+          Amr(get_sub_sparse<NumBasis,3,1,1,0>(A)),
+          Amm(get_sub_sparse<NumBasis,3,3,1,1>(A)),
+          Ame(get_sub_sparse<NumBasis,3,1,1,4>(A)),
+
+          Aer(get_sub_sparse<NumBasis,1,1,4,0>(A)),
+          Aem(get_sub_sparse<NumBasis,1,3,4,1>(A)),
+          Aee(get_sub_sparse<NumBasis,1,1,4,4>(A)),
+
+          Arr_solver(Arr), Amm_solver(Amm), Aee_solver(Aee)
+    {
+        Ur_tmp.resize(DoFs);
+        Um_tmp.resize(DoFs);
+        Ue_tmp.resize(DoFs);
+        Arr_DiagVec = Arr.get_inv_diag();
+        Amm_DiagVec = Amm.get_inv_diag();
+        Aee_DiagVec = Aee.get_inv_diag();
+    }
+
+    // Vec apply(const Vec& rhs) override {
+    //     // 提取右端项子块
+    //     const auto& br = get_sub_vector<NumBasis,1,0>(rhs);
+    //     const auto& bm = get_sub_vector<NumBasis,3,1>(rhs);
+    //     const auto& be = get_sub_vector<NumBasis,1,4>(rhs);
+
+    //     LongVector<BlockDim> Urme_tmp = rhs;
+
+    //     // Step 1: 预测密度（忽略 U_m 和 U_e 的初值，设置为 0）
+    //     Ur_tmp.fill_scalar(0.0);
+    //     LongVector<1*NumBasis> rhs_rho = br;  // 默认 Arm*Um + Are*Ue = 0
+    //     Arr_solver.set_rhs(rhs_rho);
+    //     Ur_tmp = Arr_solver.SparseLU(Ur_tmp);
+    //     set_sub_vector<NumBasis,1,0>(Ur_tmp, Urme_tmp);
+
+    //     // Step 2: 预测动量
+    //     Um_tmp.fill_scalar(0.0);
+    //     LongVector<3*NumBasis> rhs_m = bm - Amr.multiply(Ur_tmp);  // 用 Ur_tmp 修正
+    //     Amm_solver.set_rhs(rhs_m);
+    //     Um_tmp = Amm_solver.SparseLU(Um_tmp);
+    //     set_sub_vector<NumBasis,3,1>(Um_tmp, Urme_tmp);
+
+    //     // Step 3: 预测能量
+    //     Ue_tmp.fill_scalar(0.0);
+    //     LongVector<1*NumBasis> rhs_e = be - Aer.multiply(Ur_tmp) - Aem.multiply(Um_tmp);
+    //     Aee_solver.set_rhs(rhs_e);
+    //     Ue_tmp = Aee_solver.SparseLU(Ue_tmp);
+    //     set_sub_vector<NumBasis,1,4>(Ue_tmp, Urme_tmp);
+
+    //     return Urme_tmp;
+    // }
+
+////////// 上面是没有加循环的，下面是增加循环的。
+
+////////下面是加循环后编译可以通过，但是爆内存的代码，增加 LongVector<BlockDim> Urme_tmp = rhs; 不爆内存了
+ Vec apply(const Vec& rhs) override {   
+  
+    // 提取右端项子块
+    const auto& br = get_sub_vector<NumBasis,1,0>(rhs);
+    const auto& bm = get_sub_vector<NumBasis,3,1>(rhs);
+    const auto& be = get_sub_vector<NumBasis,1,4>(rhs);
+
+     LongVector<BlockDim> Urme_tmp = rhs;  // 输出解向量
+    // 初始化：全置零 
+    Ur_tmp.fill_scalar(0.0);
+    Um_tmp.fill_scalar(0.0);
+    Ue_tmp.fill_scalar(0.0);
+    Urme_tmp.fill_scalar(0.0);
+    
+    Ur_tmp = br * Arr_DiagVec;
+    Um_tmp = bm * Amm_DiagVec;
+    Ue_tmp = be * Aee_DiagVec;
+    set_sub_vector<NumBasis,1,0>(Ur_tmp, Urme_tmp);
+    set_sub_vector<NumBasis,3,1>(Um_tmp, Urme_tmp);
+    set_sub_vector<NumBasis,1,4>(Ue_tmp, Urme_tmp);
+
+    
+     // ------- 整体系统残差 -------
+    Vec AU0 = A.multiply(Urme_tmp);
+    Vec res_all0 = AU0 - rhs;
+    std::cout << "[没有进入sweep循环时整体系统残差] || A * U - b || = " << res_all0.norm()/rhs.norm() << std::endl;
+    // return Urme_tmp;
+    // 可调迭代次数
+    constexpr int max_sweeps = 1;
+    constexpr Scalar sor_weight_r = 0.125;
+    constexpr Scalar sor_weight_m = 0.125;
+    constexpr Scalar sor_weight_e = 0.125;
+
+    for (int sweep = 0; sweep < max_sweeps; ++sweep) {
+        std::cout << "================ Sweep " << sweep << " ================\n";
+        // ---------- Step 1: 密度 ----------
+        LongVector<1*NumBasis> Arm_Um = Arm.multiply(Um_tmp);
+        LongVector<1*NumBasis> Are_Ue = Are.multiply(Ue_tmp);    
+        LongVector<1*NumBasis> rhs_rho = br - Arm_Um - Are_Ue;   
+        Arr_solver.set_rhs(rhs_rho);
+        Ur_tmp = (1-sor_weight_r) * Ur_tmp + sor_weight_r * Arr_solver.SparseLU(Ur_tmp);
+        set_sub_vector<NumBasis,1,0>(Ur_tmp, Urme_tmp);
+
+        // ------- 整体系统残差 -------
+        Vec AU = A.multiply(Urme_tmp);
+        Vec res_all = AU - rhs;
+        std::cout << "[更新密度后计算整体系统残差] || A * U - b || = " << res_all.norm()/rhs.norm() << std::endl;
+
+        // ---------- Step 2: 动量 ----------
+        LongVector<3*NumBasis> rhs_m = bm
+            - Amr.multiply(Ur_tmp)
+            - Ame.multiply(Ue_tmp);
+        Amm_solver.set_rhs(rhs_m);
+        Um_tmp = (1-sor_weight_m) * Um_tmp + sor_weight_m * Amm_solver.SparseLU(Um_tmp);
+        set_sub_vector<NumBasis,3,1>(Um_tmp, Urme_tmp);
+        
+        // ------- 整体系统残差 -------
+        Vec AU2 = A.multiply(Urme_tmp);
+        Vec res_all2 = AU2 - rhs;
+        std::cout << "[更新动量后计算整体系统残差] || A * U - b || = " << res_all2.norm()/rhs.norm() << std::endl;
+
+        // ---------- Step 3: 能量 ----------
+        LongVector<1*NumBasis> rhs_e = be
+            - Aer.multiply(Ur_tmp)
+            - Aem.multiply(Um_tmp);
+        Aee_solver.set_rhs(rhs_e);
+        Ue_tmp = (1-sor_weight_e) * Ue_tmp + sor_weight_e * Aee_solver.SparseLU(Ue_tmp);
+        set_sub_vector<NumBasis,1,4>(Ue_tmp, Urme_tmp);
+
+        // ------- 整体系统残差 -------
+        Vec AU3 = A.multiply(Urme_tmp);
+        Vec res_all3 = AU3 - rhs;
+        std::cout << "[更新能量后计算整体系统残差] || A * U - b || = " << res_all3.norm()/rhs.norm() << std::endl;
+    }
+
+
+
+
+//     for (int sweep = 0; sweep < max_sweeps; ++sweep) {
+//     std::cout << "================ Sweep " << sweep << " ================\n";
+//       //////////// 不同的初始猜测
+//     //   if (sweep == 0) {
+//     //     Ur_tmp = br;
+//     //     Um_tmp = bm;
+//     //     Ue_tmp = be;
+//     //  }
+//     // ---------- Step 1: 密度 ----------
+//     LongVector<1*NumBasis> Arm_Um = Arm.multiply(Um_tmp);
+//     LongVector<1*NumBasis> Are_Ue = Are.multiply(Ue_tmp);    
+//     LongVector<1*NumBasis> rhs_rho = br - Arm_Um - Are_Ue;   
+//     Arr_solver.set_rhs(rhs_rho);
+//     Ur_tmp = Arr_solver.SparseLU(Ur_tmp);
+//     set_sub_vector<NumBasis,1,0>(Ur_tmp, Urme_tmp);
+
+//     // 密度残差分析
+//     // LongVector<1*NumBasis> Ar_rho = Arr.multiply(Ur_tmp);
+//     // LongVector<1*NumBasis> Ar_m   = Arm.multiply(Um_tmp);
+//     // LongVector<1*NumBasis> Ar_e   = Are.multiply(Ue_tmp);
+
+//     // LongVector<1*NumBasis> Ar_rho_residual = Ar_rho - br;
+//     // LongVector<1*NumBasis> Ar_m_residual   = Ar_m   - br;
+//     // LongVector<1*NumBasis> Ar_e_residual   = Ar_e   - br;
+//     // LongVector<1*NumBasis> res_rho_sum     = Ar_rho_residual + Ar_m_residual + Ar_e_residual;
+//     // LongVector<1*NumBasis> res_rho_full    = Ar_rho + Ar_m + Ar_e - br;
+
+//     // std::cout << "[密度残差分块] || Arr*Ur - br || = " << Ar_rho_residual.norm() << std::endl;
+//     // std::cout << "[密度残差分块] || Arm*Um - br || = " << Ar_m_residual.norm() << std::endl;
+//     // std::cout << "[密度残差分块] || Are*Ue - br || = " << Ar_e_residual.norm() << std::endl;
+//     // std::cout << "[密度残差之和] || sum(partials)  || = " << res_rho_sum.norm() << std::endl;
+//     // std::cout << "[密度总残差]   || Arr*Ur + Arm*Um + Are*Ue - br || = " << res_rho_full.norm() << std::endl;
+//       // ------- 整体系统残差 -------
+//     Vec AU = A.multiply(Urme_tmp);
+//     Vec res_all = AU - rhs;
+//     std::cout << "[更新密度后计算整体系统残差] || A * U - b || = " << res_all.norm()/rhs.norm() << std::endl;
+
+//     // ---------- Step 2: 动量 ----------
+//     LongVector<3*NumBasis> rhs_m = bm
+//         - Amr.multiply(Ur_tmp)
+//         - Ame.multiply(Ue_tmp);
+//     Amm_solver.set_rhs(rhs_m);
+//     // Um_tmp = Amm_solver.SparseLU(Um_tmp);
+//     set_sub_vector<NumBasis,3,1>(Um_tmp, Urme_tmp);
+
+//     // 动量残差分析
+//     // LongVector<3*NumBasis> Am_r   = Amr.multiply(Ur_tmp);
+//     // LongVector<3*NumBasis> Am_m   = Amm.multiply(Um_tmp);
+//     // LongVector<3*NumBasis> Am_e   = Ame.multiply(Ue_tmp);
+
+//     // LongVector<3*NumBasis> Am_r_residual = Am_r - bm;
+//     // LongVector<3*NumBasis> Am_m_residual = Am_m - bm;
+//     // LongVector<3*NumBasis> Am_e_residual = Am_e - bm;
+//     // LongVector<3*NumBasis> res_m_sum     = Am_r_residual + Am_m_residual + Am_e_residual;
+//     // LongVector<3*NumBasis> res_m_full    = Am_r + Am_m + Am_e - bm;
+
+//     // std::cout << "[动量残差分块] || Amr*Ur - bm || = " << Am_r_residual.norm() << std::endl;
+//     // std::cout << "[动量残差分块] || Amm*Um - bm || = " << Am_m_residual.norm() << std::endl;
+//     // std::cout << "[动量残差分块] || Ame*Ue - bm || = " << Am_e_residual.norm() << std::endl;
+//     // std::cout << "[动量残差之和] || sum(partials) || = " << res_m_sum.norm() << std::endl;
+//     // std::cout << "[动量总残差]   || Amr*Ur + Amm*Um + Ame*Ue - bm || = " << res_m_full.norm() << std::endl;
+    
+//      // ------- 整体系统残差 -------
+//     Vec AU2 = A.multiply(Urme_tmp);
+//     Vec res_all2 = AU2 - rhs;
+//     std::cout << "[更新动量后计算整体系统残差] || A * U - b || = " << res_all2.norm()/rhs.norm() << std::endl;
+
+//     // ---------- Step 3: 能量 ----------
+//     LongVector<1*NumBasis> rhs_e = be
+//         - Aer.multiply(Ur_tmp)
+//         - Aem.multiply(Um_tmp);
+//     Aee_solver.set_rhs(rhs_e);
+//     Ue_tmp = Aee_solver.SparseLU(Ue_tmp);
+//     set_sub_vector<NumBasis,1,4>(Ue_tmp, Urme_tmp);
+
+//     // 能量残差分析
+//     // LongVector<1*NumBasis> Ae_r = Aer.multiply(Ur_tmp);
+//     // LongVector<1*NumBasis> Ae_m = Aem.multiply(Um_tmp);
+//     // LongVector<1*NumBasis> Ae_e = Aee.multiply(Ue_tmp);
+
+//     // LongVector<1*NumBasis> Ae_r_residual = Ae_r - be;
+//     // LongVector<1*NumBasis> Ae_m_residual = Ae_m - be;
+//     // LongVector<1*NumBasis> Ae_e_residual = Ae_e - be;
+//     // LongVector<1*NumBasis> res_e_sum     = Ae_r_residual + Ae_m_residual + Ae_e_residual;
+//     // LongVector<1*NumBasis> res_e_full    = Ae_r + Ae_m + Ae_e - be;
+
+//     // std::cout << "[能量残差分块] || Aer*Ur - be || = " << Ae_r_residual.norm() << std::endl;
+//     // std::cout << "[能量残差分块] || Aem*Um - be || = " << Ae_m_residual.norm() << std::endl;
+//     // std::cout << "[能量残差分块] || Aee*Ue - be || = " << Ae_e_residual.norm() << std::endl;
+//     // std::cout << "[能量残差之和] || sum(partials) || = " << res_e_sum.norm() << std::endl;
+//     // std::cout << "[能量总残差]   || Aer*Ur + Aem*Um + Aee*Ue - be || = " << res_e_full.norm() << std::endl;
+//      // ------- 整体系统残差 -------
+//     Vec AU3 = A.multiply(Urme_tmp);
+//     Vec res_all3 = AU3 - rhs;
+//     std::cout << "[更新能量后计算整体系统残差] || A * U - b || = " << res_all3.norm()/rhs.norm() << std::endl;
+// }
+       // ------- 整体系统残差 -------
+    Vec AU = A.multiply(Urme_tmp);
+    Vec res_all = AU - rhs;
+    std::cout << "[整体系统残差] || A * U - b || = " << res_all.norm() << std::endl;
+
+//     for (int sweep = 0; sweep < max_sweeps; ++sweep) {
+//     std::cout << "Sweep " << sweep << std::endl;
+
+//     // ---------- Step 1: 密度 ----------
+//     LongVector<1*NumBasis> Arm_Um = Arm.multiply(Um_tmp);
+//     LongVector<1*NumBasis> Are_Ue = Are.multiply(Ue_tmp);    
+//     LongVector<1*NumBasis> rhs_rho = br - Arm_Um - Are_Ue;   
+//     Arr_solver.set_rhs(rhs_rho);
+//     Ur_tmp = Arr_solver.SparseLU(Ur_tmp);
+//     set_sub_vector<NumBasis,1,0>(Ur_tmp, Urme_tmp);
+
+//     // 残差检查
+//     LongVector<1*NumBasis> res_rho = Arr.multiply(Ur_tmp) - rhs_rho;
+//     std::cout << "|| A_rho * Ur - rhs_rho || = " << res_rho.norm() << std::endl;
+
+//     // ---------- Step 2: 动量 ----------
+//     LongVector<3*NumBasis> rhs_m = bm
+//         - Amr.multiply(Ur_tmp)
+//         - Ame.multiply(Ue_tmp);
+//     Amm_solver.set_rhs(rhs_m);
+//     Um_tmp = Amm_solver.SparseLU(Um_tmp);
+//     set_sub_vector<NumBasis,3,1>(Um_tmp, Urme_tmp);
+
+//     // 残差检查
+//     LongVector<3*NumBasis> res_m = Amm.multiply(Um_tmp) - rhs_m;
+//     std::cout << "|| A_mm * Um - rhs_m || = " << res_m.norm() << std::endl;
+
+//     // ---------- Step 3: 能量 ----------
+//     LongVector<1*NumBasis> rhs_e = be
+//         - Aer.multiply(Ur_tmp)
+//         - Aem.multiply(Um_tmp);
+//     Aee_solver.set_rhs(rhs_e);
+//     Ue_tmp = Aee_solver.SparseLU(Ue_tmp);
+//     set_sub_vector<NumBasis,1,4>(Ue_tmp, Urme_tmp);
+
+//     // 残差检查
+//     LongVector<1*NumBasis> res_e = Aee.multiply(Ue_tmp) - rhs_e;
+//     std::cout << "|| A_ee * Ue - rhs_e || = " << res_e.norm() << std::endl;
+//   }
+
+  //////////////////////////////////  下面密度、能量不更新，只有动量更新 iter=71 
+// constexpr int max_sweeps = 2;
+
+// for (int sweep = 0; sweep < max_sweeps; ++sweep) {
+//     std::cout << "Sweep " << sweep << std::endl;
+
+//     if (sweep == 0) {
+//         // ---------- Step 1: 密度 ----------
+//         LongVector<1*NumBasis> Arm_Um = Arm.multiply(Um_tmp);
+//         LongVector<1*NumBasis> Are_Ue = Are.multiply(Ue_tmp);    
+//         LongVector<1*NumBasis> rhs_rho = br - Arm_Um - Are_Ue;   
+//         Arr_solver.set_rhs(rhs_rho);
+//         Ur_tmp = Arr_solver.SparseLU(Ur_tmp);
+//         set_sub_vector<NumBasis,1,0>(Ur_tmp, Urme_tmp);
+//     }
+
+//     // ---------- Step 2: 动量 ----------
+//     LongVector<3*NumBasis> rhs_m = bm
+//         - Amr.multiply(Ur_tmp)
+//         - Ame.multiply(Ue_tmp);
+//     Amm_solver.set_rhs(rhs_m);
+//     Um_tmp = Amm_solver.SparseLU(Um_tmp);
+//     set_sub_vector<NumBasis,3,1>(Um_tmp, Urme_tmp);
+
+//     if (sweep == 0) {
+//         // ---------- Step 3: 能量 ----------
+//         LongVector<1*NumBasis> rhs_e = be
+//             - Aer.multiply(Ur_tmp)
+//             - Aem.multiply(Um_tmp);
+//         Aee_solver.set_rhs(rhs_e);
+//         Ue_tmp = Aee_solver.SparseLU(Ue_tmp);
+//         set_sub_vector<NumBasis,1,4>(Ue_tmp, Urme_tmp);
+//     }
+// }
+  //////////////////////////////////上面密度、能量不更新，只有动量更新
+
+///////////////////// 下面密度不更新，动量、能量更新 iter=500
+// constexpr int max_sweeps = 2;
+
+// for (int sweep = 0; sweep < max_sweeps; ++sweep) {
+//     std::cout << "Sweep " << sweep << std::endl;
+
+//     // Step 1: 密度更新（只在 sweep == 0 执行）
+//     if (sweep == 0) {
+//         LongVector<1*NumBasis> Arm_Um = Arm.multiply(Um_tmp);
+//         LongVector<1*NumBasis> Are_Ue = Are.multiply(Ue_tmp);    
+//         LongVector<1*NumBasis> rhs_rho = br - Arm_Um - Are_Ue;   
+//         Arr_solver.set_rhs(rhs_rho);
+//         Ur_tmp = Arr_solver.SparseLU(Ur_tmp);
+//         set_sub_vector<NumBasis,1,0>(Ur_tmp, Urme_tmp);
+//     }
+
+//     // Step 2: 动量更新（每次都做）
+//     LongVector<3*NumBasis> rhs_m = bm
+//         - Amr.multiply(Ur_tmp)
+//         - Ame.multiply(Ue_tmp);
+//     Amm_solver.set_rhs(rhs_m);
+//     Um_tmp = Amm_solver.SparseLU(Um_tmp);
+//     set_sub_vector<NumBasis,3,1>(Um_tmp, Urme_tmp);
+
+//     // Step 3: 能量更新（每次都做）
+//     LongVector<1*NumBasis> rhs_e = be
+//         - Aer.multiply(Ur_tmp)
+//         - Aem.multiply(Um_tmp);
+//     Aee_solver.set_rhs(rhs_e);
+//     Ue_tmp = Aee_solver.SparseLU(Ue_tmp);
+//     set_sub_vector<NumBasis,1,4>(Ue_tmp, Urme_tmp);
+// }
+///////////////////// 上面密度不更新，动量、能量更新
+
+    return Urme_tmp;
+}
+//////////上面是加循环后编译可以通过，但是爆内存的代码，增加 LongVector<BlockDim> Urme_tmp = rhs; 不爆内存
+
+//////////下面是加循环后编译可以通过，不会爆内存的代码，但是2次循环不收敛
+
+// Vec apply(const Vec& rhs) override {
+//     const auto& br = get_sub_vector<NumBasis,1,0>(rhs);
+//     const auto& bm = get_sub_vector<NumBasis,3,1>(rhs);
+//     const auto& be = get_sub_vector<NumBasis,1,4>(rhs);
+
+//     LongVector<BlockDim> Urme_tmp;
+//     Urme_tmp.resize(rhs.size());
+//     Ur_tmp.fill_scalar(0.0);
+//     Um_tmp.fill_scalar(0.0);
+//     Ue_tmp.fill_scalar(0.0);
+//     Urme_tmp.fill_scalar(0.0);
+
+//     constexpr int Nsweep = 1;
+//     for (int sweep = 0; sweep < Nsweep; ++sweep) {
+
+//         // Step 1: 密度预测
+//         LongVector<1*NumBasis> rhs_rho = br
+//             - Arm.multiply(Um_tmp)
+//             - Are.multiply(Ue_tmp);
+//         Arr_solver.set_rhs(rhs_rho);
+//         Ur_tmp = Arr_solver.SparseLU(Ur_tmp);
+
+//         // Step 2: 动量预测
+//         LongVector<3*NumBasis> rhs_m = bm
+//             - Amr.multiply(Ur_tmp)
+//             - Ame.multiply(Ue_tmp);
+//         Amm_solver.set_rhs(rhs_m);
+//         Um_tmp = Amm_solver.SparseLU(Um_tmp);
+
+//         // Step 3: 能量预测
+//         LongVector<1*NumBasis> rhs_e = be
+//             - Aer.multiply(Ur_tmp)
+//             - Aem.multiply(Um_tmp);
+//         Aee_solver.set_rhs(rhs_e);
+//         Ue_tmp = Aee_solver.SparseLU(Ue_tmp);
+//     }
+
+//     // 拼接最终预条件器作用结果
+//     set_sub_vector<NumBasis,1,0>(Ur_tmp, Urme_tmp);
+//     set_sub_vector<NumBasis,3,1>(Um_tmp, Urme_tmp);
+//     set_sub_vector<NumBasis,1,4>(Ue_tmp, Urme_tmp);
+
+//     return Urme_tmp;
+// }
+private:
+    const BlockSparseMatrix<BlockDim, BlockDim>& A;
+
+    // 子块矩阵
+    BlockSparseMatrix<1*NumBasis, 1*NumBasis> Arr;
+    BlockSparseMatrix<1*NumBasis, 3*NumBasis> Arm;
+    BlockSparseMatrix<1*NumBasis, 1*NumBasis> Are;
+
+    BlockSparseMatrix<3*NumBasis, 1*NumBasis> Amr;
+    BlockSparseMatrix<3*NumBasis, 3*NumBasis> Amm;
+    BlockSparseMatrix<3*NumBasis, 1*NumBasis> Ame;
+
+    BlockSparseMatrix<1*NumBasis, 1*NumBasis> Aer;
+    BlockSparseMatrix<1*NumBasis, 3*NumBasis> Aem;
+    BlockSparseMatrix<1*NumBasis, 1*NumBasis> Aee;
+
+    // 求解器
+    EigenSparseSolver<1*NumBasis, 1*NumBasis> Arr_solver;
+    EigenSparseSolver<3*NumBasis, 3*NumBasis> Amm_solver;
+    EigenSparseSolver<1*NumBasis, 1*NumBasis> Aee_solver;
+
+    // 中间结果向量
+    LongVector<1*NumBasis> Ur_tmp;
+    LongVector<3*NumBasis> Um_tmp;
+    LongVector<1*NumBasis> Ue_tmp;
+    LongVector<1*NumBasis> Arr_DiagVec;
+    LongVector<3*NumBasis> Amm_DiagVec;
+    LongVector<1*NumBasis> Aee_DiagVec;
+   };
+
+template<uInt BlockDim, uInt Max_dims, bool output_flag>
+class PGMRES {
+public:
+    // using Vec = DenseMatrix<BlockDim, 1>;
+    using Vec = LongVector<BlockDim>;
+
+    PGMRES(const BlockSparseMatrix<BlockDim, BlockDim>& A_, Preconditioner<BlockDim>& M_)
+        : A(A_), M(M_) {}
+
+    // 主迭代函数
+    std::tuple<uInt,Scalar> solve(Vec& x, const Vec& b, uInt max_iter, Scalar tol) {
+        std::array<Vec, Max_dims + 1> V{};       // 正交基 V_0, ..., V_m
+        std::array<Vec, Max_dims> Z{};           // 预条件后向量 z_j = M^{-1} v_j
+        DenseMatrix<Max_dims + 1, Max_dims> H{}; // Hessenberg 矩阵
+        DenseMatrix<Max_dims + 1, 1> g{};         // g = beta * e1
+
+        // print("spmv 前");
+        Vec r0 = b - A.multiply(x);
+        // print("spmv后，norm前");
+        Scalar beta = r0.norm();
+        // print("初始残差 r_0 = " + std::to_string(beta));
+        if (beta < tol) return {0, beta};
+
+        V[0] = r0 / beta;
+        g(0, 0) = beta;
+
+        // Givens 旋转参数
+        std::array<Scalar, Max_dims> cs{}, sn{};
+
+        for (uInt j = 0; j < max_iter && j < Max_dims; ++j) {
+            // 预条件：z_j = M^{-1} v_j
+            // print("预条件前");
+            Z[j] = M.apply(V[j]);
+            if constexpr (output_flag){
+                printf("iter = %ld ,  ||Az-v|| residual = %le\n",j, (A.multiply(Z[j])-V[j]).norm()/V[j].norm());
+            }
+
+            // print("预条件后");
+
+            // w = A z_j
+            Vec w = A.multiply(Z[j]);
+            // print("预条件的残差向量");
+
+            // Arnoldi 正交化
+            for (uInt i = 0; i <= j; ++i) {
+                H(i, j) = V[i].dot(w);
+                w -= H(i, j) * V[i];
+            }
+            H(j + 1, j) = w.norm();
+            // print("H矩阵");
+
+            if (H(j + 1, j) < 1e-14) break; // 说明基生成失败（已收敛）
+
+            V[j + 1] = w / H(j + 1, j);
+            
+            // print("开始 GIvens 旋转");
+            // Apply Givens rotations to new column H(:,j)
+            
+            for (uInt i = 0; i < j; ++i)
+                apply_givens(H(i, j), H(i + 1, j), cs[i], sn[i]);
+
+            // Create new Givens rotation
+            generate_givens(H(j, j), H(j + 1, j), cs[j], sn[j]);
+            apply_givens(H(j, j), H(j + 1, j), cs[j], sn[j]);
+            apply_givens(g(j, 0), g(j + 1, 0), cs[j], sn[j]);
+            if constexpr (output_flag){
+                printf("iter = %ld ,   residual = %le\n",j, g(j + 1, 0)/beta);
+            }
+            // print("Givens旋转完");
+            // Check residual
+            if (std::abs(g(j + 1, 0))/beta < tol) {
+                reconstruct_solution(x, Z, H, g, j + 1);
+                return {j,std::abs(g(j + 1, 0))/beta};
+            }
+        }
+
+        reconstruct_solution(x, Z, H, g, max_iter);
+        uInt real_iter = std::min(max_iter,Max_dims);
+        return {real_iter,std::abs(g(real_iter, 0))/beta};
+    }
+
+private:
+    const BlockSparseMatrix<BlockDim, BlockDim>& A;
+    Preconditioner<BlockDim>& M;
+
+    // 生成 Givens 旋转
+    void generate_givens(Scalar a, Scalar b, Scalar& c, Scalar& s) {
+        if (std::abs(b) < 1e-14) {
+            c = 1.0; s = 0.0;
+        } else if (std::abs(b) > std::abs(a)) {
+            Scalar t = -a / b;
+            s = 1.0 / std::sqrt(1 + t * t);
+            c = s * t;
+        } else {
+            Scalar t = -b / a;
+            c = 1.0 / std::sqrt(1 + t * t);
+            s = c * t;
+        }
+    }
+
+    // 应用 Givens 旋转到 (a,b)
+    void apply_givens(Scalar& a, Scalar& b, Scalar c, Scalar s) {
+        Scalar temp = c * a - s * b;
+        b = s * a + c * b;
+        a = temp;
+    }
+
+    // 解最小二乘问题并更新解
+    void reconstruct_solution(Vec& x, const std::array<Vec, Max_dims>& Z,
+                              const DenseMatrix<Max_dims + 1, Max_dims>& H,
+                              const DenseMatrix<Max_dims + 1, 1>& g,
+                              uInt k) {
+        DenseMatrix<Max_dims, 1> y{};
+        // 回代解 y: H(0:k,0:k) * y = g(0:k)
+        for (int i = k - 1; i >= 0; --i) {
+            y(i, 0) = g(i, 0);
+            for (uInt j = i + 1; j < k; ++j)
+                y(i, 0) -= H(i, j) * y(j, 0);
+            y(i, 0) /= H(i, i);
+        }
+
+        for (uInt i = 0; i < k; ++i)
+            x += Z[i] * y(i, 0);
+    }
+};
