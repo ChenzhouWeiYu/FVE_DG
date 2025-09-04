@@ -13,8 +13,10 @@
 template<uInt BlockDim, uInt Max_dims, bool output_flag>
 class PGMRES;
 
-
 template<uInt BlockDim, uInt InnerMaxIters = 100, uInt LowerOrder = 0>
+class PMGPreconditioner;
+
+template<uInt BlockDim, uInt InnerMaxIters, uInt LowerOrder>
 class PMGPreconditioner : public Preconditioner<BlockDim> {
 public:
     using Vec = LongVector<BlockDim>;
@@ -22,11 +24,15 @@ public:
     static constexpr uInt Order = (NumBasis < 10 ? (NumBasis == 1 ? 0 : 1) : (NumBasis==10 ? 2 : 3));
 private:
     const BlockSparseMatrix<5*NumBasis, 5*NumBasis>& A;
+    BJacPreconditioner<BlockDim> smother;
 
     // 粗网格的多项式阶为 LowerOrder
     static constexpr uInt LowerNumBasis = DGBasisEvaluator<LowerOrder>::NumBasis;
     BlockSparseMatrix<5*LowerNumBasis, 5*LowerNumBasis> RAP; 
+
     EigenSparseSolver<5*LowerNumBasis, 5*LowerNumBasis> RAP_solver;
+    std::unique_ptr<PMGPreconditioner<5*LowerNumBasis, InnerMaxIters, LowerOrder==0?0:LowerOrder-1>> RAP_preconditioner_ptr;
+    
 
 public:
 
@@ -35,9 +41,9 @@ public:
         : PMGPreconditioner(A_, DoFs) {}
     
     PMGPreconditioner(const BlockSparseMatrix<BlockDim, BlockDim>& A_, uInt DoFs)
-        : A(A_)
+        : A(A_), smother(BJacPreconditioner<BlockDim>(A_, DoFs)) 
     {   
-        print("PMG Preconditioner Constructor");
+        // print("PMG Preconditioner Constructor");
         DenseMatrix<5*LowerNumBasis, 5*LowerNumBasis> sub_matrix;
         for(uInt brow=0; brow<A.num_block_rows; ++brow){
             for(uInt i=0; i<A.storage.ell_max_per_row; ++i){
@@ -64,28 +70,78 @@ public:
                 RAP.add_block(brow, bcol, sub_matrix);
             }
         }
-        print("PMG Preconditioner RAP Matrix Constructed");
+        // print("PMG Preconditioner RAP Matrix Constructed");
         RAP.finalize();
-        print("PMG Preconditioner RAP Matrix Finalized");
-        RAP_solver = EigenSparseSolver<5*LowerNumBasis,5*LowerNumBasis>(RAP);
-        print("PMG Preconditioner RAP Solver Constructed");
+        // print("PMG Preconditioner RAP Matrix Finalized");
+        if constexpr (LowerOrder == 0) RAP_solver = EigenSparseSolver<5*LowerNumBasis,5*LowerNumBasis>(RAP);
+        else RAP_preconditioner_ptr = std::make_unique<PMGPreconditioner<5*LowerNumBasis, InnerMaxIters, LowerOrder==0?0:LowerOrder-1>>(RAP, DoFs);
+        // print("PMG Preconditioner RAP Solver Constructed");
     }
 
 
     
     Vec apply(const Vec& rhs) override {
-        const auto& R_r = Rmul(rhs);
-        print("PMG Preconditioner Restricted RHS to Coarse Grid");
-        RAP_solver.set_rhs(R_r);
-        print("PMG Preconditioner Set RHS");
-        const auto& sol = RAP_solver.SparseLU(R_r); // 无效的初始猜测
-        print("PMG Preconditioner Solve Coarse Grid System");
-        return Pmul(sol);
+        // 设置初始
+        Vec x(rhs.size());
+
+        #pragma GCC unroll 20
+        for(uInt vcycle = 0; vcycle < 1; ++vcycle) {
+            // 前磨光
+            #pragma GCC unroll 20
+            for(uInt pre_smoothing = 0; pre_smoothing < 0; ++pre_smoothing) {
+                x = x + smother.apply(rhs - A.multiply(x));
+            }
+            // print("PMG Preconditioner Applied Smoother");
+
+            // 限制, 粗网格求解, 插值
+            x = x + apply_coarse(rhs - A.multiply(x));
+            
+            // 后磨光
+            #pragma GCC unroll 20
+            for(uInt post_smoothing = 0; post_smoothing < 5; ++post_smoothing) {
+                x = x + smother.apply(rhs - A.multiply(x));
+            }
+            // print("PMG Preconditioner Applied Smoother");
+        }
+
+        return x;
     }
+
+    
 
   
 
 private:
+    // 接收残差的 MG 部分
+    inline Vec apply_coarse(const Vec& r) {
+        if constexpr (LowerOrder == 0) {
+            // 限制
+            auto R_r = Rmul(r);
+            // print("PMG Preconditioner Restricted RHS to Coarse Grid");
+
+            // 粗网格求解
+            RAP_solver.set_rhs(R_r);
+            // print("PMG Preconditioner Set RHS");
+            auto err = RAP_solver.SparseLU(R_r);
+            // print("PMG Preconditioner Solve Coarse Grid System");
+
+            // 插值
+            return Pmul(err);
+        }
+        else{
+            // 限制
+            auto R_r = Rmul(r);
+            // print("PMG Preconditioner Restricted RHS to Coarse Grid");
+
+            // 粗网格求解
+            auto err = RAP_preconditioner_ptr->apply(R_r);
+
+            // 插值
+            return Pmul(err);
+        }
+
+    }
+
     // 限制算子 R 的作用，实际截取高阶向量的前一段
     LongVector<5*LowerNumBasis> Rmul(LongVector<5*NumBasis> vec) {
         LongVector<5*LowerNumBasis> result(vec.size()); // 预分配空间

@@ -246,7 +246,7 @@ void Run(uInt N, FilesystemManager fsm){
                 // BJacPreconditioner<DoFs> precond(sparse_mat,U_k.size());
                 // sparse_mat.output_as_scalar("Amat.txt");
                 // FVEPreconditioner<DoFs> precond(sparse_mat, U_k.size(), cmesh);
-                PMGPreconditioner<DoFs,100,1> precond(sparse_mat, U_k.size(), cmesh); // 网格传不传都无所谓，两个构造函数都支持
+                PMGPreconditioner<DoFs,100,Order-1> precond(sparse_mat, U_k.size(), cmesh); // 网格传不传都无所谓，两个构造函数都支持
                 PGMRES<DoFs,500,true> pgmres(sparse_mat,precond);
                 LongVector<DoFs> U_tmp(U_k.size());
                 auto [pgmres_iter,pgmres_residual] = pgmres.solve(U_tmp, rhs, 500, 1e-12);
