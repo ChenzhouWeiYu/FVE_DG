@@ -13,26 +13,42 @@
 template<uInt BlockDim, uInt Max_dims, bool output_flag>
 class PGMRES;
 
-template<uInt BlockDim, uInt InnerMaxIters = 100, uInt LowerOrder = 0>
+template<uInt BlockDim, uInt VcycleMaxIters = 1, uInt LowerOrder = 0, 
+    typename Smoother=BJacPreconditioner<BlockDim>, uInt PreIters=0, uInt PostIters=5>
 class PMGPreconditioner;
 
-template<uInt BlockDim, uInt InnerMaxIters, uInt LowerOrder>
+template<uInt BlockDim, uInt VcycleMaxIters, uInt LowerOrder, typename Smoother, uInt PreIters, uInt PostIters>
 class PMGPreconditioner : public Preconditioner<BlockDim> {
-public:
+// public:
+private:
     using Vec = LongVector<BlockDim>;
     static constexpr uInt NumBasis = BlockDim / 5;
     static constexpr uInt Order = (NumBasis < 10 ? (NumBasis == 1 ? 0 : 1) : (NumBasis==10 ? 2 : 3));
-private:
+
     const BlockSparseMatrix<5*NumBasis, 5*NumBasis>& A;
-    BJacPreconditioner<BlockDim> smother;
+    Smoother smother;
 
     // 粗网格的多项式阶为 LowerOrder
     static constexpr uInt LowerNumBasis = DGBasisEvaluator<LowerOrder>::NumBasis;
     BlockSparseMatrix<5*LowerNumBasis, 5*LowerNumBasis> RAP; 
 
     EigenSparseSolver<5*LowerNumBasis, 5*LowerNumBasis> RAP_solver;
-    std::unique_ptr<PMGPreconditioner<5*LowerNumBasis, InnerMaxIters, LowerOrder==0?0:LowerOrder-1>> RAP_preconditioner_ptr;
+    std::unique_ptr<PMGPreconditioner<5*LowerNumBasis, VcycleMaxIters, LowerOrder==0?0:LowerOrder-1>> RAP_preconditioner_ptr;
     
+    // 自定义的 V-Cycle 次数、前后磨光次数（暂时不生效，以后再弄）
+    uInt vcycle_iters = VcycleMaxIters;
+    uInt pre_iters = PreIters;
+    uInt post_iters = PostIters;
+public:
+    void set_vcycle_iters(uInt vcycle_iters_){
+        vcycle_iters = vcycle_iters_;
+    }
+    void set_pre_iters(uInt pre_iters_){
+        pre_iters = pre_iters_;
+    }
+    void set_post_iters(uInt post_iters_){
+        post_iters = post_iters_;
+    }
 
 public:
 
@@ -41,7 +57,7 @@ public:
         : PMGPreconditioner(A_, DoFs) {}
     
     PMGPreconditioner(const BlockSparseMatrix<BlockDim, BlockDim>& A_, uInt DoFs)
-        : A(A_), smother(BJacPreconditioner<BlockDim>(A_, DoFs)) 
+        : A(A_), smother(Smoother(A_, DoFs)) 
     {   
         // print("PMG Preconditioner Constructor");
         DenseMatrix<5*LowerNumBasis, 5*LowerNumBasis> sub_matrix;
@@ -74,7 +90,7 @@ public:
         RAP.finalize();
         // print("PMG Preconditioner RAP Matrix Finalized");
         if constexpr (LowerOrder == 0) RAP_solver = EigenSparseSolver<5*LowerNumBasis,5*LowerNumBasis>(RAP);
-        else RAP_preconditioner_ptr = std::make_unique<PMGPreconditioner<5*LowerNumBasis, InnerMaxIters, LowerOrder==0?0:LowerOrder-1>>(RAP, DoFs);
+        else RAP_preconditioner_ptr = std::make_unique<PMGPreconditioner<5*LowerNumBasis, VcycleMaxIters, LowerOrder==0?0:LowerOrder-1>>(RAP, DoFs);
         // print("PMG Preconditioner RAP Solver Constructed");
     }
 
@@ -85,10 +101,10 @@ public:
         Vec x(rhs.size());
 
         #pragma GCC unroll 20
-        for(uInt vcycle = 0; vcycle < 1; ++vcycle) {
+        for(uInt vcycle = 0; vcycle < VcycleMaxIters; ++vcycle) {
             // 前磨光
             #pragma GCC unroll 20
-            for(uInt pre_smoothing = 0; pre_smoothing < 0; ++pre_smoothing) {
+            for(uInt pre_smoothing = 0; pre_smoothing < PreIters; ++pre_smoothing) {
                 x = x + smother.apply(rhs - A.multiply(x));
             }
             // print("PMG Preconditioner Applied Smoother");
@@ -98,10 +114,24 @@ public:
             
             // 后磨光
             #pragma GCC unroll 20
-            for(uInt post_smoothing = 0; post_smoothing < 5; ++post_smoothing) {
+            for(uInt post_smoothing = 0; post_smoothing < PostIters; ++post_smoothing) {
                 x = x + smother.apply(rhs - A.multiply(x));
             }
+
+            // 这里是 p=2,3, 时的 W-Cycle 迭代次数有减少，时间提升不明显
+            if constexpr (LowerOrder > 0){
+                // 限制, 粗网格求解, 插值
+                x = x + apply_coarse(rhs - A.multiply(x));
+                
+                // 后磨光
+                #pragma GCC unroll 20
+                for(uInt post_smoothing = 0; post_smoothing < PostIters; ++post_smoothing) {
+                    x = x + smother.apply(rhs - A.multiply(x));
+                }
+            }
             // print("PMG Preconditioner Applied Smoother");
+            // std::cout << "PMG Preconditioner Iteration " << vcycle << "   " 
+            // << "residual norm: " << (rhs - A.multiply(x)).norm() << std::endl;
         }
 
         return x;

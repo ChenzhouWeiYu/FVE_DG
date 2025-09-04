@@ -13,25 +13,47 @@
 template<uInt BlockDim, uInt Max_dims, bool output_flag>
 class PGMRES;
 
+template<uInt BlockDim, uInt VcycleMaxIters = 1, 
+    typename Smoother=BJacPreconditioner<BlockDim>, uInt PreIters=5, uInt PostIters=5>
+class FVEPreconditioner;
 
-template<uInt BlockDim, uInt InnerMaxIters = 100>
+template<uInt BlockDim, uInt VcycleMaxIters, typename Smoother, uInt PreIters, uInt PostIters>
 class FVEPreconditioner : public Preconditioner<BlockDim> {
-public:
+// public:
+private:
     using Vec = LongVector<BlockDim>;
     static constexpr uInt NumBasis = BlockDim / 5;
     static constexpr uInt Order = (NumBasis < 10 ? (NumBasis == 1 ? 0 : 1) : (NumBasis==10 ? 2 : 3));
-// private:
+
     const BlockSparseMatrix<BlockDim, BlockDim>& A;
     const ComputingMesh& mesh;
+    Smoother smother;
 
     BlockSparseMatrix<5,5*NumBasis> Rmat;
     BlockSparseMatrix<5,5> RAP;
     EigenSparseSolver<5,5> RAP_solver;
 
+    // 自定义的 V-Cycle 次数、前后磨光次数（暂时不生效，以后再弄）
+    uInt vcycle_iters = VcycleMaxIters;
+    uInt pre_iters = PreIters;
+    uInt post_iters = PostIters;
+
+public:
+    void set_vcycle_iters(uInt vcycle_iters_){
+        vcycle_iters = vcycle_iters_;
+    }
+    void set_pre_iters(uInt pre_iters_){
+        pre_iters = pre_iters_;
+    }
+    void set_post_iters(uInt post_iters_){
+        post_iters = post_iters_;
+    }
+
+
 public:
 
     FVEPreconditioner(const BlockSparseMatrix<BlockDim, BlockDim>& A_, uInt DoFs, const ComputingMesh& mesh_)
-        : A(A_), mesh(mesh_)
+        : A(A_), mesh(mesh_), smother(Smoother(A_, DoFs)) 
     {
         // Ur_tmp.resize(DoFs);
         // Um_tmp.resize(DoFs);
@@ -83,9 +105,9 @@ public:
         // std::cout << 1111 << std::endl;
         
 
-        Rmat.output_as_scalar("Rmat.txt");
-        compute_XYt(Rmat,A).output_as_scalar("RAtmat.txt");
-        RAP.output_as_scalar("RAPmat.txt");
+        // Rmat.output_as_scalar("Rmat.txt");
+        // compute_XYt(Rmat,A).output_as_scalar("RAtmat.txt");
+        // RAP.output_as_scalar("RAPmat.txt");
 
         // for(uInt brow=0; brow<RAP.num_block_rows; ++brow){
         //     for(uInt i=0; i<RAP.storage.ell_max_per_row; ++i){
@@ -108,16 +130,48 @@ public:
     }
 
 
-    
     Vec apply(const Vec& rhs) override {
-        const auto& R_r = Rmat.multiply(rhs);
-        // std::cout << 333333 << std::endl;
-        // std::cout << R_r.size() <<   "   " <<  R_r.blocks[0].size() << std::endl;
-        RAP_solver.set_rhs(R_r);
-        // std::cout << 444444444 << std::endl;
-        const auto& sol = RAP_solver.SparseLU(R_r); // 无效的初始猜测
-        // std::cout << 5555555555555 << std::endl;
+        // 设置初始
+        Vec x(rhs.size());
 
+        #pragma GCC unroll 20
+        for(uInt vcycle = 0; vcycle < VcycleMaxIters; ++vcycle) {
+            // 前磨光
+            #pragma GCC unroll 20
+            for(uInt pre_smoothing = 0; pre_smoothing < PreIters; ++pre_smoothing) {
+                x = x + smother.apply(rhs - A.multiply(x));
+            }
+
+            // 限制, 粗网格求解, 插值
+            x = x + apply_coarse(rhs - A.multiply(x));
+            
+            // 后磨光
+            #pragma GCC unroll 20
+            for(uInt post_smoothing = 0; post_smoothing < PostIters; ++post_smoothing) {
+                x = x + smother.apply(rhs - A.multiply(x));
+            }
+            // std::cout << "PMG Preconditioner Iteration " << vcycle << "   " 
+            // << "residual norm: " << (rhs - A.multiply(x)).norm() << std::endl;
+        }
+
+        return x;
+    }
+
+    
+    inline Vec apply_coarse(const Vec& r) {
+        // 限制
+        const auto& R_r = Rmat.multiply(r);
+
+        // 粗网格求解
+        RAP_solver.set_rhs(R_r);
+        const auto& err = RAP_solver.SparseLU(R_r); // 无效的初始猜测
+
+        // 插值
+        return Pmul(err);
+    }
+
+    // 插值算子 P 的作用，实际是后填充 0
+    LongVector<5*NumBasis> Pmul(LongVector<5> vec) {
         LongVector<5*NumBasis> result(A.num_block_rows); // 预分配空间
 
         // ELL部分
@@ -126,7 +180,7 @@ public:
                 const uInt bcol = Rmat.storage.ell_cols[brow][i];
                 if(bcol == Rmat.invalid_index) continue; // 关键跳过
                 const auto& block = Rmat.storage.ell_blocks[brow][i];
-                result[bcol] += block.transpose().multiply(sol[brow]);
+                result[bcol] += block.transpose().multiply(vec[brow]);
             }
         }
 
@@ -138,21 +192,11 @@ public:
             for(uInt idx = start; idx < end; ++idx) {
                 uInt bcol = Rmat.storage.csr_cols[idx];
                 const auto& block = Rmat.storage.csr_blocks[idx];
-                result[bcol] += block.transpose().multiply(sol[brow]);
+                result[bcol] += block.transpose().multiply(vec[brow]);
             }
         }
-
         return result;
-
-        
-        // return sol;
-        // return apply(rhs,100,1e-3);
     }
-
-    // Vec apply(const Vec& rhs, uInt max_sweeps = 100, Scalar epsilon = 1e-6) { 
-
-    // }
-  
 
 
 

@@ -239,14 +239,11 @@ void Run(uInt N, FilesystemManager fsm){
                 std::cout << "real residual = " << (sparse_mat.multiply(U_k_tmp) - rhs).norm()/rhs.norm() 
                     << ",\t iter = "  << eigen_iter << ",\t iter residual = " << eigen_residual << std::endl;
                 
-                // SimplePreconditioner<DoFs> precond(sparse_mat, U_k.size());
-                // PhysBlockPreconditioner<DoFs> precond(sparse_mat,U_k.size());
-                // IdentityPreconditioner<DoFs> precond(sparse_mat,U_k.size());
-                // DiagPreconditioner<DoFs> precond(sparse_mat,U_k.size());
-                // BJacPreconditioner<DoFs> precond(sparse_mat,U_k.size());
-                // sparse_mat.output_as_scalar("Amat.txt");
-                // FVEPreconditioner<DoFs> precond(sparse_mat, U_k.size(), cmesh);
-                PMGPreconditioner<DoFs,100,Order-1> precond(sparse_mat, U_k.size(), cmesh); // 网格传不传都无所谓，两个构造函数都支持
+
+                // 第二个参数是 V-Cycle 的次数，第三个参数是 p-MG 的粗网格阶数
+                // FVEPreconditioner<DoFs,2> precond(sparse_mat, U_k.size(), cmesh);
+                PMGPreconditioner<DoFs,1,Order-1> precond(sparse_mat, U_k.size(), cmesh); // 网格传不传都无所谓，两个构造函数都支持
+                
                 PGMRES<DoFs,500,true> pgmres(sparse_mat,precond);
                 LongVector<DoFs> U_tmp(U_k.size());
                 auto [pgmres_iter,pgmres_residual] = pgmres.solve(U_tmp, rhs, 500, 1e-12);
